@@ -23,23 +23,23 @@
 	</string>
 
 	<!-- Create your milestones -->
-	<string name="milestone_SCENARIO_NAME_temples_of_blood">Temple of Blood</string>
-	<string name="milestone_SCENARIO_NAME_streams_of_blood">Streams of Blood</string>
-	<string name="milestone_SCENARIO_NAME_rivers_of_blood">Filling Sacrifice</string>
-	<string name="milestone_SCENARIO_NAME_oceans_of_blood">Oceans of Blood</string>
-	<string name="milestone_SCENARIO_NAME_the_world_is_blood">The world is Blood</string>
-	<string name="milestone_SCENARIO_NAME_blessing1">Growth</string>
-	<string name="milestone_SCENARIO_NAME_blessing2">Immortality</string>
-	<string name="milestone_SCENARIO_NAME_blessing3">Supreme Rulership</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_1">MILESTONE 1</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_2">MILESTONE 2</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_3">MILESTONE 3</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_4">MILESTONE 4</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_5">MILESTONE 5</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_6">MILESTONE 6</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_7">MILESTONE 7</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_8">MILESTONE 8</string>
 
 	<!-- Describe your milestones -->
-	<string name="milestone_SCENARIO_NAME_temples_of_blood_description">Build the Temple of Blood, consisting of 1 Stone Circle, 4 Dolmens, 8 Menhirs and 16 Totems surrounding it.</string>
-	<string name="milestone_SCENARIO_NAME_streams_of_blood_description">Sacrifice 50 perpetrators to the Blood God.</string>
-	<string name="milestone_SCENARIO_NAME_rivers_of_blood_description">Sacrifice 250 perpetrators to the Blood God.</string>
-	<string name="milestone_SCENARIO_NAME_oceans_of_blood_description">Sacrifice 500 perpetrators to the Blood God.</string>
-	<string name="milestone_SCENARIO_NAME_the_world_is_blood_description">Sacrifice 1000 perpetrators to the Blood God.</string>
-	<string name="milestone_SCENARIO_NAME_blessing1_description">Reach a population of 150.</string>
-	<string name="milestone_SCENARIO_NAME_blessing2_description">Reach a population of 300.</string>
-	<string name="milestone_SCENARIO_NAME_blessing3_description">Reach a population of 450.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_1_description">Reach a prestige of 100.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_2_description">Sacrifice 50 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_3_description">Sacrifice 250 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_4_description">Sacrifice 500 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_5_description">Sacrifice 1000 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_6_description">Reach a population of 150.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_7_description">Reach a population of 300.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_8_description">Reach a population of 450.</string>
 
 </strings>

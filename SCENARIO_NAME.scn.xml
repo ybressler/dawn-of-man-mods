@@ -52,41 +52,43 @@
 	</disasters>
 
 	<milestones>
-		<milestone id="temples_of_blood">
+
+		<milestone id="MILESTONE_1">
 			<!-- What does the condition type "And" do?? -->
 			<condition type="And">
 				<sub_conditions>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
+					<condition type="ValueReached" id="Prestige" value="100"/>
+					<!-- <condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
 					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="dolmen" value="4"/>
 					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="menhir" value="8"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="totem" value="16"/>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="totem" value="16"/> -->
 				</sub_conditions>
 			</condition>
 		</milestone>
 
-		<milestone id="streams_of_blood">
+		<milestone id="MILESTONE_2">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="50"/>
 		</milestone>
 
-		<milestone id="rivers_of_blood">
+		<milestone id="MILESTONE_3">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="250"/>
 		</milestone>
 
-		<milestone id="oceans_of_blood">
+		<milestone id="MILESTONE_4">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="500"/>
 		</milestone>
 
-		<milestone id="the_world_is_blood">
+		<milestone id="MILESTONE_5">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="1000"/>
 		</milestone>
 
-		<milestone id="blessing1">
+		<milestone id="MILESTONE_6">
 			<condition type="ValueReached" id="Population" value="150"/>
 		</milestone>
-		<milestone id="blessing2">
+		<milestone id="MILESTONE_7">
 			<condition type="ValueReached" id="Population" value="300"/>
 		</milestone>
-		<milestone id="blessing3">
+		<milestone id="MILESTONE_8">
 			<condition type="ValueReached" id="Population" value="450"/>
 		</milestone>
 	</milestones>
@@ -98,16 +100,15 @@
 			<condition type="NewGame"/>
 			<actions>
 				<!-- Clear trees around start location -->
-				<action type="ClearTrees" radius="20"/>
+				<action type="ClearTrees" radius="30"/>
 
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
-				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="45" radius="10"/>
-				<action type="Spawn" entity_type="tent" amount="5" placement="StartLocationCircular" radius="20" />
-				<!-- <action type="Spawn" entity_type="rock_pile" amount="1" placement="StartLocationCircular" angle="45" radius="10"/> -->
+				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="3" angle="45" radius="10"/>
+				<action type="Spawn" entity_type="tent" amount="10" placement="StartLocationCircular" radius="20" />
 				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="9" radius="20"/>
 
-				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Male"/>
+				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
 				<action type="Spawn" entity_type="primitive_human" amount="2" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="2" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Female"/>
@@ -173,12 +174,12 @@
 						– release to Schwifty's new mod.
 						– Wastelands.
 				 -->
-				<action type="SetRaider" era="Paleolithic" entity_types="wolf cave_lion cave_hyena" mins="3 3 3" maxes="9 9 9" grace_period="0.3y" period="1.0y" variance="0.75y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="1y" entity_types="primitive_human wolf cave_hyena cave_lion" mins="1 2 2 2" maxes="10 10 10 10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="2"/>
-				<action type="SetRaider" era="Neolithic" hardcore_timer="5y" entity_types="primitive_human" min="15" max="40" period="1.75y" variance="0.5y" extra_raider_per_population="3"/>
-				<action type="SetRaider" era="CopperAge" hardcore_timer="10y" entity_types="primitive_human" min="25" max="60" period="1.5y" variance="0.5y" extra_raider_per_population="5"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="15y" entity_types="primitive_human" min="40" max="75" period="2.5y" variance="0.75y" extra_raider_per_population="5"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" period="2.0y" variance="1.0y" extra_raider_per_population="6"/>
+				<action type="SetRaider" era="Paleolithic" hardcore_timer="0y" entity_types="wolf cave_lion cave_hyena" mins="3 3 3" maxes="9 9 9" grace_period="0.3y" period="1.0y" variance="0.50y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="1y" entity_types="primitive_human wolf cave_hyena cave_lion" mins="1 2 2 2" maxes="10 10 10 10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="10"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="5y" entity_types="primitive_human wolf cave_hyena" mins="15 5 5" maxes="40 10 10" period="1.75y" variance="0.5y" extra_raider_per_population="7"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="10y" entity_types="primitive_human wolf cave_hyena" mins="25 10 10" maxes="60 20 20" period="1.5y" variance="0.5y" extra_raider_per_population="6"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="15y" entity_types="primitive_human wolf" mins="40 15" maxes="75 20" period="2.5y" variance="0.75y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" period="2.0y" variance="1.0y" extra_raider_per_population="4"/>
 
 
 				<!-- Features -->
@@ -188,10 +189,10 @@
 				<action type="SetFeatureEnabled" feature="TameableAnimalSpawn" value="true"/>
 
 				<!-- Parameters -->
-				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.3"/>
-				<action type="SetMigrationParameters" min="3" max="15" period="1y" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.2"/>
+				<action type="SetMigrationParameters" min="3" max="10" period="1y" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
-				<action type="SetTraderPeriod" value="0.75y"/>
+				<action type="SetTraderPeriod" value="1.15y"/>
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
 
 			</actions>
