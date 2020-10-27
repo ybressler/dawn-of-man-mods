@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario>
+
+	<!-- If you want to have multiple scenarios with this mod (they be grouped up in the screen) -->
+	<group_id value="GROUP_NAME"/>
+	<!-- Options are "Freeplay / Challenge" -->
+	<category value="Challenge"/>
+	<hardcore_mode_allowed value="true"/>
+	<!-- Size means the size of the world (default=4)-->
+	<size value="3"/>
+
+	<starting_conditions season_id="Spring"/>
+
+	<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+	<locations>
+
+		<!--
+			Map location is the pointer on the menu. Location is the location on the actual map
+
+			Note: Create 2 diff maps:
+				1) North, make it cold but filled with resources, also, fewer rivers?
+					1A) North river
+					1B) North lake
+				2) South, make warm, but filled with dangerous animals and less resources...
+
+		-->
+		<location id="twisty_river" seed="3165798" location="700.0, 800.0" environment="north" map_location="0.325,0.30" lakes="5" river="true"/>
+		<location id="river_fork" seed="9548457" environment="north" map_location="0.475,0.45" lakes="5" river="true"/>
+
+		<!-- Unsure -->
+		<location id="north_river" seed="6789834" environment="north" map_location="0.9,0.2" lakes="5"/>
+
+	</locations>
+
+<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+	<!--
+		A haiku:
+		"These are kind of boring.
+		There are some fancy lights.
+		You can't do any work.
+		And it makes your people sad.
+			That's it."
+
+		@Schwifty
+
+	-->
+
+	<disasters>
+		<disaster disaster_type="Storm" period="2.0y" variance="0.25y"/>
+		<disaster disaster_type="Blizzard" period="2.0y" variance="1y"/>
+	</disasters>
+
+	<milestones>
+		<milestone id="temples_of_blood">
+			<condition type="And">
+				<sub_conditions>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="dolmen" value="4"/>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="menhir" value="8"/>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="totem" value="16"/>
+				</sub_conditions>
+			</condition>
+		</milestone>
+
+		<milestone id="streams_of_blood">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="50"/>
+		</milestone>
+
+		<milestone id="rivers_of_blood">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="250"/>
+		</milestone>
+
+		<milestone id="oceans_of_blood">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="500"/>
+		</milestone>
+
+		<milestone id="the_world_is_blood">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="1000"/>
+		</milestone>
+
+		<milestone id="blessing1">
+			<condition type="ValueReached" id="Population" value="150"/>
+		</milestone>
+		<milestone id="blessing2">
+			<condition type="ValueReached" id="Population" value="300"/>
+		</milestone>
+		<milestone id="blessing3">
+			<condition type="ValueReached" id="Population" value="450"/>
+		</milestone>
+	</milestones>
+
+	<events>
+
+		<!-- This gets run once, when the game is first started -->
+		<event>
+			<condition type="NewGame"/>
+			<actions>
+				<!-- Clear trees around start location -->
+				<action type="ClearTrees" radius="20"/>
+
+				<!-- Spawn initial entities -->
+				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
+				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="45" radius="10"/>
+				<action type="Spawn" entity_type="tent" amount="5" placement="StartLocationCircular" radius="20" />
+				<!-- <action type="Spawn" entity_type="rock_pile" amount="1" placement="StartLocationCircular" angle="45" radius="10"/> -->
+				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="9" radius="20"/>
+
+				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Male"/>
+				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
+				<action type="Spawn" entity_type="primitive_human" amount="2" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Male"/>
+				<action type="Spawn" entity_type="primitive_human" amount="2" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Female"/>
+				<action type="Spawn" entity_type="primitive_human" amount="1" placement="StartLocationCircular" angle="35" radius="3" years_old="20" gender="Male" name="Uhlog" behaviour="NoTasks,NoOutfitChange"/>
+
+				<action type="Spawn" entity_type="skins_outfit" amount="1" placement="Uhlog"/>
+				<action type="Spawn" entity_type="skins_outfit" amount="14" placement="Human"/>
+				<action type="Spawn" entity_type="flint_spear" amount="9" placement="Human"/>
+				<action type="Spawn" entity_type="flint_knife" amount="7" placement="Human"/>
+				<action type="Spawn" entity_type="flint_sickle" amount="2" placement="Human"/>
+				<action type="Spawn" entity_type="flint_pick" amount="2" placement="Human"/>
+				<action type="Spawn" entity_type="bone_harpoon" amount="2" placement="Human"/>
+
+				<action type="Spawn" entity_type="nuts" amount="3" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_fish" amount="3" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_meat" amount="3" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_skin" amount="3" placement="Storage"/>
+
+			</actions>
+		</event>
+
+		<!-- This gets run every time the game is started or loaded, to allow for easy iteration -->
+		<event flags="MultipleExecutions">
+			<condition type="InitGame"/>
+			<actions>
+				<!-- Set animal populations, these will get spawned automatically -->
+				<action type="SetAnimalPopulation" animal_types="vulture dove eagle" min="7" max="12"/>
+
+
+				<!-- Create dangerous animals -->
+				<action type="SetAnimalPopulation" animal_types="wolf" min="50" max="55"  era_factors ="0.5 0.5 1 1 1 1"/>
+				<action type="SetAnimalPopulation" animal_types="cave_lion" min="15" max="25" era_factors ="1 0.75 0.5 0.25 0.2 0.1"/>
+				<action type="SetAnimalPopulation" animal_types="cave_lion" min="15" max="30"  era_factors ="1 1 1 0.75 0.75 0.5"/>
+				<action type="SetAnimalPopulation" animal_types="cave_hyena" min="30" max="30" era_factors ="1 0.75 0.75 0.6 0.6 0.3"/>
+
+				<!-- Create predators -->
+				<action type="SetAnimalPopulation" animal_types="bear" min="10" max="20" era_factors ="0.0 0.25 0.5 0.75 1 1"/>
+				<action type="SetAnimalPopulation" animal_types="cave_bear" min="10" max="20" era_factors ="1 0.75 0.5 0.25 0.2 0.1"/>
+
+				<!-- Domesticatable animals -->
+				<action type="SetAnimalPopulation" animal_types="ibex mouflon boar" min="22" max="28"/>
+				<action type="SetAnimalPopulation" animal_types="wild_horse" min="22" max="27" era_factors ="0.1 0.5 0.75 1 0.75 0.25"/>
+				<action type="SetAnimalPopulation" animal_types="feral_horse wild_donkey aurochs" min="22" max="27" era_factors ="0 0.25 0.5 0.75 1 1"/>
+
+				<!-- All the other animals -->
+				<action type="SetAnimalPopulation" animal_type="deer" min="15" max="40" era_factors ="0 0 0.25 1 1 1"/>
+				<action type="SetAnimalPopulation" animal_type="reindeer" min="25" max="40" era_factors ="1 0.75 0.5 0.25 0.2 0.2"/>
+				<action type="SetAnimalPopulation" animal_type="ancient_bison" min="20" max="25" era_factors ="1 0.75 0.5 0.25 0.2 0.2"/>
+				<action type="SetAnimalPopulation" animal_type="bison" min="20" max="50" era_factors ="0 0.25 0.5 0.75 1 1"/>
+				<action type="SetAnimalPopulation" animal_type="muskox" min="25" max="30" era_factors ="0.5 0.75 1 1 0.75 0.75"/>
+
+
+				<!-- Set big animals -->
+				<action type="SetAnimalPopulation" animal_type="megaloceros" min="15" max="30" era_factors ="1 0.75 0.5 0.25 0.2 0.2"/>
+				<action type="SetAnimalPopulation" animal_type="mammoth" min="10" max="25" era_factors ="1 0.75 0.5 0.25 0.2 0.2"/>
+				<action type="SetAnimalPopulation" animal_type="woolly_rhinoceros" min="10" max="25" era_factors ="1 0.5 0.25 0.2 0.2 0.2"/>
+				<action type="SetAnimalPopulation" animal_type="elasmotherium" min="15" max="20" era_factors ="1 1 1 0.75 0.5 0.5"/>
+
+
+				<!-- Set raider parameters -->
+				<!--
+					Look at everwinter:
+						– release to Schwifty's new mod.
+						– Wastelands.
+				 -->
+				<action type="SetRaider" era="Paleolithic" entity_types="wolf cave_lion cave_hyena" mins="3 3 3" maxes="9 9 9" grace_period="0.3y" period="1.0y" variance="0.75y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="1y" entity_types="primitive_human wolf cave_hyena cave_lion" mins="1 2 2 2" maxes="10 10 10 10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="2"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="5y" entity_types="primitive_human" min="15" max="40" period="1.75y" variance="0.5y" extra_raider_per_population="3"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="10y" entity_types="primitive_human" min="25" max="60" period="1.5y" variance="0.5y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="15y" entity_types="primitive_human" min="40" max="75" period="2.5y" variance="0.75y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" period="2.0y" variance="1.0y" extra_raider_per_population="6"/>
+
+
+				<!-- Features -->
+				<action type="SetFeatureEnabled" feature="Hints" value="false"/>
+				<action type="SetFeatureEnabled" feature="Warnings" value="false"/>
+				<action type="SetFeatureEnabled" feature="TechConfirmMessages" value="false"/>
+				<action type="SetFeatureEnabled" feature="TameableAnimalSpawn" value="true"/>
+
+				<!-- Parameters -->
+				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.3"/>
+				<action type="SetMigrationParameters" min="3" max="15" period="1y" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetTraderPeriod" value="0.75y"/>
+				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
+
+			</actions>
+		</event>
+	</events>
+</scenario>
