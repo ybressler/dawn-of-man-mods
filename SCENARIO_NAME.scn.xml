@@ -2,7 +2,7 @@
 <scenario>
 
 	<!-- If you want to have multiple scenarios with this mod (they be grouped up in the screen) -->
-	<group_id value="GROUP_NAME"/>
+	<group_id value="GROUP 1"/>
 	<!-- Options are "Freeplay / Challenge" -->
 	<category value="Challenge"/>
 	<hardcore_mode_allowed value="true"/>
@@ -47,12 +47,13 @@
 	-->
 
 	<disasters>
-		<disaster disaster_type="Storm" period="2.0y" variance="0.25y"/>
+		<disaster disaster_type="Storm" period="10.0y" variance="1.25y"/>
 		<disaster disaster_type="Blizzard" period="2.0y" variance="1y"/>
 	</disasters>
 
 	<milestones>
 		<milestone id="temples_of_blood">
+			<!-- What does the condition type "And" do?? -->
 			<condition type="And">
 				<sub_conditions>
 					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>

@@ -13,14 +13,13 @@
  -->
 <strings>
 	<string name="SCENARIO_NAME">Very bloody times are ahead</string>
-	<string name="SCENARIO_NAME_group">Temple of Blood 2</string>
+	<string name="SCENARIO_NAME_group">GROUP 1</string>
 
-	<string name="scenario_SCENARIO_NAME">Temple of Blood 2</string>
-	<string name="scenario_SCENARIO_NAME_subtitle">Insane</string>
-	<string name="scenario_SCENARIO_NAME_description">Yaakov's custom build... Build the great Temple of Blood and please the Blood God by sacrificing as many enemies as possible.
-	</string>
+	<string name="scenario_SCENARIO_NAME">SCENARIO NAME</string>
+	<string name="scenario_SCENARIO_NAME_subtitle">SUBTITLE</string>
+	<string name="scenario_SCENARIO_NAME_description">Yaakov's custom build... SCENARIO NAME</string>
 	<string name="scenario_SCENARIO_NAME_context">
-The Great Shaman Uhlog has decreed that a large temple is to be built to please the Blood God, otherwise it will release its wrath upon our sons.
+		SCENARIO NAME CONTEXT. Many words here.
 	</string>
 
 	<!-- Create your milestones -->
