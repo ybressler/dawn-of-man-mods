@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <environment>
 
-	<resource_factor value="1.5"/>
+	<!-- Miscellaneous -->
+	<backdrop_scale value="1.0, 0.25, 1.0"/>
 	<sun_angle_factor value="0.5"/>
-	<ford_distance_factor value="1.5"/>
-	<!-- <trees_everywhere value="True"/> -->
-	<noise_amplitudes values="0.01 0.03 0.2 0.154 0.097 0.02 0.02 0.02"/>
 
-	<trees values="Fir Pine Spruce Rye Einkorn Emmer Flax BitterVetch Chickpeas Lentils Peas Blackberry Blueberry Raspberry Strawberry Chestnut Pear Cherry Service"/>
+
+
+	<!-- How much resources? -->
+	<resource_factor value="1.0"/>
+
+
+	<!-- How far apart are river fords? -->
+	<ford_distance_factor value="2.5"/>
+
+	<!-- <noise_amplitudes values="0.01 0.03 0.2 0.154 0.097 0.02 0.02 0.02"/> -->
+	<noise_amplitudes values="0.1 0.165 0.1 0.05"/>
+	<distance_height_offset value="0.04"/>
+
+	<trees values="Fir Pine Spruce Einkorn Flax Chickpeas Blackberry Blueberry Strawberry Chestnut Service"/>
+
+	<!-- Make very full of trees -->
+	<global_tree_density value="1"/>
+
+<!-- ####################################################################### -->
 
 	<tree_override_prototypes>
 
@@ -30,6 +46,25 @@
 		</tree_override_prototype>
 
 	</tree_override_prototypes>
+
+
+<!-- ######################################################################### -->
+
+
+<prop_override_prototypes>
+	<prop_override_prototype>
+		<id value="Megalith"/>
+		<density value="0.75" />
+		<min_altitude value="-2.5" />
+		<max_altitude value="100"/>
+		<min_angle value="40" />
+		<max_angle value="55"/>
+	</prop_override_prototype>
+</prop_override_prototypes>
+
+
+<!-- ######################################################################### -->
+
 
 	<seasons>
 		<season id="Spring" setup_id="Spring" duration="0.25" precipitation_chance="0.25" windy_chance="0.5" very_windy_chance="0.1" fish_boost="0.5">
