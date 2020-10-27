@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This file replaces text...
+
+	Text is replace with the text described here:
+		"SCENARIO_NAME_2" becomes "Very bloody times are ahead"
+
+	Note:
+		– These string names need to be unique. (With other mods too!)
+
+	Tasks:
+		– rename and prefix
+ -->
+<strings>
+	<string name="SCENARIO_NAME">Very bloody times are ahead</string>
+	<string name="SCENARIO_NAME_group">GROUP ONE</string>
+
+	<string name="scenario_SCENARIO_NAME">SCENARIO NAME</string>
+	<string name="scenario_SCENARIO_NAME_subtitle">SUBTITLE</string>
+	<string name="scenario_SCENARIO_NAME_description">Yaakov's custom build... SCENARIO NAME</string>
+	<string name="scenario_SCENARIO_NAME_context">SCENARIO NAME CONTEXT. Many words here.</string>
+
+	<!-- Create your milestones -->
+	<string name="milestone_SCENARIO_NAME_MILESTONE_1">MILESTONE 1</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_2">MILESTONE 2</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_3">MILESTONE 3</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_4">MILESTONE 4</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_5">MILESTONE 5</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_6">MILESTONE 6</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_7">MILESTONE 7</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_8">MILESTONE 8</string>
+
+	<!-- Describe your milestones -->
+	<string name="milestone_SCENARIO_NAME_MILESTONE_1_description">Reach a prestige of 100.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_2_description">Sacrifice 50 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_3_description">Sacrifice 250 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_4_description">Sacrifice 500 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_5_description">Sacrifice 1000 perpetrators to the Blood God.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_6_description">Reach a population of 150.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_7_description">Reach a population of 300.</string>
+	<string name="milestone_SCENARIO_NAME_MILESTONE_8_description">Reach a population of 450.</string>
+
+</strings>
