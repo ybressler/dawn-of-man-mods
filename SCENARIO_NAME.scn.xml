@@ -2,7 +2,7 @@
 <scenario>
 
 	<!-- If you want to have multiple scenarios with this mod (they be grouped up in the screen) -->
-	<group_id value="GROUP ONE"/>
+	<group_id value="GROUP_1"/>
 	<!-- Options are "Freeplay / Challenge" -->
 	<category value="Challenge"/>
 	<hardcore_mode_allowed value="true"/>
@@ -54,7 +54,26 @@
 	<milestones>
 
 		<milestone id="MILESTONE_1">
-			<!-- What does the condition type "And" do?? -->
+			<!--Condition "And" needs ALL sub_conditions to be reached: 100 Prestige & 1 Stone Circle
+ 			<condition type="And">
+				<sub_conditions>
+					<condition type="ValueReached" id="Prestige" value="100"/>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
+				</sub_conditions>
+			</condition>
+			-->
+
+			<!--Condition "Or" needs ONE sub_condition to be reached: 100 Prestige OR 1 Stone Circle
+ 			<condition type="Or">
+				<sub_conditions>
+					<condition type="ValueReached" id="Prestige" value="100"/>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
+				</sub_conditions>
+			</condition>
+			-->
+			<!-- If you only need 1 condition there is no need for And / Or, but I think only 1 sub_condition works technically.
+			<condition type="ValueReached" id="Prestige" value="100"/>
+			-->
 			<condition type="And">
 				<sub_conditions>
 					<condition type="ValueReached" id="Prestige" value="100"/>
@@ -136,7 +155,11 @@
 			<actions>
 				<!-- Set animal populations, these will get spawned automatically -->
 				<action type="SetAnimalPopulation" animal_types="vulture dove eagle" min="7" max="12"/>
-
+				<!--
+					fast dots on my screen
+					would really appreciate
+					no bird to be seen
+				-->
 
 				<!-- Create dangerous animals -->
 				<action type="SetAnimalPopulation" animal_types="wolf" min="50" max="55"  era_factors ="0.5 0.5 1 1 1 1"/>
@@ -174,6 +197,7 @@
 						– release to Schwifty's new mod.
 						– Wastelands.
 				 -->
+				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 				<action type="SetRaider" era="Paleolithic" hardcore_timer="0y" entity_types="wolf cave_lion cave_hyena" mins="3 3 3" maxes="9 9 9" grace_period="0.3y" period="1.0y" variance="0.50y"/>
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="1y" entity_types="primitive_human wolf cave_hyena cave_lion" mins="1 2 2 2" maxes="10 10 10 10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="10"/>
 				<action type="SetRaider" era="Neolithic" hardcore_timer="5y" entity_types="primitive_human wolf cave_hyena" mins="15 5 5" maxes="40 10 10" period="1.75y" variance="0.5y" extra_raider_per_population="7"/>
@@ -185,6 +209,7 @@
 				<!-- Features -->
 				<action type="SetFeatureEnabled" feature="Hints" value="false"/>
 				<action type="SetFeatureEnabled" feature="Warnings" value="false"/>
+				<!-- Pre CopperAge warning about Fortifications-->
 				<action type="SetFeatureEnabled" feature="TechConfirmMessages" value="false"/>
 				<action type="SetFeatureEnabled" feature="TameableAnimalSpawn" value="true"/>
 
@@ -197,5 +222,38 @@
 
 			</actions>
 		</event>
+
+		<!-- Here is the spot to insert your own Events -->
+		<!--
+
+		Funny Stuff like the change of seasons during harvest in everwinter
+
+		Or free beer during Testplay:
+		Infinite free beer, MultipleExecutions triggers the event multiple times instead once per game
+		<event flags="MultipleExecutions">
+			<condition type="Not">
+				<sub_condition value="20" type="EntityCountReached" entity_type="beer"/>
+			</condition>
+			<actions>
+				<action type="SetTimeOfYear" value="0.5099"/>
+				<action type="Spawn" entity_type="beer" amount="1" placement="StartLocationCircular" angle="5" radius="15"/>
+			</actions>
+		</event>
+
+		Speedup whenever GameSpeed is not x8, reliable during auto-tests and a funny way to torment a player (never used it).
+		In conjunction with raids this would set the time a player has to ring the alarm to a very short period (maybe pause on normal can save a few milliseconds).
+		Or Imagine it with GameSpeed=1: Force the player to play only on x1 (Every Speedup will be reset immediately)
+		Besides this is a good example for condition [Not GameSpeed" value="8"] instead of [Or (GameSpeed" value="8"|GameSpeed" value="4"|GameSpeed" value="2")].
+		<event flags="MultipleExecutions">
+			<condition type="Not">
+				<sub_condition type="ValueEquals" id="GameSpeed" value="8"/>
+			</condition>
+			<actions>
+				<action type="SetTimeScale" value="8"/>
+			</actions>
+		</event>
+
+		-->
+
 	</events>
 </scenario>
