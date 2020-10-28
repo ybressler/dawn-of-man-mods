@@ -3,7 +3,7 @@
 
 	<!-- Miscellaneous -->
 	<backdrop_scale value="1.0, 0.25, 1.0"/>
-	<sun_angle_factor value="0.5"/>
+	<sun_angle_factor value="0.7"/>
 
 
 
@@ -14,14 +14,13 @@
 	<!-- How far apart are river fords? -->
 	<ford_distance_factor value="2.5"/>
 
-	<!-- <noise_amplitudes values="0.01 0.03 0.2 0.154 0.097 0.02 0.02 0.02"/> -->
-	<noise_amplitudes values="0.1 0.165 0.1 0.05"/>
+	<noise_amplitudes values="0.01 0.06 0.2 0.154 0.097 0.02 0.02 0.02"/>
 	<distance_height_offset value="0.04"/>
 
 	<trees values="Fir Pine Spruce Einkorn Flax Chickpeas Blackberry Blueberry Strawberry Chestnut Service"/>
 
 	<!-- Make very full of trees -->
-	<global_tree_density value="1"/>
+	<global_tree_density value="1.1"/>
 
 <!-- ####################################################################### -->
 
