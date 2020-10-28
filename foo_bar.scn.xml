@@ -54,7 +54,7 @@
 
 	<milestones>
 
-		<milestone id="MILESTONE_1">
+		<milestone id="MILESTONE1">
 			<!--Condition "And" needs ALL sub_conditions to be reached: 100 Prestige & 1 Stone Circle
  			<condition type="And">
 				<sub_conditions>
@@ -86,29 +86,29 @@
 			</condition>
 		</milestone>
 
-		<milestone id="MILESTONE_2">
+		<milestone id="MILESTONE2">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="50"/>
 		</milestone>
 
-		<milestone id="MILESTONE_3">
+		<milestone id="MILESTONE3">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="250"/>
 		</milestone>
 
-		<milestone id="MILESTONE_4">
+		<milestone id="MILESTONE4">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="500"/>
 		</milestone>
 
-		<milestone id="MILESTONE_5">
+		<milestone id="MILESTONE5">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="1000"/>
 		</milestone>
 
-		<milestone id="MILESTONE_6">
+		<milestone id="MILESTONE6">
 			<condition type="ValueReached" id="Population" value="150"/>
 		</milestone>
-		<milestone id="MILESTONE_7">
+		<milestone id="MILESTONE7">
 			<condition type="ValueReached" id="Population" value="300"/>
 		</milestone>
-		<milestone id="MILESTONE_8">
+		<milestone id="MILESTONE8">
 			<condition type="ValueReached" id="Population" value="450"/>
 		</milestone>
 	</milestones>
