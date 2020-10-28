@@ -14,7 +14,7 @@
 	<!-- How far apart are river fords? -->
 	<ford_distance_factor value="2.5"/>
 
-	<noise_amplitudes values="0.01 0.06 0.2 0.154 0.097 0.02 0.02 0.02"/>
+	<noise_amplitudes values="0.125 0.250 0.115 0.105 0.0905 0.055 0.0001"/>
 	<distance_height_offset value="0.04"/>
 
 	<trees values="Fir Pine Spruce Einkorn Flax Chickpeas Blackberry Blueberry Strawberry Chestnut Service"/>
@@ -40,8 +40,8 @@
 
 		<tree_override_prototype>
 			<id value="Pine"/>
-			<min_altitude value="2" />
-			<max_altitude value="16"/>
+			<min_altitude value="5" />
+			<max_altitude value="40"/>
 		</tree_override_prototype>
 
 	</tree_override_prototypes>
@@ -49,15 +49,15 @@
 
 <!-- ######################################################################### -->
 
-
+<!-- Fill the slopes with megaliths -->
 <prop_override_prototypes>
 	<prop_override_prototype>
 		<id value="Megalith"/>
-		<density value="0.75" />
-		<min_altitude value="-2.5" />
-		<max_altitude value="100"/>
-		<min_angle value="40" />
-		<max_angle value="55"/>
+		<density value="0.50" />
+		<min_altitude value="10" />
+		<max_altitude value="90"/>
+		<min_angle value="20" />
+		<max_angle value="65"/>
 	</prop_override_prototype>
 </prop_override_prototypes>
 
