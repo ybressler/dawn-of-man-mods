@@ -2,7 +2,7 @@
 <scenario>
 
 	<!-- If you want to have multiple scenarios with this mod (they be grouped up in the screen) -->
-	<group_id value="GROUP_1"/>
+	<group_id value="foo_bar"/>
 	<!-- Options are "Freeplay / Challenge" -->
 	<category value="Challenge"/>
 	<hardcore_mode_allowed value="true"/>
