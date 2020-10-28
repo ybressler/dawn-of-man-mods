@@ -2,10 +2,10 @@
 <scenario>
 
 	<!-- If you want to have multiple scenarios with this mod (they be grouped up in the screen) -->
-	<group_id value="flatlands_group"/>
+	<group_id value="foo_bar"/>
 
 	<!-- Options are "Freeplay / Challenge" -->
-	<category value="Challenge"/>
+	<category value="Freeplay"/>
 	<hardcore_mode_allowed value="true"/>
 	<!-- Size means the size of the world (default=4)-->
 	<size value="3"/>
