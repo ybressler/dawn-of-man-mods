@@ -75,15 +75,16 @@
 			<!-- If you only need 1 condition there is no need for And / Or, but I think only 1 sub_condition works technically.
 			<condition type="ValueReached" id="Prestige" value="100"/>
 			-->
-			<condition type="And">
+			<condition type="ValueReached" id="Prestige" value="100"/>
+			<!-- <condition type="And">
 				<sub_conditions>
 					<condition type="ValueReached" id="Prestige" value="100"/>
-					<!-- <condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
 					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="dolmen" value="4"/>
 					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="menhir" value="8"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="totem" value="16"/> -->
+					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="totem" value="16"/>
 				</sub_conditions>
-			</condition>
+			</condition> -->
 		</milestone>
 
 		<milestone id="MILESTONE2">
@@ -120,13 +121,13 @@
 			<condition type="NewGame"/>
 			<actions>
 				<!-- Clear trees around start location -->
-				<action type="ClearTrees" radius="30"/>
+				<action type="ClearTrees" radius="22"/>
 
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="3"/>
-				<action type="Spawn" entity_type="tent" amount="10" placement="StartLocationCircular" radius="20" />
-				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="9" radius="20"/>
+				<action type="Spawn" entity_type="tent" amount="10" placement="StartLocationCircular" radius="6" />
+				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="3" radius="20"/>
 
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
