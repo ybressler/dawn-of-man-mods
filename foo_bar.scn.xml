@@ -125,10 +125,10 @@
 
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
-				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="35" radius="6"/>
-				<action type="Spawn" entity_type="storage_tent" amount="1" placement="StartLocationCircular" angle="35" radius="6"/>
-				<action type="Spawn" entity_type="tent" amount="9" placement="StartLocationCircular" angle="15" radius="20" />
-				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="35" radius="6"/>
+				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="90" radius="6"/>
+				<action type="Spawn" entity_type="storage_tent" amount="1" placement="StartLocationCircular" angle="270" radius="8"/>
+				<action type="Spawn" entity_type="tent" amount="9" placement="StartLocationCircular" angle="25" radius="20" />
+				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/>
 
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
