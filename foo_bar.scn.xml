@@ -121,7 +121,7 @@
 			<condition type="NewGame"/>
 			<actions>
 				<!-- Clear trees around start location -->
-				<action type="ClearTrees" radius="22"/>
+				<action type="ClearTrees" radius="20"/>
 
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
@@ -138,16 +138,11 @@
 
 				<action type="Spawn" entity_type="skins_outfit" amount="1" placement="Uhlog"/>
 				<action type="Spawn" entity_type="skins_outfit" amount="14" placement="Human"/>
-				<action type="Spawn" entity_type="flint_spear" amount="9" placement="Human"/>
-				<action type="Spawn" entity_type="flint_knife" amount="7" placement="Human"/>
-				<action type="Spawn" entity_type="flint_sickle" amount="2" placement="Human"/>
-				<action type="Spawn" entity_type="flint_pick" amount="2" placement="Human"/>
-				<action type="Spawn" entity_type="bone_harpoon" amount="2" placement="Human"/>
 
 				<action type="Spawn" entity_type="nuts" amount="3" placement="Storage"/>
-				<action type="Spawn" entity_type="raw_fish" amount="3" placement="Storage"/>
-				<action type="Spawn" entity_type="raw_meat" amount="3" placement="Storage"/>
-				<action type="Spawn" entity_type="raw_skin" amount="3" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_fish" amount="1" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_meat" amount="1" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_skin" amount="1" placement="Storage"/>
 
 			</actions>
 		</event>
