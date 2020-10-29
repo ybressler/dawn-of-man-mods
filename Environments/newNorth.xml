@@ -15,7 +15,8 @@
 	<ford_distance_factor value="3.0"/>
 
 	<!-- I love these setttings.... -->
-	<noise_amplitudes values="0.2 0.02 0.25 0.02 0.2"/>
+	<noise_amplitudes values="0.419 0.468 0.646 0.269 0.417 0.438 0.303 0.169"/>
+	<!-- <noise_amplitudes values="0.2 0.02 0.25 0.02 0.2"/> -->
 	<!-- <noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.005 0.002"/> -->
 	<distance_height_offset value="0.04"/>
 
