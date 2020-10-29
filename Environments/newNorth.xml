@@ -15,7 +15,7 @@
 	<ford_distance_factor value="3.0"/>
 
 	<!-- I love these setttings.... -->
-	<noise_amplitudes values="0.2 0.4 0.2 0.1"/>
+	<noise_amplitudes values="0.2 0.25 0.01 0.2"/>
 	<!-- <noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.005 0.002"/> -->
 	<distance_height_offset value="0.04"/>
 
@@ -43,8 +43,8 @@
 		<!-- Hills should be FULL of pines... -->
 		<tree_override_prototype>
 			<id value="Pine"/>
-			<density value="0.75" />
-			<min_altitude value="8" />
+			<density value="1.0" />
+			<min_altitude value="6" />
 			<max_altitude value="40"/>
 		</tree_override_prototype>
 
@@ -77,7 +77,7 @@
 
 		<season id="Summer" setup_id="Summer" duration="0.25" precipitation_chance="0.0"  windy_chance="0.25">
 			<min_temperature value="20"/>
-			<max_temperature value="45"/>
+			<max_temperature value="50"/>
 			<min_wind value="2"/>
 			<max_wind value="7.5"/>
 		</season>
@@ -90,6 +90,8 @@
 		<season id="Winter" setup_id="Winter" snow_setup_id="WinterSnow" duration="0.25" precipitation_chance="0.5" windy_chance="0.5" very_windy_chance="0.5" reduced_fauna="true">
 			<min_temperature value="-15"/>
 			<max_temperature value="10.0"/>
+			<min_wind value="2"/>
+			<max_wind value="7.5"/>
 		</season>
 	</seasons>
 
