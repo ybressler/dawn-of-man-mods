@@ -15,7 +15,7 @@
 	<ford_distance_factor value="3.0"/>
 
 	<!-- I love these setttings.... -->
-	<noise_amplitudes values="0.2 0.25 0.01 0.2"/>
+	<noise_amplitudes values="0.2 0.02 0.25 0.02 0.2"/>
 	<!-- <noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.005 0.002"/> -->
 	<distance_height_offset value="0.04"/>
 
@@ -35,15 +35,15 @@
 		</tree_override_prototype>
 
 		<tree_override_prototype>
-			<id value="Spruce"/>
+			<id value="Pine"/>
 			<min_altitude value="2" />
 			<max_altitude value="14"/>
 		</tree_override_prototype>
 
 		<!-- Hills should be FULL of pines... -->
 		<tree_override_prototype>
-			<id value="Pine"/>
-			<density value="1.0" />
+			<id value="Spruce"/>
+			<density value="1.5" />
 			<min_altitude value="6" />
 			<max_altitude value="40"/>
 		</tree_override_prototype>
