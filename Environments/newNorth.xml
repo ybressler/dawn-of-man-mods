@@ -12,16 +12,17 @@
 
 
 	<!-- How far apart are river fords? -->
-	<ford_distance_factor value="4.0"/>
+	<ford_distance_factor value="3.0"/>
 
 	<!-- I love these setttings.... -->
-	<noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.005 0.002"/>
+	<noise_amplitudes values="0.2 0.2 0.1 0.2 0.1 0.2"/>
+	<!-- <noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.005 0.002"/> -->
 	<distance_height_offset value="0.04"/>
 
 	<trees values="Fir Pine Spruce Einkorn Flax Chickpeas Blackberry Blueberry Strawberry Chestnut Service"/>
 
 	<!-- Make very full of trees -->
-	<global_tree_density value="1.1"/>
+	<global_tree_density value="1.25"/>
 
 <!-- ####################################################################### -->
 

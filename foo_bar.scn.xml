@@ -26,11 +26,11 @@
 				2) South, make warm, but filled with dangerous animals and less resources...
 
 		-->
-		<location id="twisty_river" seed="3165798" location="700.0, 800.0" environment="north" map_location="0.325,0.30" lakes="5" river="true"/>
-		<location id="river_fork" seed="9548457" environment="north" map_location="0.475,0.45" lakes="5" river="true"/>
+		<location id="twisty_river" seed="3165798" location="700.0, 800.0" environment="newNorth" map_location="0.325,0.30" lakes="5" river="true"/>
+		<location id="river_fork" seed="9548457" environment="newNorth" map_location="0.475,0.45" lakes="5" river="true"/>
 
 		<!-- Unsure -->
-		<location id="north_river" seed="6789834" environment="north" map_location="0.9,0.2" lakes="5"/>
+		<location id="north_river" seed="6789834" environment="newNorth" map_location="0.9,0.2" lakes="5"/>
 
 	</locations>
 
@@ -125,9 +125,10 @@
 
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
-				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="3"/>
-				<action type="Spawn" entity_type="tent" amount="10" placement="StartLocationCircular" radius="6" />
-				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="3" radius="20"/>
+				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="6"/>
+				<action type="Spawn" entity_type="tent" amount="10" placement="StartLocationCircular" radius="15" />
+				<action type="Spawn" entity_type="storage_tent" amount="1" placement="StartLocationCircular" radius="20" />
+				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="6" radius="20"/>
 
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
