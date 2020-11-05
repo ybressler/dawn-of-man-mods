@@ -30,7 +30,7 @@
 		<location id="river_fork" seed="9548457" environment="newNorth" map_location="0.475,0.45" lakes="5" river="true"/>
 
 		<!-- Unsure -->
-		<location id="north_river" seed="6789834" environment="newNorth" map_location="0.9,0.2" lakes="5"/>
+		<location id="north_river" seed="6789834" environment="newNorth" map_location="0.9,0.2" lakes="5" river="false"/>
 
 	</locations>
 
@@ -130,10 +130,10 @@
 				<action type="Spawn" entity_type="tent" amount="9" placement="StartLocationCircular" angle="25" radius="20" />
 				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/>
 
-				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
-				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
-				<action type="Spawn" entity_type="primitive_human" amount="2" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Male"/>
-				<action type="Spawn" entity_type="primitive_human" amount="2" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Female"/>
+				<action type="Spawn" entity_type="primitive_human" amount="10" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
+				<action type="Spawn" entity_type="primitive_human" amount="9" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
+				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Male"/>
+				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Female"/>
 				<action type="Spawn" entity_type="primitive_human" amount="1" placement="StartLocationCircular" angle="35" radius="3" years_old="20" gender="Male" name="Uhlog" behaviour="NoTasks,NoOutfitChange"/>
 
 				<action type="Spawn" entity_type="skins_outfit" amount="1" placement="Uhlog"/>
@@ -160,7 +160,7 @@
 				-->
 
 				<!-- Create dangerous animals -->
-				<action type="SetAnimalPopulation" animal_types="wolf" min="50" max="55"  era_factors ="0.5 0.5 1 1 1 1"/>
+				<action type="SetAnimalPopulation" animal_types="wolf" min="40" max="55"  era_factors ="0.33 0.45 0.65 1 1 1"/>
 				<action type="SetAnimalPopulation" animal_types="cave_lion" min="15" max="25" era_factors ="1 0.75 0.5 0.25 0.2 0.1"/>
 				<action type="SetAnimalPopulation" animal_types="cave_lion" min="15" max="30"  era_factors ="1 1 1 0.75 0.75 0.5"/>
 				<action type="SetAnimalPopulation" animal_types="cave_hyena" min="30" max="30" era_factors ="1 0.75 0.75 0.6 0.6 0.3"/>
@@ -197,11 +197,11 @@
 				 -->
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 				<action type="SetRaider" era="Paleolithic" hardcore_timer="1y" entity_types="wolf cave_lion cave_hyena" mins="3 3 3" maxes="9 9 9" grace_period="0.3y" period="1.0y" variance="0.50y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="1y" entity_types="primitive_human wolf cave_hyena cave_lion" mins="1 2 2 2" maxes="10 10 10 10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="9"/>
-				<action type="SetRaider" era="Neolithic" hardcore_timer="5y" entity_types="primitive_human wolf cave_hyena" mins="15 5 5" maxes="40 10 10" period="1.75y" variance="0.5y" extra_raider_per_population="7"/>
-				<action type="SetRaider" era="CopperAge" hardcore_timer="10y" entity_types="primitive_human wolf cave_hyena" mins="25 10 10" maxes="60 20 20" period="1.5y" variance="0.5y" extra_raider_per_population="6"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="15y" entity_types="primitive_human wolf" mins="40 15" maxes="75 20" period="2.5y" variance="0.75y" extra_raider_per_population="5"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" period="2.0y" variance="1.0y" extra_raider_per_population="4"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="2y" entity_types="primitive_human wolf cave_hyena cave_lion" mins="2 2 2 2" maxes="10 10 10 10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="8"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="5y" entity_types="primitive_human cave_hyena" mins="15 5" maxes="40 10" period="1.5y" variance="0.5y" extra_raider_per_population="7"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="10y" entity_types="primitive_human wolf cave_hyena" mins="25 10 10" maxes="60 20 20" period="1.14y" variance="0.5y" extra_raider_per_population="6"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="15y" entity_types="primitive_human wolf" mins="40 15" maxes="75 20" period="1.5y" variance="0.75y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
 
 
 				<!-- Features -->
@@ -212,8 +212,8 @@
 				<action type="SetFeatureEnabled" feature="TameableAnimalSpawn" value="true"/>
 
 				<!-- Parameters -->
-				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.2"/>
-				<action type="SetMigrationParameters" min="3" max="10" period="1y" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.15"/>
+				<action type="SetMigrationParameters" min="1" max="6" period="0.8y" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
@@ -222,13 +222,13 @@
 		</event>
 
 		<!-- Here is the spot to insert your own Events -->
-		<!--
 
-		Funny Stuff like the change of seasons during harvest in everwinter
+
+		<!-- Funny Stuff like the change of seasons during harvest in everwinter
 
 		Or free beer during Testplay:
-		Infinite free beer, MultipleExecutions triggers the event multiple times instead once per game
-		<event flags="MultipleExecutions">
+		Infinite free beer, MultipleExecutions triggers the event multiple times instead once per game -->
+		<!-- <event flags="MultipleExecutions">
 			<condition type="Not">
 				<sub_condition value="20" type="EntityCountReached" entity_type="beer"/>
 			</condition>
@@ -236,22 +236,22 @@
 				<action type="SetTimeOfYear" value="0.5099"/>
 				<action type="Spawn" entity_type="beer" amount="1" placement="StartLocationCircular" angle="5" radius="15"/>
 			</actions>
-		</event>
+		</event> -->
 
-		Speedup whenever GameSpeed is not x8, reliable during auto-tests and a funny way to torment a player (never used it).
+		<!-- Speedup whenever GameSpeed is not x8, reliable during auto-tests and a funny way to torment a player (never used it).
 		In conjunction with raids this would set the time a player has to ring the alarm to a very short period (maybe pause on normal can save a few milliseconds).
 		Or Imagine it with GameSpeed=1: Force the player to play only on x1 (Every Speedup will be reset immediately)
-		Besides this is a good example for condition [Not GameSpeed" value="8"] instead of [Or (GameSpeed" value="8"|GameSpeed" value="4"|GameSpeed" value="2")].
-		<event flags="MultipleExecutions">
+		Besides this is a good example for condition [Not GameSpeed" value="8"] instead of [Or (GameSpeed" value="8"|GameSpeed" value="4"|GameSpeed" value="2")]. -->
+		<!-- <event flags="MultipleExecutions">
 			<condition type="Not">
 				<sub_condition type="ValueEquals" id="GameSpeed" value="8"/>
 			</condition>
 			<actions>
 				<action type="SetTimeScale" value="8"/>
 			</actions>
-		</event>
+		</event> -->
 
-		-->
+
 
 	</events>
 </scenario>

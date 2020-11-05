@@ -15,7 +15,8 @@
 	<ford_distance_factor value="3.0"/>
 
 	<!-- I love these setttings.... -->
-	<noise_amplitudes values="0.2 0.04 0.2 0.15 0.125 0.04 0.02 0.01 0.02"/>
+	<!-- <noise_amplitudes values="0.2 0.04 0.2 0.15 0.125 0.04 0.02 0.01 0.02"/> -->
+	<noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.03 0.02 0.01 0.002"/>
 	<!-- <noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.005 0.002"/> -->
 	<distance_height_offset value="0.09"/>
 
@@ -43,7 +44,7 @@
 		<!-- Hills should be FULL of pines... -->
 		<tree_override_prototype>
 			<id value="Spruce"/>
-			<density value="2.5" />
+			<density value="3.5" />
 			<min_altitude value="5" />
 			<max_altitude value="60"/>
 		</tree_override_prototype>
@@ -70,24 +71,24 @@
 
 
 	<seasons>
-		<season id="Spring" setup_id="Spring" duration="0.25" precipitation_chance="0.25" windy_chance="0.5" very_windy_chance="0.1" fish_boost="0.5">
+		<season id="Spring" setup_id="Spring" duration="0.20" precipitation_chance="0.25" windy_chance="0.5" very_windy_chance="0.1" fish_boost="0.5">
 			 <min_temperature value="5"/>
 			 <max_temperature value="25"/>
 		</season>
 
-		<season id="Summer" setup_id="Summer" duration="0.25" precipitation_chance="0.0"  windy_chance="0.25">
+		<season id="Summer" setup_id="Summer" duration="0.20" precipitation_chance="0.0"  windy_chance="0.25">
 			<min_temperature value="20"/>
 			<max_temperature value="50"/>
 			<min_wind value="2"/>
 			<max_wind value="7.5"/>
 		</season>
 
-		<season id="Fall" setup_id="Fall" duration="0.25" precipitation_chance="0.25" windy_chance="0.5" very_windy_chance="0.1">
+		<season id="Fall" setup_id="Fall" duration="0.30" precipitation_chance="0.25" windy_chance="0.5" very_windy_chance="0.1">
 			<min_temperature value="5"/>
 			<max_temperature value="25"/>
 		</season>
 
-		<season id="Winter" setup_id="Winter" snow_setup_id="WinterSnow" duration="0.25" precipitation_chance="0.5" windy_chance="0.5" very_windy_chance="0.5" reduced_fauna="true">
+		<season id="Winter" setup_id="Winter" snow_setup_id="WinterSnow" duration="0.3" precipitation_chance="0.5" windy_chance="0.5" very_windy_chance="0.5" reduced_fauna="true">
 			<min_temperature value="-15"/>
 			<max_temperature value="10.0"/>
 			<min_wind value="2"/>
