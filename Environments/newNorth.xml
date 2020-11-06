@@ -3,12 +3,12 @@
 
 	<!-- Miscellaneous -->
 	<backdrop_scale value="1.0, 0.25, 1.0"/>
-	<sun_angle_factor value="0.7"/>
+	<sun_angle_factor value="0.6"/>
 
 
 
 	<!-- How much resources? -->
-	<resource_factor value="1.0"/>
+	<resource_factor value="0.85"/>
 
 
 	<!-- How far apart are river fords? -->
@@ -16,7 +16,7 @@
 
 	<!-- I love these setttings.... -->
 	<!-- <noise_amplitudes values="0.2 0.04 0.2 0.15 0.125 0.04 0.02 0.01 0.02"/> -->
-	<noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.03 0.02 0.01 0.002"/>
+	<noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.03 0.02 0.005 0.002"/>
 	<!-- <noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.005 0.002"/> -->
 	<distance_height_offset value="0.09"/>
 
@@ -88,7 +88,7 @@
 			<max_temperature value="25"/>
 		</season>
 
-		<season id="Winter" setup_id="Winter" snow_setup_id="WinterSnow" duration="0.3" precipitation_chance="0.5" windy_chance="0.5" very_windy_chance="0.5" reduced_fauna="true">
+		<season id="Winter" setup_id="Winter" snow_setup_id="WinterSnow" duration="0.3" precipitation_chance="0.5" windy_chance="0.5" very_windy_chance="0.25" reduced_fauna="true">
 			<min_temperature value="-15"/>
 			<max_temperature value="10.0"/>
 			<min_wind value="2"/>
