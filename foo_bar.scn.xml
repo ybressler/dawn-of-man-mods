@@ -195,7 +195,6 @@
 						– release to Schwifty's new mod.
 						– Wastelands.
 				 -->
-				 
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 				<action type="SetRaider" era="Paleolithic" hardcore_timer="1y" entity_types="wolf cave_lion cave_hyena" mins="3 3 3" maxes="9 9 9" grace_period="0.3y" period="1.0y" variance="0.50y"/>
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="2y" entity_types="primitive_human wolf cave_hyena cave_lion" mins="2 2 2 2" maxes="10 10 10 10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="8"/>
