@@ -55,11 +55,11 @@
 	<milestones>
 
 		<!-- Population milestones. -->
-		<milestone id="milestone_POPULATION_50">
+		<milestone id="POPULATION_50">
 			<condition type="ValueReached" id="Population" value="50"/>
 		</milestone>
 
-		<milestone id="milestone_POPULATION_100">
+		<milestone id="POPULATION_100">
 			<condition type="ValueReached" id="Population" value="100"/>
 		</milestone>
 
