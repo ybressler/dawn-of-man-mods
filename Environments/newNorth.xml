@@ -15,8 +15,9 @@
 	<ford_distance_factor value="3.0"/>
 
 	<!-- I love these setttings.... -->
-	<!-- <noise_amplitudes values="0.2 0.04 0.2 0.15 0.125 0.04 0.02 0.01 0.02"/> -->
-	<noise_amplitudes values="0.125 0.25 0.0555 0.105 0.02 0.045 0.02 0.01 0.01 0.002"/>
+	<noise_amplitudes values="0.01 0.06 0.25 0.01 0.10 0.097 0.02 0.02 0.02"/>
+	<!-- <noise_amplitudes values="0.25 0.0675 0.2 0.1 0.05 0.01 0.1"/> -->
+
 	<distance_height_offset value="0.09"/>
 
 	<trees values="Fir Pine Spruce Einkorn Flax Chickpeas Blackberry Blueberry Strawberry Chestnut Service"/>
@@ -30,22 +31,24 @@
 
 		<tree_override_prototype>
 			<id value="Fir"/>
+			<density value="2.0"/>
 			<min_altitude value="1" />
-			<max_altitude value="20"/>
+			<max_altitude value="30"/>
 		</tree_override_prototype>
 
 		<tree_override_prototype>
 			<id value="Pine"/>
-			<min_altitude value="2" />
-			<max_altitude value="14"/>
+			<density value="1.0" />
+			<min_altitude value="5" />
+			<max_altitude value="25"/>
 		</tree_override_prototype>
 
 		<!-- Hills should be FULL of pines... -->
 		<tree_override_prototype>
 			<id value="Spruce"/>
 			<density value="3.5" />
-			<min_altitude value="5" />
-			<max_altitude value="60"/>
+			<min_altitude value="8" />
+			<max_altitude value="100"/>
 		</tree_override_prototype>
 
 	</tree_override_prototypes>
@@ -63,7 +66,39 @@
 		<min_angle value="20" />
 		<max_angle value="65"/>
 	</prop_override_prototype>
+
+	<!-- Loose flint at the bottpm of hills-->
+	<prop_override_prototype>
+		<id value="Flint"/>
+		<density value="0.5" />
+		<min_altitude value="2" />
+		<max_altitude value="8"/>
+		<min_angle value="5" />
+		<max_angle value="10"/>
+	</prop_override_prototype>
+
+
 </prop_override_prototypes>
+
+<!-- Metal in the mountains -->
+<deposit_override_prototypes>
+	<deposit_override_prototype>
+		<id value="Flint"/>
+		<density value="0.5" />
+		<min_altitude value="5" />
+		<max_altitude value="25"/>
+		<min_angle value="40" />
+		<max_angle value="85"/>
+	</deposit_override_prototype>
+
+	<deposit_override_prototype>
+		<id value="Copper"/>
+		<min_angle value="0" />
+		<max_angle value="20"/>
+	</deposit_override_prototype>
+</deposit_override_prototypes>
+
+
 
 
 <!-- ######################################################################### -->

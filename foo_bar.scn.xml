@@ -134,13 +134,12 @@
 			<condition type="NewGame"/>
 			<actions>
 				<!-- Clear trees around start location -->
-				<action type="ClearTrees" radius="20"/>
+				<action type="ClearTrees" radius="12"/>
 
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
-				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="180" radius="6"/>
-				<action type="Spawn" entity_type="storage_tent" amount="1" placement="StartLocationCircular" angle="90" radius="5"/>
-				<action type="Spawn" entity_type="storage_tent" amount="1" placement="StartLocationCircular" angle="270" radius="5"/>
+				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="180" radius="5"/>
+				<action type="Spawn" entity_type="storage_tent" amount="2" placement="StartLocationCircular" angle="90" radius="12"/>
 				<!-- <action type="Spawn" entity_type="tent" amount="9" placement="StartLocationCircular" angle="110" radius="20" /> -->
 				<!-- <action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/> -->
 
