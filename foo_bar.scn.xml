@@ -65,7 +65,7 @@
 
 
 
-		<milestone id="PRESTIGE_150">
+		<milestone id="PRESTIGE_250">
 			<!--Condition "And" needs ALL sub_conditions to be reached: 100 Prestige & 1 Stone Circle
  			<condition type="And">
 				<sub_conditions>
@@ -86,7 +86,7 @@
 			<!-- If you only need 1 condition there is no need for And / Or, but I think only 1 sub_condition works technically.
 			<condition type="ValueReached" id="Prestige" value="100"/>
 			-->
-			<condition type="ValueReached" id="Prestige" value="150"/>
+			<condition type="ValueReached" id="Prestige" value="250"/>
 			<!-- <condition type="And">
 				<sub_conditions>
 					<condition type="ValueReached" id="Prestige" value="100"/>
@@ -140,7 +140,7 @@
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="180" radius="5"/>
 				<action type="Spawn" entity_type="storage_hut" amount="2" placement="StartLocationCircular" radius="15" />
-				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" radius="20" />
+				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="110" radius="20" />
 				<!-- <action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/> -->
 
 				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
