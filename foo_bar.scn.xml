@@ -224,10 +224,10 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion" min="3" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_hyena" min="3" max="9" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="8"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0.5y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="9"/>
 
-				<action type="SetRaider" era="Neolithic" hardcore_timer="1.15y" entity_types="cave_hyena" min="5" max="10" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Neolithic" hardcore_timer="1.15y" entity_types="primitive_human" min="15" max="30" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="7"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="1.5y" entity_types="cave_hyena" min="5" max="10" grace_period="0.25y" period="1.0y" variance="0.5y"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="1.5y" entity_types="primitive_human" min="15" max="30" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="8"/>
 
 				<action type="SetRaider" era="CopperAge" hardcore_timer="4y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
 				<action type="SetRaider" era="CopperAge" hardcore_timer="4" entity_types="primitive_human" min="25" max="50" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="6"/>

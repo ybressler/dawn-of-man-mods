@@ -56,10 +56,10 @@
 	<detail_override_prototypes>
 		<detail_override_prototype>
 			<id value="DetailStick"/>
-			<density value="0.12" />
+			<density value="0.15" />
 			<min_altitude value="-2"/>
 			<max_altitude value="12"/>
-			<min_angle value="3"/>
+			<min_angle value="2"/>
 			<max_angle value="15"/>
 			<min_humidity value="0.25"/>
 			<max_humidity value="0.75"/>
