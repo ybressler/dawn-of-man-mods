@@ -16,7 +16,7 @@
 
 	<!-- I love these setttings.... -->
 	<!-- <noise_amplitudes values="0.2 0.04 0.2 0.15 0.125 0.04 0.02 0.01 0.02"/> -->
-	<noise_amplitudes values="0.125 0.25 0.11 0.105 0.02 0.0905 0.02 0.01 0.02 0.002"/>
+	<noise_amplitudes values="0.125 0.25 0.0555 0.105 0.02 0.045 0.02 0.01 0.01 0.002"/>
 	<distance_height_offset value="0.09"/>
 
 	<trees values="Fir Pine Spruce Einkorn Flax Chickpeas Blackberry Blueberry Strawberry Chestnut Service"/>
