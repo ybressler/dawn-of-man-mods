@@ -44,4 +44,24 @@
 	<string name="milestone_MILESTONE7_description">Reach a population of 300.</string>
 	<string name="milestone_MILESTONE8_description">Reach a population of 450.</string>
 
+
+	<!-- Create your narrative -->
+	<string name="welcome_message_title">They're coming.</string>
+	<string name="welcome_message_desription">The hills echo battle cries.</string>
+
+	<string name="invasion_1_title">They're coming.</string>
+	<string name="invasion_1_description">A scouting party is approaching your village.</string>
+
+
+
+	<!-- Early winters -->
+	<string name="earlywinter_timer_1_title">Winds from the east.</string>
+	<string name="earlywinter_timer_1_description">A sudden wind blows from the east, bringing early cold temperatures. Winter is upon us.</string>
+
+
+	<!-- Early spring -->
+	<string name="earlysummer_timer_1_title">An omen from fire.</string>
+	<string name="earlysummer_timer_1_description">A village elder died while performing a sacrifice to the fire god. Summer has arrived early.</string>
+
+
 </strings>
