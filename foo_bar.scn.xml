@@ -140,7 +140,7 @@
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="180" radius="5"/>
 				<action type="Spawn" entity_type="storage_hut" amount="2" placement="StartLocationCircular" radius="15" />
-				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="110" radius="20" />
+				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="110" radius="25" />
 				<!-- <action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/> -->
 
 				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
