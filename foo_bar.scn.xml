@@ -291,8 +291,6 @@
 
 
 
-
-
 		<!-- early winters -->
 		<event>
 					<condition type="TimeElapsed" timer="RealTime" value="1.4"/>
