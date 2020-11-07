@@ -139,11 +139,10 @@
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="180" radius="5"/>
-				<action type="Spawn" entity_type="storage_tent" amount="2" placement="StartLocationCircular" angle="90" radius="12"/>
+				<action type="Spawn" entity_type="storage_hut" amount="2" placement="StartLocationCircular" radius="15" />
 				<action type="Spawn" entity_type="tent" amount="10" placement="StartLocationCircular" angle="110" radius="20" />
 				<!-- <action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/> -->
 
-				<action type="Spawn" entity_type="sticks" amount="20" placement="Storage"/>
 				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
 				<action type="Spawn" entity_type="log" amount="10" placement="Storage"/>
 				<action type="Spawn" entity_type="stone" amount="1" placement="Storage"/>
@@ -255,6 +254,8 @@
 
 				<!-- Start off with some knowledge -->
 				<action type="Unlock" tech_era="Paleolithic"/>
+				<action type="Unlock" tech_type="pottery"/>
+				<action type="Unlock" tech_type="bone_polishing"/>
 
 
 			</actions>
