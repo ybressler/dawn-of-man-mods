@@ -47,7 +47,7 @@
 
 	<!-- Create your narrative -->
 	<string name="welcome_message_title">They're coming.</string>
-	<string name="welcome_message_desription">The hills echo battle cries.</string>
+	<string name="welcome_message_description">The hills echo battle cries.</string>
 
 	<string name="invasion_1_title">They're coming.</string>
 	<string name="invasion_1_description">A scouting party is approaching your village.</string>

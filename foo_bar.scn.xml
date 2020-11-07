@@ -146,7 +146,7 @@
 				<!-- Spawn initial entities -->
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="2" placement="StartLocationCircular" angle="180" radius="5"/>
-				<action type="Spawn" entity_type="storage_hut" amount="3" placement="StartLocationCircular" radius="16" />
+				<action type="Spawn" entity_type="storage_hut" amount="3" placement="StartLocationCircular" angle="90" radius="15" />
 				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="24" radius="25" />
 
 				<!-- Initial Resources -->
@@ -164,10 +164,10 @@
 				<action type="Spawn" entity_type="flint_axe" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="flint_pick" amount="1" placement="Human"/>
 
-				<action type="Spawn" entity_type="nuts" amount="3" placement="Storage"/>
-				<action type="Spawn" entity_type="raw_fish" amount="3" placement="Storage"/>
-				<action type="Spawn" entity_type="raw_meat" amount="3" placement="Storage"/>
-				<action type="Spawn" entity_type="raw_skin" amount="3" placement="Storage"/>
+				<action type="Spawn" entity_type="nuts" amount="6" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_fish" amount="6" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_meat" amount="6" placement="Storage"/>
+				<action type="Spawn" entity_type="raw_skin" amount="6" placement="Storage"/>
 
 			</actions>
 		</event>
@@ -271,10 +271,10 @@
 
 		<!-- Intro -->
 		<event>
-			<condition type="TimeElapsed" timer="RealTime" value="0"/>
-			<actions>
-				<action type="ShowMessage" title="welcome_message_title" text="welcome_message_description"/>
-			</actions>
+				<condition type="TimeElapsed" timer="RealTime" value="0"/>
+				<actions>
+						<action type="ShowMessage" title="welcome_message_title" text="welcome_message_description"/>
+				</actions>
 		</event>
 
 
@@ -282,32 +282,32 @@
 
 		<!-- Invasions: Extra Raiders -->
 		<event>
-				<condition type="TimeElapsed" timer="RealTime" value="0.5"/>
-			<actions>
-				<action type="ShowMessage" title="invasion_1_title" text="invasion_1_description"/>
-				<action type="TriggerRaiderAttack" amount="15"/>
-			</actions>
+				<condition type="TimeElapsed" timer="RealTime" value="0.5y"/>
+				<actions>
+						<action type="ShowMessage" title="invasion_1_title" text="invasion_1_description"/>
+						<action type="TriggerRaiderAttack" amount="15"/>
+				</actions>
 		</event>
 
 
 
 		<!-- early winters -->
 		<event>
-					<condition type="TimeElapsed" timer="RealTime" value="1.4"/>
-		<actions>
-			<action type="ShowMessage" title="earlywinter_timer_1_title" text="earlywinter_timer_1_description"/>
-			<action type="SetTimeOfYear" value="0.68"/>
-		</actions>
+				<condition type="TimeElapsed" timer="RealTime" value="1.4y"/>
+				<actions>
+						<action type="ShowMessage" title="earlywinter_timer_1_title" text="earlywinter_timer_1_description"/>
+						<action type="SetTimeOfYear" value="0.68"/>
+				</actions>
 		</event>
 
 
 		<!-- skip spring (early summer) -->
 		<event>
-					<condition type="TimeElapsed" timer="RealTime" value="3.025"/>
-		<actions>
-			<action type="ShowMessage" title="earlysummer_timer_1_title" text="earlysummer_timer_1_description"/>
-			<action type="SetTimeOfYear" value="0.19"/>
-		</actions>
+				<condition type="TimeElapsed" timer="RealTime" value="3.025y"/>
+				<actions>
+						<action type="ShowMessage" title="earlysummer_timer_1_title" text="earlysummer_timer_1_description"/>
+						<action type="SetTimeOfYear" value="0.19"/>
+				</actions>
 		</event>
 
 
