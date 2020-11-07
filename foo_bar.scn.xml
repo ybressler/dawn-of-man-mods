@@ -140,7 +140,7 @@
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="180" radius="5"/>
 				<action type="Spawn" entity_type="storage_hut" amount="2" placement="StartLocationCircular" radius="15" />
-				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="110" radius="25" />
+				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="24" radius="25" />
 				<!-- <action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/> -->
 
 				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
@@ -223,19 +223,19 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion" min="3" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_hyena" min="3" max="9" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0.5y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="9"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0.5y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="10"/>
 
 				<action type="SetRaider" era="Neolithic" hardcore_timer="1.5y" entity_types="cave_hyena" min="5" max="10" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Neolithic" hardcore_timer="1.5y" entity_types="primitive_human" min="15" max="30" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="8"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="1.5y" entity_types="primitive_human" min="15" max="30" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="9"/>
 
 				<action type="SetRaider" era="CopperAge" hardcore_timer="4y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="CopperAge" hardcore_timer="4" entity_types="primitive_human" min="25" max="50" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="6"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="4" entity_types="primitive_human" min="25" max="50" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="7"/>
 
 				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/>
 				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="40" max="75" grace_period="0.40y" period="1.5y" variance="0.75y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="40" max="75" grace_period="0.40y" period="1.5y" variance="0.75y" extra_raider_per_population="4"/>
 
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
 
 
 				<!-- Features -->
@@ -246,7 +246,7 @@
 				<action type="SetFeatureEnabled" feature="TameableAnimalSpawn" value="true"/>
 
 				<!-- Parameters -->
-				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.5"/>
+				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.35"/>
 				<action type="SetMigrationParameters" min="1" max="5" period="0.75y" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
