@@ -55,8 +55,8 @@
 	<milestones>
 
 		<!-- Population milestones. -->
-		<milestone id="POPULATION_50">
-			<condition type="ValueReached" id="Population" value="50"/>
+		<milestone id="POPULATION_75">
+			<condition type="ValueReached" id="Population" value="75"/>
 		</milestone>
 
 		<milestone id="POPULATION_100">
@@ -140,7 +140,7 @@
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="180" radius="5"/>
 				<action type="Spawn" entity_type="storage_tent" amount="2" placement="StartLocationCircular" angle="90" radius="12"/>
-				<!-- <action type="Spawn" entity_type="tent" amount="9" placement="StartLocationCircular" angle="110" radius="20" /> -->
+				<action type="Spawn" entity_type="tent" amount="10" placement="StartLocationCircular" angle="110" radius="20" />
 				<!-- <action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/> -->
 
 				<action type="Spawn" entity_type="sticks" amount="20" placement="Storage"/>
@@ -156,14 +156,14 @@
 
 
 
-				<action type="Spawn" entity_type="primitive_human" amount="10" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
-				<action type="Spawn" entity_type="primitive_human" amount="9" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
+				<action type="Spawn" entity_type="primitive_human" amount="20" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
+				<action type="Spawn" entity_type="primitive_human" amount="19" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Female"/>
 				<action type="Spawn" entity_type="primitive_human" amount="1" placement="StartLocationCircular" angle="35" radius="3" years_old="20" gender="Male" name="Uhlog" behaviour="NoTasks,NoOutfitChange"/>
 
 				<action type="Spawn" entity_type="skins_outfit" amount="1" placement="Uhlog"/>
-				<action type="Spawn" entity_type="skins_outfit" amount="19" placement="Human"/>
+				<action type="Spawn" entity_type="skins_outfit" amount="49" placement="Human"/>
 
 				<action type="Spawn" entity_type="nuts" amount="3" placement="Storage"/>
 				<action type="Spawn" entity_type="raw_fish" amount="1" placement="Storage"/>

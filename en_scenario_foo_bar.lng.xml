@@ -16,12 +16,12 @@
 	<!-- <string name="foo_bar_group">Deadly Times</string> -->
 
 	<string name="scenario_foo_bar">They're Coming</string>
-	<string name="scenario_foo_bar_subtitle">They're coming. And they want revenge.</string>
+	<string name="scenario_foo_bar_subtitle">And they want revenge.</string>
 	<string name="scenario_foo_bar_description">This is a brutal scenario.</string>
 	<string name="scenario_foo_bar_context">You've transgressed the sacred vow. Now you will pay the ultimate price.</string>
 
 	<!-- Create your milestones -->
-	<string name="milestone_POPULATION_50">Population 50</string>
+	<string name="milestone_POPULATION_75">Population 75</string>
 	<string name="milestone_POPULATION_100">Population 100</string>
 	<string name="milestone_MILESTONE1">Prestige!</string>
 	<string name="milestone_MILESTONE2">MILESTONE 2</string>
