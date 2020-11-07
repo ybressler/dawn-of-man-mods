@@ -254,7 +254,7 @@
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
 
 				<!-- Start off with some knowledge -->
-				<action type="Unlock" tech_era="Paleothilic"/>
+				<action type="Unlock" tech_era="Paleolithic"/>
 
 
 			</actions>
