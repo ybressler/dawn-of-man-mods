@@ -61,7 +61,7 @@
 			<max_altitude value="12"/>
 			<min_angle value="3"/>
 			<max_angle value="15"/>
-			<min_humidity value="0.35"/>
+			<min_humidity value="0.25"/>
 			<max_humidity value="0.75"/>
 		</detail_override_prototype>
 	</detail_override_prototypes>
