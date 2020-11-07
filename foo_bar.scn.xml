@@ -247,14 +247,14 @@
 				<action type="SetFeatureEnabled" feature="TameableAnimalSpawn" value="true"/>
 
 				<!-- Parameters -->
-				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.05"/>
+				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.5"/>
 				<action type="SetMigrationParameters" min="1" max="5" period="0.75y" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
 
 				<!-- Start off with some knowledge -->
-				<action type="Unlock" tech_era="Mesolithic"/>
+				<action type="Unlock" tech_era="Paleothilic"/>
 
 
 			</actions>
