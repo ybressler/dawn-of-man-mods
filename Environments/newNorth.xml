@@ -15,8 +15,7 @@
 	<ford_distance_factor value="3.0"/>
 
 	<!-- I love these setttings.... -->
-	<noise_amplitudes values="0.01 0.06 0.25 0.01 0.10 0.097 0.02 0.02 0.02"/>
-	<!-- <noise_amplitudes values="0.25 0.0675 0.2 0.1 0.05 0.01 0.1"/> -->
+	<noise_amplitudes values="0.01 0.06 0.25 0.05 0.115 0.097 0.05 0.03"/>
 
 	<distance_height_offset value="0.09"/>
 
@@ -52,6 +51,20 @@
 		</tree_override_prototype>
 
 	</tree_override_prototypes>
+
+	<!-- Add tons of sticks yo... -->
+	<detail_override_prototypes>
+		<detail_override_prototype>
+			<id value="DetailStick"/>
+			<density value="0.15" />
+			<min_altitude value="-2"/>
+			<max_altitude value="12"/>
+			<min_angle value="3"/>
+			<max_angle value="15"/>
+			<min_humidity value="0.3"/>
+			<max_humidity value="0.75"/>
+		</detail_override_prototype>
+	</detail_override_prototypes>
 
 
 <!-- ######################################################################### -->
