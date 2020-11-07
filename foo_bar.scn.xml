@@ -54,6 +54,17 @@
 
 	<milestones>
 
+		<!-- Population milestones. -->
+		<milestone id="milestone_POPULATION_50">
+			<condition type="ValueReached" id="Population" value="50"/>
+		</milestone>
+
+		<milestone id="milestone_POPULATION_100">
+			<condition type="ValueReached" id="Population" value="100"/>
+		</milestone>
+
+
+
 		<milestone id="MILESTONE1">
 			<!--Condition "And" needs ALL sub_conditions to be reached: 100 Prestige & 1 Stone Circle
  			<condition type="And">
@@ -86,6 +97,8 @@
 				</sub_conditions>
 			</condition> -->
 		</milestone>
+
+
 
 		<milestone id="MILESTONE2">
 			<condition type="EntityCountReached" counter="KilledRaiders" value="50"/>
@@ -127,8 +140,21 @@
 				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" angle="90" radius="6"/>
 				<action type="Spawn" entity_type="storage_tent" amount="1" placement="StartLocationCircular" angle="270" radius="8"/>
-				<action type="Spawn" entity_type="tent" amount="9" placement="StartLocationCircular" angle="180" radius="20" />
+				<action type="Spawn" entity_type="tent" amount="9" placement="StartLocationCircular" angle="110" radius="20" />
 				<action type="Spawn" entity_type="wood_pile" amount="1" placement="StartLocationCircular" angle="180" radius="6"/>
+
+				<action type="Spawn" entity_type="sticks" amount="20" placement="Storage"/>
+				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
+				<action type="Spawn" entity_type="log" amount="10" placement="Storage"/>
+				<action type="Spawn" entity_type="stone" amount="1" placement="Storage"/>
+
+				<action type="Spawn" entity_type="flint_sickle" amount="1" placement="Storage"/>
+				<action type="Spawn" entity_type="flint_axe" amount="1" placement="Storage"/>
+				<action type="Spawn" entity_type="flint_pick" amount="1" placement="Storage"/>
+
+
+
+
 
 				<action type="Spawn" entity_type="primitive_human" amount="10" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="9" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
@@ -196,12 +222,21 @@
 						– Wastelands.
 				 -->
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
-				<action type="SetRaider" era="Paleolithic" hardcore_timer="0.25y" entity_types="wolf cave_lion cave_hyena" mins="3 3 3" maxes="9 9 9" grace_period="0.3y" period="1.0y" variance="0.50y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="1.5y" entity_types="primitive_human cave_hyena" mins="4 2" maxes="10 6" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="8"/>
-				<action type="SetRaider" era="Neolithic" hardcore_timer="5y" entity_types="primitive_human cave_hyena" mins="15 5" maxes="30 10" period="1.15y" variance="0.5y" extra_raider_per_population="7"/>
-				<action type="SetRaider" era="CopperAge" hardcore_timer="10y" entity_types="primitive_human" min="25" max="40" period="1.15y" variance="0.5y" extra_raider_per_population="6"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="15y" entity_types="primitive_human" min="40" max="75" period="1.5y" variance="0.75y" extra_raider_per_population="5"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion" min="3" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_hyena" min="3" max="9" grace_period="0.25y" period="1.0y" variance="0.5y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.25y" variance="0.5y" extra_raider_per_population="8"/>
+
+				<action type="SetRaider" era="Neolithic" hardcore_timer="1.15y" entity_types="cave_hyena" min="5" max="10" grace_period="0.25y" period="1.0y" variance="0.5y"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="1.15y" entity_types="primitive_human" min="15" max="30" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="7"/>
+
+				<action type="SetRaider" era="CopperAge" hardcore_timer="4y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="4" entity_types="primitive_human" min="25" max="50" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="6"/>
+
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="40" max="75" grace_period="0.40y" period="1.5y" variance="0.75y" extra_raider_per_population="5"/>
+
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
 
 
 				<!-- Features -->
@@ -217,6 +252,10 @@
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
+
+				<!-- Start off with some knowledge -->
+				<action type="Unlock" tech_era="Mesolithic"/>
+
 
 			</actions>
 		</event>

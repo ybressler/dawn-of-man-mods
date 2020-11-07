@@ -15,13 +15,16 @@
 	<string name="foo_bar">Death Valley</string>
 	<!-- <string name="foo_bar_group">Deadly Times</string> -->
 
-	<string name="scenario_foo_bar">Death Valley</string>
-	<string name="scenario_foo_bar_subtitle">There is death in this valley.</string>
-	<string name="scenario_foo_bar_description">Yaakov's custom build... SCENARIO NAME</string>
-	<string name="scenario_foo_bar_context">SCENARIO NAME CONTEXT. Many words here.</string>
+	<string name="scenario_foo_bar">They're Coming</string>
+	<string name="scenario_foo_bar_subtitle">They're coming. And they want revenge.</string>
+	<string name="scenario_foo_bar_description">This is a brutal scenario.</string>
+	<string name="scenario_foo_bar_context">You've transgressed the sacred vow. Now you will pay the ultimate price.</string>
 
 	<!-- Create your milestones -->
-	<string name="milestone_MILESTONE1">MILESTONE 1</string>
+	<string name="milestone_POPULATION_50">Population of 50</string>
+	<string name="milestone_POPULATION_100">Population of 100</string>
+
+	<string name="milestone_MILESTONE1">Prestige!</string>
 	<string name="milestone_MILESTONE2">MILESTONE 2</string>
 	<string name="milestone_MILESTONE3">MILESTONE 3</string>
 	<string name="milestone_MILESTONE4">MILESTONE 4</string>
@@ -31,6 +34,9 @@
 	<string name="milestone_MILESTONE8">MILESTONE 8</string>
 
 	<!-- Describe your milestones -->
+	<string name="milestone_POPULATION_50_description">Reach a Population of 50</string>
+	<string name="milestone_POPULATION_100_description">Reach a Population of 100</string>
+
 	<string name="milestone_MILESTONE1_description">Reach a prestige of 100.</string>
 	<string name="milestone_MILESTONE2_description">Sacrifice 50 perpetrators to the Blood God.</string>
 	<string name="milestone_MILESTONE3_description">Sacrifice 250 perpetrators to the Blood God.</string>
