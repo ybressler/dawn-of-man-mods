@@ -138,9 +138,9 @@
 
 				<!-- People -->
 				<action type="Spawn" entity_type="primitive_human" amount="20" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
-				<action type="Spawn" entity_type="primitive_human" amount="20" placement="StartLocationCircular" angle="35" radius="3" age="Adult" gender="Female"/>
+				<action type="Spawn" entity_type="primitive_human" amount="20" placement="StartLocationCircular" angle="35" radius="4" age="Adult" gender="Female"/>
 				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Male"/>
-				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="3" age="Young" gender="Female"/>
+				<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="2" age="Young" gender="Female"/>
 
 
 				<!-- Spawn initial entities -->
@@ -149,6 +149,9 @@
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="14"/>
 				<action type="Spawn" entity_type="storage_hut" amount="3" placement="StartLocationCircular" radius="14" />
 				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="24" radius="25" />
+
+				<action type="Spawn" entity_type="sledge" amount="5"/>
+				<action type="Spawn" entity_type="sticks" amount="15" placement="StartLocationCircular" angle="300" radius="20"/>
 
 				<!-- Initial Resources -->
 				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
@@ -163,7 +166,6 @@
 				<action type="Spawn" entity_type="biface" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="wooden_harpoon" amount="1" placement="Human"/>
 
-				<action type="Spawn" entity_type="sledge" amount="5" placement="Human"/>
 				<action type="Spawn" entity_type="flint_sickle" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="flint_axe" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="flint_pick" amount="1" placement="Human"/>

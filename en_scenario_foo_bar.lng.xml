@@ -47,15 +47,32 @@
 
 	<!-- Create your narrative -->
 	<string name="welcome_message_title">They're coming.</string>
-	<string name="welcome_message_description">The hills echo with battle cries.\nLine 2.<br>Line3\m<br></br>Line4</string>
+	<!-- <string name="welcome_message_description">The hills echo with battle cries.</string> -->
+	<string name="welcome_message_description">A commotion in the village!
+One of the village elders falls to his knees in desperate prayer.
+The crowd parts, and forms an open circle around Timmy (an adorable child). A large "X" is painted on his forehead in wolf-blood.
+"I've seen enough!" growls your war chief before storming out.
+"Does this mean... Are they coming?" someone asks.
+"No," replies the elder solemnly.
+"They're already here."
+	</string>
+
 
 	<string name="invasion_1_scouts_title">Can you hear them?</string>
 	<string name="invasion_1_scouts_description">The children have been hearing strange sounds from the forest.</string>
 	<string name="invasion_1_main_title">They're coming.</string>
-	<string name="invasion_1_main_description">Dead raiders surround your settlement. Your war chief bends down for a closer look at their war paint. His face twists into one of horror. "That was just a scouting party", he exclaims with horror. "Sound the war horn!"</string>
+	<string name="invasion_1_main_description">Dead raiders surround your settlement.
+Your war chief bends down for a closer look at their war paint. His face twists into one of horror. "That was just a scouting party", he exclaims with horror. "Sound the war horn!"</string>
 
 	<string name="invasion_2_main_title">A dark omen.</string>
-	<string name="invasion_2_main_description">A commotion in the village! One of the village elders falls to his knees in desperate prayer. "What happened?" someone asks? The crowd parts, and forms an open circle around Timmy (an adorable child). A large "X" is painted on his forehead in wolf-blood. "I've seen enough!" growls your war chief before storming out. "Does this mean `they're` coming?" someone asks. "No," replies the elder solemnly. "It means thatthey're already here."</string>
+	<string name="invasion_2_main_description">A commotion in the village!
+One of the village elders falls to his knees in desperate prayer.
+"What happened?" someone asks?
+The crowd parts, and forms an open circle around Timmy (an adorable child). A large "X" is painted on his forehead in wolf-blood.
+"I've seen enough!" growls your war chief before storming out.
+"Does this mean `they're` coming?" someone asks.
+"No," replies the elder solemnly.
+"It means thatthey're already here."</string>
 
 	<!-- Early winters -->
 	<string name="earlywinter_timer_1_title">Winds from the east.</string>
