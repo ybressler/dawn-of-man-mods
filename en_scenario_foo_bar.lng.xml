@@ -66,9 +66,23 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 "No," replies the elder solemnly.
 "They're already here."</string>
 
+
+	<!-- Unlock techs -->
+	<string name="fortifications_unlocked_title">Fortifications unlocked!</string>
+	<string name="fortifications_unlocked_description">Rumor has it that your settlement has unlocked a strange new technology which can "shoot arrows from the sky."
+A rival clan is on its way to prove their strength with the bloody edge of a battle axe.</string>
+
+<string name="post_fortifications_unlocked_title">Fortifications are powerful!</string>
+<string name="post_fortifications_unlocked_description">Your victory against the axe clan has spread near and far.
+Expect increased migration to your settlement!</string>
+
+
+
 	<!-- Early winters -->
 	<string name="earlywinter_timer_1_title">Winds from the east.</string>
 	<string name="earlywinter_timer_1_description">A sudden wind blows from the east, bringing early cold temperatures. Winter is upon us.</string>
+
+
 
 
 	<!-- Early spring -->

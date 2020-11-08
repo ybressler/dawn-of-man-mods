@@ -34,7 +34,7 @@
 
 	</locations>
 
-<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 	<!--
 		A haiku:
 		"These are kind of boring.
@@ -51,6 +51,10 @@
 		<disaster disaster_type="Storm" period="10.0y" variance="1.25y"/>
 		<disaster disaster_type="Blizzard" period="2.0y" variance="1y"/>
 	</disasters>
+
+
+<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
 
 	<milestones>
 
@@ -126,6 +130,9 @@
 			<condition type="ValueReached" id="Population" value="450"/>
 		</milestone>
 	</milestones>
+
+
+<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
 	<events>
 
@@ -220,6 +227,8 @@
 				<action type="SetAnimalPopulation" animal_type="elasmotherium" min="15" max="20" era_factors ="1 1 1 0.75 0.5 0.5"/>
 
 
+	<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
 				<!-- Set raider parameters -->
 				<!--
 					Look at everwinter:
@@ -227,9 +236,8 @@
 						– Wastelands.
 				 -->
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion" min="3" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_hyena" min="2" max="4" grace_period="0.05y" period="0.20y" variance="0.5y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0.8y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="15"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="2 2" maxes="4 4" grace_period="0.05y" period="0.2y" variance="0.025y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/>
 
 				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/>
 
@@ -256,7 +264,7 @@
 
 				<!-- Parameters -->
 				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.35"/>
-				<action type="SetMigrationParameters" min="1" max="5" period="0.75y" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetMigrationParameters" min="2" max="7" period="0.75y" variance="0.25" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
@@ -271,12 +279,43 @@
 			</actions>
 		</event>
 
-
-		<!-- Here is the spot to insert your own Events -->
-
+		<!-- ############################################################################################################################################################################## -->
 
 
+		<!-- Change behaviors inside the game as things progress -->
 
+		<event>
+				<condition type="TechUnlocked" tech="fortifications"/>
+				<actions>
+						<action type="ShowMessage" title="fortifications_unlocked_title" text="fortifications_unlocked_description"/>
+						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35"  decrease_start_population="300" decrease_halfing_population="250"/>
+						<action type="TriggerRaiderAttack" amount="25"/>
+				</actions>
+		</event>
+
+		<!--  0.15 years after the above event... -->
+		<event flags="RequiresPrevious">
+				<condition type="TimeElapsed" timer="RealTime" value="0.15y"/>
+				<actions>
+						<action type="ShowMessage" title="post_fortifications_unlocked_title" text="post_fortifications_unlocked_description"/>
+						<action type="SetMigrationParameters" min="2" max="6" period="0.25y" variance="0.15"/>
+				</actions>
+		</event>
+
+		<!--  1.25 years after the above event... -->
+		<event flags="RequiresPrevious">
+				<condition type="TimeElapsed" timer="RealTime" value="1.25y"/>
+				<actions>
+						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/>
+				</actions>
+		</event>
+
+
+
+
+
+
+		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
 		<!-- Intro -->
 		<event>
@@ -289,6 +328,8 @@
 
 
 
+		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
 
 		<!-- Invasions: Extra Raiders -->
 		<event>
@@ -300,7 +341,7 @@
 		</event>
 
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="0.65y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="0.575y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_1_main_title" text="invasion_1_main_description"/>
 						<action type="TriggerRaiderAttack" amount="30"/>
@@ -317,6 +358,7 @@
 		</event>
 
 
+		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
 		<!-- early winters -->
 		<event>
