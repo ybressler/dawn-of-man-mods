@@ -295,7 +295,7 @@
 
 		<!--  0.15 years after the above event... -->
 		<event flags="RequiresPrevious">
-				<condition type="TimeElapsed" timer="RealTime" value="0.15y"/>
+				<condition type="EntityCountReached" counter="KilledRaiders" value="80"/>
 				<actions>
 						<action type="ShowMessage" title="post_fortifications_unlocked_title" text="post_fortifications_unlocked_description"/>
 						<action type="SetMigrationParameters" min="2" max="6" period="0.25y" variance="0.15"/>
@@ -304,7 +304,7 @@
 
 		<!--  1.25 years after the above event... -->
 		<event flags="RequiresPrevious">
-				<condition type="TimeElapsed" timer="RealTime" value="1.25y"/>
+				<condition type="EntityCountReached" counter="KilledRaiders" value="100"/>
 				<actions>
 						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/>
 				</actions>
