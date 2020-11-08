@@ -144,9 +144,10 @@
 
 
 				<!-- Spawn initial entities -->
-				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" radius="0" />
-				<action type="Spawn" entity_type="crafter" amount="2" placement="StartLocationCircular" angle="180" radius="5"/>
-				<action type="Spawn" entity_type="storage_hut" amount="3" placement="StartLocationCircular" angle="90" radius="15" />
+				<action type="Spawn" entity_type="hearth" amount="1" placement="StartLocationCircular" angle="270" radius="20" />
+				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="0"/>
+				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="14"/>
+				<action type="Spawn" entity_type="storage_hut" amount="3" placement="StartLocationCircular" radius="14" />
 				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="24" radius="25" />
 
 				<!-- Initial Resources -->
@@ -229,13 +230,15 @@
 				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="10"/>
 
 				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="50" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="7"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="7"/>
 
 				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/>
 				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="40" max="75" grace_period="0.40y" period="1.5y" variance="0.75y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="50" grace_period="0.40y" period="1.5y" variance="0.75y" extra_raider_per_population="6"/>
 
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="60" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
 
 
 				<!-- Features -->
@@ -284,8 +287,25 @@
 		<event>
 				<condition type="TimeElapsed" timer="RealTime" value="0.5y"/>
 				<actions>
-						<action type="ShowMessage" title="invasion_1_title" text="invasion_1_description"/>
+						<action type="ShowMessage" title="invasion_1_scouts_title" text="invasion_1_scouts_description"/>
 						<action type="TriggerRaiderAttack" amount="15"/>
+				</actions>
+		</event>
+
+		<event>
+				<condition type="TimeElapsed" timer="RealTime" value="0.65y"/>
+				<actions>
+						<action type="ShowMessage" title="invasion_1_main_title" text="invasion_1_main_description"/>
+						<action type="TriggerRaiderAttack" amount="30"/>
+				</actions>
+		</event>
+
+		<!-- Second invasion -->
+		<event>
+				<condition type="TimeElapsed" timer="RealTime" value="1.75y"/>
+				<actions>
+						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
+						<action type="TriggerRaiderAttack" amount="42"/>
 				</actions>
 		</event>
 
