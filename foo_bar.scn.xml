@@ -304,12 +304,25 @@
 
 		<!--  1.25 years after the above event... -->
 		<event flags="RequiresPrevious">
-				<condition type="EntityCountReached" counter="KilledRaiders" value="100"/>
+				<condition type="ValueReached" counter="Population" value="90"/>
 				<actions>
 						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/>
 				</actions>
 		</event>
 
+
+
+		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+		<!--  Prestige -->
+
+		<event>
+				<condition type="ValueReached" counter="Prestige" value="175"/>
+				<actions>
+						<action type="ShowMessage" title="prestige_175_title" text="prestige_175_description"/>
+						<!-- <action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/> -->
+				</actions>
+		</event>
 
 
 

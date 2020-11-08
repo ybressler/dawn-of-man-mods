@@ -78,6 +78,12 @@ Expect increased migration to your settlement!</string>
 
 
 
+<!--  Prestige -->
+<string name="prestige_175_title">Prestige</string>
+<string name="prestige_175_description">Your village is getting stronger.
+A rival clan has taken notice.</string>
+
+
 	<!-- Early winters -->
 	<string name="earlywinter_timer_1_title">Winds from the east.</string>
 	<string name="earlywinter_timer_1_description">A sudden wind blows from the east, bringing early cold temperatures. Winter is upon us.</string>
