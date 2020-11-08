@@ -317,9 +317,9 @@
 		<!--  Prestige -->
 
 		<event>
-				<condition type="ValueReached" id="Prestige" value="175"/>
+				<condition type="ValueReached" id="Prestige" value="210"/>
 				<actions>
-						<action type="ShowMessage" title="prestige_175_title" text="prestige_175_description"/>
+						<action type="ShowMessage" title="prestige_210_title" text="prestige_210_description"/>
 						<!-- <action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/> -->
 				</actions>
 		</event>
@@ -353,8 +353,9 @@
 				</actions>
 		</event>
 
-		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="0.575y"/>
+		<event flags="RequiresPrevious">
+				<condition type="EntityCountReached" counter="KilledRaiders" value="14"/>
+				<!-- And more than 10 raiders killed? -->
 				<actions>
 						<action type="ShowMessage" title="invasion_1_main_title" text="invasion_1_main_description"/>
 						<action type="TriggerRaiderAttack" amount="30"/>
