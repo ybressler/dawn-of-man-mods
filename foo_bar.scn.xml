@@ -152,8 +152,10 @@
 
 				<!-- Initial Resources -->
 				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
+				<action type="Spawn" entity_type="sticks" amount="5" placement="Storage"/>
 				<action type="Spawn" entity_type="log" amount="10" placement="Storage"/>
 				<action type="Spawn" entity_type="stone" amount="3" placement="Storage"/>
+
 
 				<!-- Initial Tools -->
 				<action type="Spawn" entity_type="skins_outfit" amount="50" placement="Human"/>
@@ -161,6 +163,7 @@
 				<action type="Spawn" entity_type="biface" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="wooden_harpoon" amount="1" placement="Human"/>
 
+				<action type="Spawn" entity_type="sledge" amount="5" placement="Human"/>
 				<action type="Spawn" entity_type="flint_sickle" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="flint_axe" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="flint_pick" amount="1" placement="Human"/>
@@ -223,18 +226,18 @@
 				 -->
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion" min="3" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_hyena" min="3" max="9" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0.5y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="15"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_hyena" min="2" max="4" grace_period="0.05y" period="0.20y" variance="0.5y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0.8y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="15"/>
 
-				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="cave_hyena" min="5" max="10" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="10"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/>
 
-				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/>
-				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="7"/>
+				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/> -->
+				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/>
 
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="50" grace_period="0.40y" period="1.5y" variance="0.75y" extra_raider_per_population="6"/>
+				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/> -->
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="7"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="50" grace_period="0.40y" period="1.5y" variance="0.85y" extra_raider_per_population="6"/>
 
 				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
 				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
@@ -260,6 +263,7 @@
 				<action type="Unlock" tech_era="Paleolithic"/>
 				<action type="Unlock" tech_type="pottery"/>
 				<action type="Unlock" tech_type="bone_polishing"/>
+				<action type="Unlock" tech_type="sledgemaking"/>
 
 
 			</actions>
@@ -277,6 +281,7 @@
 				<condition type="TimeElapsed" timer="RealTime" value="0"/>
 				<actions>
 						<action type="ShowMessage" title="welcome_message_title" text="welcome_message_description"/>
+						<action type="TriggerRaiderAttack" amount="5"/>
 				</actions>
 		</event>
 
@@ -285,7 +290,7 @@
 
 		<!-- Invasions: Extra Raiders -->
 		<event>
-				<condition type="TimeElapsed" timer="RealTime" value="0.5y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="0.5y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_1_scouts_title" text="invasion_1_scouts_description"/>
 						<action type="TriggerRaiderAttack" amount="15"/>
@@ -293,7 +298,7 @@
 		</event>
 
 		<event>
-				<condition type="TimeElapsed" timer="RealTime" value="0.65y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="0.65y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_1_main_title" text="invasion_1_main_description"/>
 						<action type="TriggerRaiderAttack" amount="30"/>
@@ -302,7 +307,7 @@
 
 		<!-- Second invasion -->
 		<event>
-				<condition type="TimeElapsed" timer="RealTime" value="1.75y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="1.75y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
 						<action type="TriggerRaiderAttack" amount="42"/>
@@ -313,7 +318,7 @@
 
 		<!-- early winters -->
 		<event>
-				<condition type="TimeElapsed" timer="RealTime" value="1.4y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="1.4y"/>
 				<actions>
 						<action type="ShowMessage" title="earlywinter_timer_1_title" text="earlywinter_timer_1_description"/>
 						<action type="SetTimeOfYear" value="0.68"/>
@@ -323,7 +328,7 @@
 
 		<!-- skip spring (early summer) -->
 		<event>
-				<condition type="TimeElapsed" timer="RealTime" value="3.025y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.025y"/>
 				<actions>
 						<action type="ShowMessage" title="earlysummer_timer_1_title" text="earlysummer_timer_1_description"/>
 						<action type="SetTimeOfYear" value="0.19"/>
