@@ -2,7 +2,7 @@
 <scenario>
 
 	<!-- If you want to have multiple scenarios with this mod (they be grouped up in the screen) -->
-	<group_id value="foo_bar"/>
+	<group_id value="theyre_coming"/>
 
 	<!-- Options are "Freeplay / Challenge" -->
 	<category value="Freeplay"/>
@@ -67,7 +67,64 @@
 			<condition type="ValueReached" id="Population" value="100"/>
 		</milestone>
 
+		<milestone id="milestone_ANIMALS_100">
+			<condition type="ValueReached" id="DomesticAnimalCount" value="100"/>
+		</milestone>
 
+
+		<milestone id="milestone_COW_CITY">
+			<!-- More than 150 residents and have more cows than people...
+					Solve with OR( And(population, cattle), And(p, c), ...)
+			-->
+
+			<condition type="Or">
+
+				<!-- 150 each -->
+				<condition type="And">
+					<sub_conditions>
+						<condition type="ValueReached" id="Population" value="150"/>
+						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="150"/>
+					</sub_conditions>
+				</condition>
+
+				<!-- 200 each -->
+				<condition type="And">
+					<sub_conditions>
+						<condition type="ValueReached" id="Population" value="200"/>
+						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200"/>
+					</sub_conditions>
+					</condition>
+
+				<!-- 250 each -->
+				<condition type="And">
+					<sub_conditions>
+						<condition type="ValueReached" id="Population" value="250"/>
+						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="250"/>
+					</sub_conditions>
+					</condition>
+
+				<!-- 300 each -->
+				<condition type="And">
+					<sub_conditions>
+						<condition type="ValueReached" id="Population" value="300"/>
+						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="300"/>
+					</sub_conditions>
+					</condition>
+
+			</condition>
+
+
+		</milestone>
+
+
+		<milestone id="milestone_DEATH_50">
+			<condition type="EntityCountReached" counter="DeadResidents" value="50"/>
+		</milestone>
+
+
+		<milestone id="milestone_DEATH_150">
+			<condition type="EntityCountReached" counter="DeadResidents" value="150"/>
+		</milestone>
 
 		<milestone id="PRESTIGE_250">
 			<!--Condition "And" needs ALL sub_conditions to be reached: 100 Prestige & 1 Stone Circle
@@ -236,22 +293,30 @@
 						– Wastelands.
 				 -->
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="2 2" maxes="4 4" grace_period="0.05y" period="0.2y" variance="0.025y"/>
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/>
 
-				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/>
+				<!-- At first, many small animals... -->
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="2 2" maxes="6 6" grace_period="0.05y" period="0.2y" variance="0.025y"/>
+
+				<!-- Soon, animals and people... -->
+				<!-- Can we do multiple periods? -->
+				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="12"/>
+
+				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
+				<!-- <action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/> -->
+
+				<!-- <action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/> -->
 
 				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/> -->
-				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/>
+				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/> -->
 
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/>
 				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/> -->
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="7"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="50" grace_period="0.40y" period="1.5y" variance="0.85y" extra_raider_per_population="6"/>
+				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="7"/> -->
+				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="50" grace_period="0.40y" period="1.5y" variance="0.85y" extra_raider_per_population="6"/> -->
 
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+				<!-- <action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/> -->
+				<!-- <action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/> -->
+				<!-- <action type="SetRaider" era="IronAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/> -->
 
 
 				<!-- Features -->

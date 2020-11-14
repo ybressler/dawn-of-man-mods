@@ -12,18 +12,21 @@
 		– rename and prefix
  -->
 <strings>
-	<string name="foo_bar">Death Valley</string>
-	<!-- <string name="foo_bar_group">Deadly Times</string> -->
+	<string name="theyre_coming">They're Coming</string>
+	<!-- <string name="theyre_coming_group">Deadly Times</string> -->
 
-	<string name="scenario_foo_bar">They're Coming</string>
-	<string name="scenario_foo_bar_subtitle">And they want revenge.</string>
-	<string name="scenario_foo_bar_description">This is a brutal scenario.</string>
-	<string name="scenario_foo_bar_context">You've transgressed the sacred vow. Now you will pay the ultimate price.</string>
+	<string name="scenario_theyre_coming">They're Coming (Part I)</string>
+	<string name="scenario_theyre_coming_subtitle">And they want revenge.</string>
+	<string name="scenario_theyre_coming_description">A brutal scenario.</string>
+	<string name="scenario_theyre_coming_context">You've transgressed the sacred vow. Now you will pay the ultimate price.</string>
 
 	<!-- Create your milestones -->
 	<string name="milestone_POPULATION_75">Population 75</string>
 	<string name="milestone_POPULATION_100">Population 100</string>
 	<string name="milestone_PRESTIGE_250">Prestige!</string>
+	<string name="milestone_ANIMALS_100">Animal Town</string>
+	<string name="milestone_DEATH_50">Taste of Death</string>
+	<string name="milestone_DEATH_150">Glorious Death</string>
 	<string name="milestone_MILESTONE2">MILESTONE 2</string>
 	<string name="milestone_MILESTONE3">MILESTONE 3</string>
 	<string name="milestone_MILESTONE4">MILESTONE 4</string>
@@ -36,6 +39,9 @@
 	<string name="milestone_POPULATION_50_description">Reach a Population of 50</string>
 	<string name="milestone_POPULATION_100_description">Reach a Population of 100</string>
 	<string name="milestone_PRESTIGE_250_description">Reach a prestige of 250.</string>
+	<string name="milestone_ANIMALS_100_description">Reach an animal population of 100</string>
+	<string name="milestone_DEATH_50_description">50 humans have sacrificed their lives.</string>
+	<string name="milestone_DEATH_150_description">150 humans have sacrificed their lives.</string>
 	<string name="milestone_MILESTONE2_description">Sacrifice 50 perpetrators to the Blood God.</string>
 	<string name="milestone_MILESTONE3_description">Sacrifice 250 perpetrators to the Blood God.</string>
 	<string name="milestone_MILESTONE4_description">Sacrifice 500 perpetrators to the Blood God.</string>
