@@ -65,11 +65,15 @@
 		<string name="milestone_MILESTONE8_description">Reach a population of 450.</string>
 
 
-	<!-- Create your narrative -->
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
+
+	<!-- Time driven invasions -->
+
 	<string name="welcome_message_title">They're coming.</string>
 	<string name="welcome_message_description">The hills echo with battle cries.</string>
 
 
+	<!-- Raiders will come to attack... -->
 	<string name="invasion_1_scouts_title">Can you hear them?</string>
 	<string name="invasion_1_scouts_description">The children have been hearing strange sounds from the forest.</string>
 	<string name="invasion_1_main_title">They're coming.</string>
@@ -77,6 +81,7 @@
 Your war chief bends down for a closer look at their war paint. His face twists into one of horror.
 "That was just a scouting party", he exclaims with horror. "Sound the war horn!"</string>
 
+	<!-- 2nd Wave -->
 	<string name="invasion_2_main_title">A dark omen.</string>
 	<string name="invasion_2_main_description">A commotion in the village!
 One of the village elders falls to his knees in desperate prayer.
@@ -86,23 +91,35 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 "No," replies the elder solemnly.
 "They're already here."</string>
 
+	<!-- 3rd wave -->
+	<string name="invasion_3_main_title">Wave #3</string>
+	<string name="invasion_3_main_description">The third invasion...</string>
+
+
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
+
+	<!-- Merit driven invasions -->
 
 	<!-- Unlock techs -->
 	<string name="fortifications_unlocked_title">Fortifications unlocked!</string>
 	<string name="fortifications_unlocked_description">Rumor has it that your settlement has unlocked a strange new technology which can "shoot arrows from the sky."
 A rival clan is on its way to prove their strength with the bloody edge of a battle axe.</string>
 
-<string name="post_fortifications_unlocked_title">Fortifications are powerful!</string>
-<string name="post_fortifications_unlocked_description">Your victory against the axe clan has spread near and far.
+	<string name="post_fortifications_unlocked_title">Fortifications are powerful!</string>
+	<string name="post_fortifications_unlocked_description">Your victory against the axe clan has spread near and far.
 Expect increased migration to your settlement!</string>
 
 
 
 <!--  Prestige -->
-<string name="prestige_210_title">Prestige</string>
-<string name="prestige_210_description">Your village is getting stronger.
+	<string name="prestige_210_title">Prestige</string>
+	<string name="prestige_210_description">Your village is getting stronger.
 A rival clan has taken notice.</string>
 
+
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
+
+	<!-- Mess with the calendar... -->
 
 	<!-- Early winters -->
 	<string name="earlywinter_timer_1_title">Winds from the east.</string>

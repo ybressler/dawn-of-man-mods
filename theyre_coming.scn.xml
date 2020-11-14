@@ -280,10 +280,9 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 
 				<!-- At first, many small animals... -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="2 2" maxes="6 6" grace_period="0.05y" period="0.2y" variance="0.025y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="2 2" maxes="6 6" grace_period="0.05y" periods="0.2y 0.35y" variances="0.025y 0.05y"/>
 
-				<!-- Soon, animals and people... -->
-				<!-- Can we do multiple periods? -->
+				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
 				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="12"/>
 
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
@@ -418,6 +417,16 @@
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
 						<action type="TriggerRaiderAttack" amount="42"/>
+				</actions>
+		</event>
+
+		<!-- Third invasion -->
+		<!-- I'd like to specify the technology of these raiders... Is that possible? -->
+		<event>
+				<condition type="TimeElapsed" timer="GameTime" value="3.15y"/>
+				<actions>
+						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
+						<action type="TriggerRaiderAttack" amount="47"/>
 				</actions>
 		</event>
 
