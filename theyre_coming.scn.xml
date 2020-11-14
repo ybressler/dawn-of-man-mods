@@ -380,6 +380,7 @@
 				<condition type="ValueReached" id="Prestige" value="210"/>
 				<actions>
 						<action type="ShowMessage" title="prestige_210_title" text="prestige_210_description"/>
+						<action type="TriggerRaiderAttack" amount="8"/>
 						<!-- <action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/> -->
 				</actions>
 		</event>
@@ -424,7 +425,7 @@
 
 		<!-- Second invasion -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="1.75y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="1.85y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
 						<action type="TriggerRaiderAttack" amount="45"/>
