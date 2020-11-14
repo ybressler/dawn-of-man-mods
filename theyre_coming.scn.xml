@@ -67,12 +67,12 @@
 			<condition type="ValueReached" id="Population" value="100"/>
 		</milestone>
 
-		<milestone id="milestone_ANIMALS_100">
+		<milestone id="ANIMALS_100">
 			<condition type="ValueReached" id="DomesticAnimalCount" value="100"/>
 		</milestone>
 
 
-		<milestone id="milestone_COW_CITY">
+		<milestone id="COW_CITY">
 			<!-- More than 150 residents and have more cows than people...
 					Solve with OR( And(population, cattle), And(p, c), ...)
 			-->
@@ -80,49 +80,33 @@
 			<condition type="Or">
 
 				<!-- 150 each -->
-				<condition type="And">
-					<sub_conditions>
+				<sub_conditions>
+					<condition type="And">
 						<condition type="ValueReached" id="Population" value="150"/>
 						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="150"/>
-					</sub_conditions>
-				</condition>
+					</condition>
+				</sub_conditions>
+
 
 				<!-- 200 each -->
-				<condition type="And">
-					<sub_conditions>
+				<sub_conditions>
+					<condition type="And">
 						<condition type="ValueReached" id="Population" value="200"/>
 						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200"/>
-					</sub_conditions>
 					</condition>
-
-				<!-- 250 each -->
-				<condition type="And">
-					<sub_conditions>
-						<condition type="ValueReached" id="Population" value="250"/>
-						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="250"/>
-					</sub_conditions>
-					</condition>
-
-				<!-- 300 each -->
-				<condition type="And">
-					<sub_conditions>
-						<condition type="ValueReached" id="Population" value="300"/>
-						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="300"/>
-					</sub_conditions>
-					</condition>
+				</sub_conditions>
 
 			</condition>
-
 
 		</milestone>
 
 
-		<milestone id="milestone_DEATH_50">
+		<milestone id="DEATH_50">
 			<condition type="EntityCountReached" counter="DeadResidents" value="50"/>
 		</milestone>
 
 
-		<milestone id="milestone_DEATH_150">
+		<milestone id="DEATH_150">
 			<condition type="EntityCountReached" counter="DeadResidents" value="150"/>
 		</milestone>
 

@@ -20,35 +20,49 @@
 	<string name="scenario_theyre_coming_description">A brutal scenario.</string>
 	<string name="scenario_theyre_coming_context">You've transgressed the sacred vow. Now you will pay the ultimate price.</string>
 
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
+
 	<!-- Create your milestones -->
-	<string name="milestone_POPULATION_75">Population 75</string>
-	<string name="milestone_POPULATION_100">Population 100</string>
-	<string name="milestone_PRESTIGE_250">Prestige!</string>
-	<string name="milestone_ANIMALS_100">Animal Town</string>
-	<string name="milestone_DEATH_50">Taste of Death</string>
-	<string name="milestone_DEATH_150">Glorious Death</string>
-	<string name="milestone_MILESTONE2">MILESTONE 2</string>
-	<string name="milestone_MILESTONE3">MILESTONE 3</string>
-	<string name="milestone_MILESTONE4">MILESTONE 4</string>
-	<string name="milestone_MILESTONE5">MILESTONE 5</string>
-	<string name="milestone_MILESTONE6">MILESTONE 6</string>
-	<string name="milestone_MILESTONE7">MILESTONE 7</string>
-	<string name="milestone_MILESTONE8">MILESTONE 8</string>
+
+	<!-- General -->
+		<string name="milestone_POPULATION_75">Population 75</string>
+		<string name="milestone_POPULATION_100">Population 100</string>
+		<string name="milestone_PRESTIGE_250">Prestige!</string>
+	<!-- Next, animals -->
+		<string name="milestone_ANIMALS_100">Animal Town</string>
+		<string name="milestone_COW_CITY">Cattle City</string>
+	<!-- Next, war -->
+		<string name="milestone_DEATH_50">Taste of Death</string>
+		<string name="milestone_DEATH_150">Glorious Death</string>
+		<string name="milestone_MILESTONE2">MILESTONE 2</string>
+		<string name="milestone_MILESTONE3">MILESTONE 3</string>
+		<string name="milestone_MILESTONE4">MILESTONE 4</string>
+		<string name="milestone_MILESTONE5">MILESTONE 5</string>
+		<string name="milestone_MILESTONE6">MILESTONE 6</string>
+		<string name="milestone_MILESTONE7">MILESTONE 7</string>
+		<string name="milestone_MILESTONE8">MILESTONE 8</string>
+
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
 
 	<!-- Describe your milestones -->
-	<string name="milestone_POPULATION_50_description">Reach a Population of 50</string>
-	<string name="milestone_POPULATION_100_description">Reach a Population of 100</string>
-	<string name="milestone_PRESTIGE_250_description">Reach a prestige of 250.</string>
-	<string name="milestone_ANIMALS_100_description">Reach an animal population of 100</string>
-	<string name="milestone_DEATH_50_description">50 humans have sacrificed their lives.</string>
-	<string name="milestone_DEATH_150_description">150 humans have sacrificed their lives.</string>
-	<string name="milestone_MILESTONE2_description">Sacrifice 50 perpetrators to the Blood God.</string>
-	<string name="milestone_MILESTONE3_description">Sacrifice 250 perpetrators to the Blood God.</string>
-	<string name="milestone_MILESTONE4_description">Sacrifice 500 perpetrators to the Blood God.</string>
-	<string name="milestone_MILESTONE5_description">Sacrifice 1000 perpetrators to the Blood God.</string>
-	<string name="milestone_MILESTONE6_description">Reach a population of 150.</string>
-	<string name="milestone_MILESTONE7_description">Reach a population of 300.</string>
-	<string name="milestone_MILESTONE8_description">Reach a population of 450.</string>
+
+	<!-- General -->
+		<string name="milestone_POPULATION_75_description">Reach a Population of 75</string>
+		<string name="milestone_POPULATION_100_description">Reach a Population of 100</string>
+		<string name="milestone_PRESTIGE_250_description">Reach a prestige of 250.</string>
+	<!-- Animals -->
+		<string name="milestone_ANIMALS_100_description">Reach an animal population of 100</string>
+		<string name="milestone_COW_CITY_description">Have more cattle than humans, while having a human population greater than 150.</string>
+	<!-- War -->
+		<string name="milestone_DEATH_50_description">50 humans have sacrificed their lives.</string>
+		<string name="milestone_DEATH_150_description">150 humans have sacrificed their lives.</string>
+		<string name="milestone_MILESTONE2_description">Sacrifice 50 perpetrators to the Blood God.</string>
+		<string name="milestone_MILESTONE3_description">Sacrifice 250 perpetrators to the Blood God.</string>
+		<string name="milestone_MILESTONE4_description">Sacrifice 500 perpetrators to the Blood God.</string>
+		<string name="milestone_MILESTONE5_description">Sacrifice 1000 perpetrators to the Blood God.</string>
+		<string name="milestone_MILESTONE6_description">Reach a population of 150.</string>
+		<string name="milestone_MILESTONE7_description">Reach a population of 300.</string>
+		<string name="milestone_MILESTONE8_description">Reach a population of 450.</string>
 
 
 	<!-- Create your narrative -->
