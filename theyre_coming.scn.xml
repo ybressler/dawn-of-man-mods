@@ -473,7 +473,7 @@
 			<condition type="TimeElapsed" timer="GameTime" value="5.1y"/>
 			<actions>
 					<action type="ShowMessage" title="five_years_title" text="five_years_description"/>
-					<action type="SetTimeOfYear" value="0.68"/>
+					<action type="QuitGame" success="true"/>
 			</actions>
 	</event>
 
