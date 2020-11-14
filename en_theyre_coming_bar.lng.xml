@@ -100,6 +100,11 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 
 	<!-- Merit driven invasions -->
 
+	<string name="fortifications_warning_title">Neolithic unlocked!</string>
+		<string name="fortifications_warning_description">You've unlocked the power to harness the earth. Be careful about researching / building fortifications.
+Such an outright display of strength is sure to anger your enemies...
+Tip: Wait until your population is greater than 65 before researching fortifications. Also, collect all the wood you'll need before researching fortification...</string>
+
 	<!-- Unlock techs -->
 	<string name="fortifications_unlocked_title">Fortifications unlocked!</string>
 	<string name="fortifications_unlocked_description">Rumor has it that your settlement has unlocked a strange new technology which can "shoot arrows from the sky."
@@ -109,6 +114,7 @@ A rival clan is on its way to prove their strength with the bloody edge of a bat
 	<string name="post_fortifications_unlocked_description">Your victory against the axe clan has spread near and far.
 Expect increased migration to your settlement!</string>
 
+<!-- Trigger the same fortifications thingy once you've built stone walls... -->
 
 
 <!--  Prestige -->
@@ -131,6 +137,22 @@ A rival clan has taken notice.</string>
 	<!-- Early spring -->
 	<string name="earlysummer_timer_1_title">An omen from fire.</string>
 	<string name="earlysummer_timer_1_description">A village elder died while performing a sacrifice to the fire god. Summer has arrived early.</string>
+
+
+
+	<!-- Early spring -->
+	<string name="five_years_title">5 Long Years.</string>
+	<string name="five_years_description">You survived for 5 long years. Congratulations!
+(A note from the creator: Please let me know what you enjoyed about this mod. How can it be improved?)
+</string>
+
+
+
+
+
+
+
+
 
 
 </strings>

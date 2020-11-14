@@ -210,7 +210,8 @@
 
 
 				<!-- Initial Tools -->
-				<action type="Spawn" entity_type="skins_outfit" amount="50" placement="Human"/>
+				<!-- Make things extra hard by providing not enough skin outfits -->
+				<action type="Spawn" entity_type="skins_outfit" amount="25" placement="Human"/>
 				<action type="Spawn" entity_type="wooden_spear" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="biface" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="wooden_harpoon" amount="1" placement="Human"/>
@@ -280,10 +281,10 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 
 				<!-- At first, many small animals... -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="2 2" maxes="6 6" grace_period="0.05y" periods="0.2y 0.35y" variances="0.025y 0.05y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="8 8" grace_period="0.05y" periods="0.25y 0.33y" variances="0.05y 0.05y"/>
 
 				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
-				<action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="12"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="3.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="12"/>
 
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
 				<!-- <action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/> -->
@@ -333,12 +334,22 @@
 
 		<!-- Change behaviors inside the game as things progress -->
 
+		<!-- Warn player not to research fortifications... -->
+		<event>
+				<condition type="TechUnlocked" tech="cereal_domestication"/>
+				<actions>
+						<action type="ShowMessage" title="fortifications_warning_title" text="fortifications_warning_description"/>
+				</actions>
+		</event>
+
+
+
 		<event>
 				<condition type="TechUnlocked" tech="fortifications"/>
 				<actions>
 						<action type="ShowMessage" title="fortifications_unlocked_title" text="fortifications_unlocked_description"/>
 						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35"  decrease_start_population="300" decrease_halfing_population="250"/>
-						<action type="TriggerRaiderAttack" amount="25"/>
+						<action type="TriggerRaiderAttack" amount="45"/>
 				</actions>
 		</event>
 
@@ -416,7 +427,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="1.75y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
-						<action type="TriggerRaiderAttack" amount="42"/>
+						<action type="TriggerRaiderAttack" amount="45"/>
 				</actions>
 		</event>
 
@@ -426,7 +437,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="3.15y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
-						<action type="TriggerRaiderAttack" amount="47"/>
+						<action type="TriggerRaiderAttack" amount="45"/>
 				</actions>
 		</event>
 
@@ -455,7 +466,16 @@
 
 
 
+<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
+	<!-- After 5 years, call the game... -->
+	<event>
+			<condition type="TimeElapsed" timer="GameTime" value="5.1y"/>
+			<actions>
+					<action type="ShowMessage" title="five_years_title" text="five_years_description"/>
+					<action type="SetTimeOfYear" value="0.68"/>
+			</actions>
+	</event>
 
 		<!-- Funny Stuff like the change of seasons during harvest in everwinter
 

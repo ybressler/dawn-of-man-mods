@@ -12,10 +12,15 @@
 
 
 	<!-- How far apart are river fords? -->
-	<ford_distance_factor value="3.0"/>
+	<!-- Maybe this wil fix the raiders issues... -->
+	<ford_distance_factor value="1.0"/>
 
 	<!-- I love these setttings.... -->
-	<noise_amplitudes values="0.01 0.06 0.25 0.05 0.115 0.011 0.04 0.03"/>
+	<!-- Keep this for base comparison...
+		<noise_amplitudes values="0.01 0.06 0.25 0.05 0.115 0.011 0.04 0.03"/> -->
+
+	<!-- This adds interdispersed mountains, lots of flat area. This is good... -->
+	<noise_amplitudes values="0.02 0.06 0.25 0.05 0.115 0.011 0.04 0.03"/>
 
 	<distance_height_offset value="0.09"/>
 
@@ -54,6 +59,7 @@
 
 	<!-- Add tons of sticks yo... -->
 	<detail_override_prototypes>
+		<!-- Can I override sticks for 2 diff params types? -->
 		<detail_override_prototype>
 			<id value="DetailStick"/>
 			<density value="0.15" />
