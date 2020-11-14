@@ -78,26 +78,27 @@
 			-->
 
 			<condition type="Or">
-
-				<!-- 150 each -->
+				<!-- Any of the following... -->
 				<sub_conditions>
+
+					<!-- 150 each -->
 					<condition type="And">
-						<condition type="ValueReached" id="Population" value="150"/>
-						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="150"/>
-					</condition>
-				</sub_conditions>
+							<sub_conditions>
+								<condition type="ValueReached" id="Population" value="150"/>
+								<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="150"/>
+							</sub_conditions>
+						</condition>
 
-
-				<!-- 200 each -->
-				<sub_conditions>
+					<!-- 200 each -->
 					<condition type="And">
-						<condition type="ValueReached" id="Population" value="200"/>
-						<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200"/>
+						<sub_conditions>
+							<condition type="ValueReached" id="Population" value="200"/>
+							<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200"/>
+						</sub_conditions>
 					</condition>
-				</sub_conditions>
 
+				</sub_conditions>
 			</condition>
-
 		</milestone>
 
 
