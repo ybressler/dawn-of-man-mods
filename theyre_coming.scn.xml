@@ -419,7 +419,7 @@
 				<!-- And more than 10 raiders killed? -->
 				<actions>
 						<action type="ShowMessage" title="invasion_1_main_title" text="invasion_1_main_description"/>
-						<action type="TriggerRaiderAttack" amount="30"/>
+						<action type="TriggerRaiderAttack" amount="28"/>
 				</actions>
 		</event>
 
@@ -428,7 +428,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="1.85y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
-						<action type="TriggerRaiderAttack" amount="45"/>
+						<action type="TriggerRaiderAttack" amount="37"/>
 				</actions>
 		</event>
 
@@ -447,7 +447,7 @@
 
 		<!-- early winters -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="1.4y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="1.45y"/>
 				<actions>
 						<action type="ShowMessage" title="earlywinter_timer_1_title" text="earlywinter_timer_1_description"/>
 						<action type="SetTimeOfYear" value="0.68"/>
