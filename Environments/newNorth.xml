@@ -20,7 +20,8 @@
 		<noise_amplitudes values="0.01 0.06 0.25 0.05 0.115 0.011 0.04 0.03"/> -->
 
 	<!-- This adds interdispersed mountains, lots of flat area. This is good... -->
-	<noise_amplitudes values="0.02 0.06 0.25 0.05 0.115 0.011 0.04 0.03"/>
+	<!-- <noise_amplitudes values="0.02 0.06 0.25 0.05 0.115 0.011 0.04 0.03"/> -->
+	<noise_amplitudes values="0.02 0.06 0.25 0.05 0.115 0.011 0.04 0.01"/>
 
 	<distance_height_offset value="0.09"/>
 
