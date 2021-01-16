@@ -111,8 +111,18 @@
 	</deposit_override_prototype>
 
 	<deposit_override_prototype>
+		<id value="Tin"/>
+		<density value="0.25"/>
+		<min_angle value="1" />
+		<max_angle value="20"/>
+		<min_altitude value="2"/>
+		<max_altitude value="10"/>
+	</deposit_override_prototype>
+
+
+	<deposit_override_prototype>
 		<id value="Copper"/>
-		<min_angle value="0" />
+		<min_angle value="1" />
 		<max_angle value="20"/>
 	</deposit_override_prototype>
 </deposit_override_prototypes>
