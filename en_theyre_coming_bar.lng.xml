@@ -129,7 +129,9 @@ Expect increased migration to your settlement!</string>
 <!--  Prestige -->
 	<string name="prestige_210_title">Prestige</string>
 	<string name="prestige_210_description">Your village is getting stronger.
-A rival clan has taken notice.</string>
+A rival clan has taken notice.
+(This was triggered because your prestige is greater than 210.)
+</string>
 
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
