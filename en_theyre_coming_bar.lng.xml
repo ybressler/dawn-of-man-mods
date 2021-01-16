@@ -34,7 +34,11 @@
 	<!-- Next, war -->
 		<string name="milestone_DEATH_50">Taste of Death</string>
 		<string name="milestone_DEATH_150">Glorious Death</string>
-		<string name="milestone_MILESTONE2">MILESTONE 2</string>
+	<!-- Sacrifice -->
+		<string name="milestone_SACRIFICE_50">Sacrifice (50)</string>
+
+
+		<string name="milestone_MILESTONE2">Survive "Invasion #3"</string>
 		<string name="milestone_MILESTONE3">MILESTONE 3</string>
 		<string name="milestone_MILESTONE4">MILESTONE 4</string>
 		<string name="milestone_MILESTONE5">MILESTONE 5</string>
@@ -56,7 +60,12 @@
 	<!-- War -->
 		<string name="milestone_DEATH_50_description">50 humans have sacrificed their lives.</string>
 		<string name="milestone_DEATH_150_description">150 humans have sacrificed their lives.</string>
-		<string name="milestone_MILESTONE2_description">Sacrifice 50 perpetrators to the Blood God.</string>
+	<!-- Sacrifice -->
+		<string name="milestone_SACRIFICE_50_description">Sacrifice 50 perpetrators to the Blood God.</string>
+
+	<!-- Additional milestones -->
+		<string name="milestone_MILESTONE2_description">Survive 3 terrible invasions. (Need to beef up the story here a bit...)</string>
+
 		<string name="milestone_MILESTONE3_description">Sacrifice 250 perpetrators to the Blood God.</string>
 		<string name="milestone_MILESTONE4_description">Sacrifice 500 perpetrators to the Blood God.</string>
 		<string name="milestone_MILESTONE5_description">Sacrifice 1000 perpetrators to the Blood God.</string>
@@ -93,7 +102,7 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 
 	<!-- 3rd wave -->
 	<string name="invasion_3_main_title">Wave #3</string>
-	<string name="invasion_3_main_description">The third invasion...</string>
+	<string name="invasion_3_main_description">Survive this invasion and achieve a milestone!</string>
 
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
