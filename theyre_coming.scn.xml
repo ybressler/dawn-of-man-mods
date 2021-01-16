@@ -147,7 +147,7 @@
 
 
 		<milestone id="MILESTONE2">
-			<condition type="TimeElapsed" timer="GameTime" value="3.50y"/>
+			<condition type="TimeElapsed" timer="GameTime" value="4.25y"/>
 		</milestone>
 
 		<milestone id="MILESTONE3">
@@ -435,10 +435,10 @@
 		<!-- Third invasion -->
 		<!-- I'd like to specify the technology of these raiders... Is that possible? -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.15y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.65y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
-						<action type="TriggerRaiderAttack" amount="43"/>
+						<action type="TriggerRaiderAttack" amount="45"/>
 				</actions>
 		</event>
 
