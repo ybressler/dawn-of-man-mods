@@ -283,10 +283,10 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 
 				<!-- At first, many small animals... -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="8 8" grace_period="0.05y" periods="0.25y 0.33y" variances="0.05y 0.05y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="10 10" grace_period="0.05y" periods="0.25y 0.33y" variances="0.05y 0.05y"/>
 
 				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
-				<action type="SetRaider" era="Neolithic" hardcore_timer="3.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="12"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="4.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="12"/>
 
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
 				<!-- <action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/> -->
@@ -316,7 +316,7 @@
 
 				<!-- Parameters -->
 				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.35"/>
-				<action type="SetMigrationParameters" min="2" max="7" period="0.75y" variance="0.25" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetMigrationParameters" min="3" max="8" period="0.70y" variance="0.15" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
@@ -435,12 +435,17 @@
 		</event>
 
 		<!-- Third invasion -->
-		<!-- I'd like to specify the technology of these raiders... Is that possible? -->
+		<!-- The following raider invasion occurs at almost the same time, I hope this makes them spawn in different areas... -->
 		<event>
 				<condition type="TimeElapsed" timer="GameTime" value="3.65y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
 						<action type="TriggerRaiderAttack" amount="20"/>
+				</actions>
+		</event>
+		<event>
+				<condition type="TimeElapsed" timer="GameTime" value="3.66y"/>
+				<actions>
 						<action type="TriggerRaiderAttack" amount="20"/>
 				</actions>
 		</event>
