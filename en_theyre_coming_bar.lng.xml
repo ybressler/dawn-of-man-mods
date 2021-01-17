@@ -32,6 +32,7 @@
 		<string name="milestone_ANIMALS_100">Animal Town</string>
 		<string name="milestone_COW_CITY">Cattle City</string>
 	<!-- Next, war -->
+		<string name="milestone_DEATH_1">The First Has Fallen</string>
 		<string name="milestone_DEATH_50">Taste of Death</string>
 		<string name="milestone_DEATH_150">Glorious Death</string>
 	<!-- Sacrifice -->
@@ -58,6 +59,7 @@
 		<string name="milestone_ANIMALS_100_description">Reach an animal population of 100</string>
 		<string name="milestone_COW_CITY_description">Have more cattle than humans, while having a human population greater than 150.</string>
 	<!-- War -->
+		<string name="milestone_DEATH_1_description">The first human amongst you has fallen. Expect many more deaths.</string>
 		<string name="milestone_DEATH_50_description">50 humans have sacrificed their lives.</string>
 		<string name="milestone_DEATH_150_description">150 humans have sacrificed their lives.</string>
 	<!-- Sacrifice -->
@@ -110,18 +112,55 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 	<!-- Merit driven invasions -->
 
 	<string name="fortifications_warning_title">Neolithic unlocked!</string>
-		<string name="fortifications_warning_description">You've unlocked the power to harness the earth. Be careful about researching / building fortifications.
+	<string name="fortifications_warning_description">You've unlocked the power to harness the earth. Be careful while building fortifications.
 Such an outright display of strength is sure to anger your enemies...
-Tip: Wait until your population is greater than 65 before researching fortifications. Also, collect all the wood you'll need before researching fortification...</string>
+Tip: Build walls and a gate, but don't build towers or defensive platforms until you're ready to defend against the tide of invaders who'll storm your fortress driven by jealosy, bloodlust, and sacrificial zeal.
+</string>
 
-	<!-- Unlock techs -->
+<!-- Challenge the Uhrghor clan (1 watchtower)-->
 	<string name="fortifications_unlocked_title">Fortifications unlocked!</string>
-	<string name="fortifications_unlocked_description">Rumor has it that your settlement has unlocked a strange new technology which can "shoot arrows from the sky."
-A rival clan is on its way to prove their strength with the bloody edge of a battle axe.</string>
+	<string name="fortifications_unlocked_description">
+Rumor has it that your settlement has unlocked a strange new technology which can "shoot arrows from the sky."
+The rival clan of Uhrghor is paying close attention.
+Tip: Wait until your population is greater than 65 before building any towers.
+</string>
 
-	<string name="post_fortifications_unlocked_title">Fortifications are powerful!</string>
-	<string name="post_fortifications_unlocked_description">Your victory against the axe clan has spread near and far.
-Expect increased migration to your settlement!</string>
+	<string name="fortifications_build_title">Watch Towers Built!</string>
+	<string name="fortifications_build_description">
+How dare you mock the strength of the Uhrghors!
+An elite warrior band marches to your settlement to prove man is mightier than fixtures of wood and dirt.
+They yearn to prove their strength with the bloody edge of a battle axe.
+</string>
+
+	<string name="post_fortifications_build_title">Fortifications are powerful!</string>
+	<string name="post_fortifications_build_description">Your victory against the Uhrghors has spread near and far!
+Expect increased migration to your settlement!
+</string>
+
+
+<!-- Challenge the Gahrghor clan (12 watchtowers)-->
+<string name="fortifications_build_6_title">Your Towers Taunt your Enemies' Gods</string>
+<string name="fortifications_build_6_description">
+Be wary, for your display of outright strength has taunted the all-powerful Gahrghor Clan.
+They gather in the far plains of the East, bidding their time.
+In the meantime, no one wants to join your settlement out of sheer terror. Don't expect any migration until the Gahrghors are dealt with.
+Tip: If you build 12 towers, the Gahrghors will invade in massive numbers. (Have a population > 125)
+</string>
+
+
+<string name="fortifications_build_12_title">The Gahrghor Clan Moves</string>
+<string name="fortifications_build_12_description">
+For 50 migrations of the buffalo, the Gahrghor Clan has ruled in the far off plains of the East.
+But lately, clouds the size of mountains can be seen coming from the East. It's the Gahrghors! They're on the move.
+It must of been your arrogant towers which has beckoned their wrath. And now, you must pay.
+</string>
+
+<string name="post_fortifications_build_12_title">Ghargors Defeated!</string>
+<string name="post_fortifications_build_12_description">
+Your battlement's walls are decorated with the slain bodies of your enemies. Most impressive of all, Chieftan Oürga's head sits upon a spike at your fortress' entrance.
+Truly, you have shown your strength. Expect increased migrations while all the neighboring settlements hear of your astonishing victory.
+</string>
+
 
 <!-- Trigger the same fortifications thingy once you've built stone walls... -->
 

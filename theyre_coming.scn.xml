@@ -102,6 +102,10 @@
 		</milestone>
 
 
+		<milestone id="DEATH_1">
+			<condition type="EntityCountReached" counter="DeadResidents" value="1"/>
+		</milestone>
+
 		<milestone id="DEATH_50">
 			<condition type="EntityCountReached" counter="DeadResidents" value="50"/>
 		</milestone>
@@ -294,16 +298,17 @@
 				<!-- <action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/> -->
 
 				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/> -->
-				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/> -->
+				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/>
 
-				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/>
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/> -->
-				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="7"/> -->
+				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/> -->
+				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="6.25y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/> -->
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="7.25" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="7"/>
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="50" grace_period="0.40y" period="1.5y" variance="0.85y" extra_raider_per_population="6"/> -->
 
-				<!-- <action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/> -->
-				<!-- <action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/> -->
-				<!-- <action type="SetRaider" era="IronAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/> -->
+				<action type="SetRaider" era="IronAge" hardcore_timer="10.35y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+				<action type="SetRaider" era="SteelAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="130" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
 
 
 				<!-- Features -->
@@ -326,6 +331,10 @@
 				<action type="Unlock" tech_type="pottery"/>
 				<action type="Unlock" tech_type="bone_polishing"/>
 				<action type="Unlock" tech_type="sledgemaking"/>
+				<action type="Unlock" tech_type="bone_polishing"/>
+				<!-- These technologies are traps. Don't create bows, they won't help you against invadors. -->
+				<action type="Unlock" tech_type="archery"/>
+
 
 
 			</actions>
@@ -344,34 +353,88 @@
 				</actions>
 		</event>
 
+		<!--    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    -->
 
-
+		<!-- Warn not to build fortifications -->
 		<event>
 				<condition type="TechUnlocked" tech="fortifications"/>
 				<actions>
 						<action type="ShowMessage" title="fortifications_unlocked_title" text="fortifications_unlocked_description"/>
+				</actions>
+		</event>
+
+		<!-- Trigger raider attack on completion of watch tower -->
+		<event>
+			<!-- Maybe I should span a specific raider with a name and if he's killed, we get the next bonus... -->
+				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="1"/>
+				<actions>
+						<action type="ShowMessage" title="fortifications_built_title" text="fortifications_built_description"/>
 						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35"  decrease_start_population="300" decrease_halfing_population="250"/>
 						<action type="TriggerRaiderAttack" amount="45"/>
 				</actions>
 		</event>
 
+
 		<!--  0.15 years after the above event... -->
 		<event flags="RequiresPrevious">
+				<!-- <condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="1"/> -->
 				<condition type="EntityCountReached" counter="KilledRaiders" value="80"/>
 				<actions>
-						<action type="ShowMessage" title="post_fortifications_unlocked_title" text="post_fortifications_unlocked_description"/>
+						<action type="ShowMessage" title="post_fortifications_build_title" text="post_fortifications_build_description"/>
 						<action type="SetMigrationParameters" min="2" max="6" period="0.25y" variance="0.15"/>
 				</actions>
 		</event>
 
 		<!--  1.25 years after the above event... -->
 		<event flags="RequiresPrevious">
+				<!-- <condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="1"/> -->
 				<condition type="ValueReached" id="Population" value="90"/>
 				<actions>
 						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/>
 				</actions>
 		</event>
 
+		<!--    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    -->
+
+		<!-- Trigger a warning after 6 towers are built -->
+		<!-- Also, no one wants to come to your settlement because they're scared... -->
+		<event>
+				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="6"/>
+				<actions>
+						<action type="ShowMessage" title="fortifications_build_6_title" text="fortifications_build_6_description"/>
+						<action type="SetMigrationParameters" min="1" max="2" period="1.95y" variance="0.50"  decrease_start_population="300" decrease_halfing_population="250"/>
+				</actions>
+		</event>
+
+
+
+		<!-- Trigger raider attack on completion of 12 watch towers -->
+		<event flags="RequiresPrevious">
+			<!-- Maybe I should span a specific raider with a name and if he's killed, we get the next bonus... -->
+				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="12"/>
+				<actions>
+						<action type="ShowMessage" title="fortifications_build_12_title" text="fortifications_build_12_description"/>
+						<action type="TriggerRaiderAttack" amount="90"/>
+				</actions>
+		</event>
+
+		<!--  After you beat them -->
+		<event flags="RequiresPrevious">
+				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="12"/>
+				<condition type="EntityCountReached" counter="KilledRaiders" value="170"/>
+				<actions>
+						<action type="ShowMessage" title="post_fortifications_build_12_title" text="post_fortifications_build_12_title"/>
+						<action type="SetMigrationParameters" min="2" max="6" period="0.25y" variance="0.15"/>
+				</actions>
+		</event>
+
+		<!--  1.25 years after the above event... -->
+		<event flags="RequiresPrevious">
+				<condition type="ValueReached" id="Population" value="110"/>
+				<actions>
+						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/>
+				</actions>
+		</event>
 
 
 		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
