@@ -308,7 +308,8 @@
 				<action type="SetRaider" era="IronAge" hardcore_timer="10.35y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
 				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
 				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
-				<action type="SetRaider" era="SteelAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="130" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+				<!-- There's no steel age, sadly. -->
+				<action type="SetRaider" era="IronAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="130" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
 
 
 				<!-- Features -->
