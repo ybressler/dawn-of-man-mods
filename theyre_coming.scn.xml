@@ -206,6 +206,7 @@
 				<action type="Spawn" entity_type="flint" amount="5" placement="Storage"/>
 				<action type="Spawn" entity_type="sticks" amount="5" placement="Storage"/>
 				<action type="Spawn" entity_type="log" amount="10" placement="Storage"/>
+				<action type="Spawn" entity_type="bone" amount="3" placement="Storage"/>
 				<action type="Spawn" entity_type="stone" amount="3" placement="Storage"/>
 
 
@@ -213,6 +214,7 @@
 				<!-- Make things extra hard by providing not enough skin outfits -->
 				<action type="Spawn" entity_type="skins_outfit" amount="25" placement="Human"/>
 				<action type="Spawn" entity_type="wooden_spear" amount="1" placement="Human"/>
+				<action type="Spawn" entity_type="bone_spear" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="biface" amount="1" placement="Human"/>
 				<action type="Spawn" entity_type="wooden_harpoon" amount="1" placement="Human"/>
 
