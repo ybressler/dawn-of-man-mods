@@ -427,10 +427,10 @@
 
 		<!-- Second invasion -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="1.95y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="1.975y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
-						<action type="TriggerRaiderAttack" amount="33"/>
+						<action type="TriggerRaiderAttack" amount="29"/>
 				</actions>
 		</event>
 
