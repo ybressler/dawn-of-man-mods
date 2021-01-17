@@ -491,7 +491,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="1.975y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
-						<action type="TriggerRaiderAttack" amount="29"/>
+						<action type="TriggerRaiderAttack" amount="28"/>
 				</actions>
 		</event>
 
@@ -504,8 +504,9 @@
 						<action type="TriggerRaiderAttack" amount="20"/>
 				</actions>
 		</event>
+
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.66y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.75y"/>
 				<actions>
 						<action type="TriggerRaiderAttack" amount="20"/>
 				</actions>
