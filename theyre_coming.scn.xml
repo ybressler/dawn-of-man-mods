@@ -287,10 +287,10 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 
 				<!-- At first, many small animals... -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="10 10" grace_period="0.05y" periods="0.25y 0.33y" variances="0.05y 0.05y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="8 8" grace_period="0.05y" periods="0.25y 0.33y" variances="0.05y 0.05y"/>
 
 				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
-				<action type="SetRaider" era="Neolithic" hardcore_timer="4.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="12"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="4.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="15"/>
 
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
 				<!-- <action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/> -->
@@ -298,7 +298,7 @@
 				<!-- <action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/> -->
 
 				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/> -->
-				<action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="primitive_human" min="25" max="30" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="5.25y" entity_types="primitive_human" min="10" max="25" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/>
 
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/> -->
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="6.25y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/> -->
