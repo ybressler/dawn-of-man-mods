@@ -377,7 +377,6 @@
 
 		<!--  0.15 years after the above event... -->
 		<event flags="RequiresPrevious">
-				<!-- <condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="1"/> -->
 				<condition type="EntityCountReached" counter="KilledRaiders" value="80"/>
 				<actions>
 						<action type="ShowMessage" title="post_fortifications_build_title" text="post_fortifications_build_description"/>
@@ -387,7 +386,6 @@
 
 		<!--  1.25 years after the above event... -->
 		<event flags="RequiresPrevious">
-				<!-- <condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="1"/> -->
 				<condition type="ValueReached" id="Population" value="90"/>
 				<actions>
 						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35" decrease_start_population="300" decrease_halfing_population="250"/>
@@ -420,7 +418,6 @@
 
 		<!--  After you beat them -->
 		<event flags="RequiresPrevious">
-				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="12"/>
 				<condition type="EntityCountReached" counter="KilledRaiders" value="170"/>
 				<actions>
 						<action type="ShowMessage" title="post_fortifications_build_12_title" text="post_fortifications_build_12_title"/>
