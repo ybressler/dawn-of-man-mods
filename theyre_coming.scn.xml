@@ -501,14 +501,14 @@
 				<condition type="TimeElapsed" timer="GameTime" value="3.65y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
-						<action type="TriggerRaiderAttack" amount="20"/>
+						<action type="TriggerRaiderAttack" amount="30"/>
 				</actions>
 		</event>
 
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.75y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.85y"/>
 				<actions>
-						<action type="TriggerRaiderAttack" amount="20"/>
+						<action type="TriggerRaiderAttack" amount="15"/>
 				</actions>
 		</event>
 
@@ -527,7 +527,7 @@
 
 		<!-- skip spring (early summer) -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.025y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.0125y"/>
 				<actions>
 						<action type="ShowMessage" title="earlysummer_timer_1_title" text="earlysummer_timer_1_description"/>
 						<action type="SetTimeOfYear" value="0.19"/>
