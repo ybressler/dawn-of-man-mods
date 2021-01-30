@@ -111,8 +111,8 @@
 	<string name="welcome_message_title">They're coming.</string>
 	<string name="welcome_message_description">The hills echo with battle cries.</string>
 
-	<string name="welcome_message_title">They're already on their way.</string>
-	<string name="welcome_message_description">You don't have much time before a small scouting team comes upon your encampment.
+	<string name="welcome_message_2_title">They're already on their way.</string>
+	<string name="welcome_message_2_description">You don't have much time before a small scouting team comes upon your encampment.
 	Build some weapons right away!
 	Tip: Build wooden spears and harpoons, they're quick to build and you have enough sticks.</string>
 
