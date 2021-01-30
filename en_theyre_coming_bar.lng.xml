@@ -24,56 +24,84 @@
 
 	<!-- Create your milestones -->
 
-	<!-- General -->
+	<!-- Population Growth -->
 		<string name="milestone_POPULATION_75">Population 75</string>
 		<string name="milestone_POPULATION_100">Population 100</string>
+		<string name="milestone_POPULATION_150">Population 150</string>
+		<string name="milestone_POPULATION_300">Population 300</string>
+		<string name="milestone_POPULATION_450">Population 450</string>
+
+	<!-- Be prestigious -->
 		<string name="milestone_PRESTIGE_250">Prestige!</string>
+		<string name="milestone_PRESTIGE_500">Prestige 500!</string>
+
+	<!-- Build big things -->
+		<string name="milestone_BUILD_MEGALITH_3">Big Stones</string>
+		<string name="milestone_BUILD_STONE_CIRCLE">Big Magic!</string>
+		<string name="milestone_BUILD_50_BRONZE">Worship the God of War</string>
+
 	<!-- Next, animals -->
 		<string name="milestone_ANIMALS_100">Animal Town</string>
 		<string name="milestone_COW_CITY">Cattle City</string>
-	<!-- Next, war -->
+
+	<!-- Kill Raiders -->
+		<string name="milestone_SACRIFICE_50">Sacrifice (50)</string>
+		<string name="milestone_SACRIFICE_250">Kill 250</string>
+		<string name="milestone_SACRIFICE_500">Kill 500</string>
+		<string name="milestone_SACRIFICE_1000">Kill 1,000</string>
+
+	<!-- Sacrifice your own -->
 		<string name="milestone_DEATH_1">The First Has Fallen</string>
 		<string name="milestone_DEATH_50">Taste of Death</string>
 		<string name="milestone_DEATH_150">Glorious Death</string>
-	<!-- Sacrifice -->
-		<string name="milestone_SACRIFICE_50">Sacrifice (50)</string>
 
 
-		<string name="milestone_MILESTONE2">Survive "Invasion #3"</string>
-		<string name="milestone_MILESTONE3">MILESTONE 3</string>
-		<string name="milestone_MILESTONE4">MILESTONE 4</string>
-		<string name="milestone_MILESTONE5">MILESTONE 5</string>
-		<string name="milestone_MILESTONE6">MILESTONE 6</string>
-		<string name="milestone_MILESTONE7">MILESTONE 7</string>
-		<string name="milestone_MILESTONE8">MILESTONE 8</string>
+	<!-- Survival -->
+		<string name="milestone_SURVIVE_3">Survive "Invasion #3"</string>
+
+
+
+
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
 
 	<!-- Describe your milestones -->
 
-	<!-- General -->
+	<!-- Population Growth -->
 		<string name="milestone_POPULATION_75_description">Reach a Population of 75</string>
 		<string name="milestone_POPULATION_100_description">Reach a Population of 100</string>
-		<string name="milestone_PRESTIGE_250_description">Reach a prestige of 250.</string>
-	<!-- Animals -->
+		<string name="milestone_POPULATION_150_description">Reach a Population of 150</string>
+		<string name="milestone_POPULATION_300_description">Reach a Population of 300</string>
+		<string name="milestone_POPULATION_450_description">Reach a Population of 450</string>
+
+	<!-- Be prestigious -->
+		<string name="milestone_PRESTIGE_250_description">Reach prestige of 250!</string>
+		<string name="milestone_PRESTIGE_250_description">Reach prestige of 500!</string>
+
+	<!-- Build big things -->
+		<string name="milestone_BUILD_MEGALITH_3_description">Please the gods with 3 megaliths!</string>
+		<string name="milestone_BUILD_STONE_CIRCLE_description">Harness "Big Magic" from 1 stone circle!</string>
+		<string name="milestone_BUILD_50_BRONZE_description">Have in your possession 50 bronze spears, knives, and axes!</string>
+
+
+	<!-- Next, animals -->
 		<string name="milestone_ANIMALS_100_description">Reach an animal population of 100</string>
 		<string name="milestone_COW_CITY_description">Have more cattle than humans, while having a human population greater than 150.</string>
-	<!-- War -->
+
+	<!-- Kill Raiders -->
+		<string name="milestone_SACRIFICE_50_description">Sacrifice 50 perpetrators to the Blood God.</string>
+		<string name="milestone_SACRIFICE_250_description">Sacrifice 250 perpetrators to the Blood God.</string>
+		<string name="milestone_SACRIFICE_500_description">Sacrifice 500 perpetrators to the Blood God.</string>
+		<string name="milestone_SACRIFICE_1000_description">Sacrifice 1,000 perpetrators to the Blood God.</string>
+
+	<!-- Sacrifice your own -->
 		<string name="milestone_DEATH_1_description">The first human amongst you has fallen. Expect many more deaths.</string>
 		<string name="milestone_DEATH_50_description">50 humans have sacrificed their lives.</string>
 		<string name="milestone_DEATH_150_description">150 humans have sacrificed their lives.</string>
-	<!-- Sacrifice -->
-		<string name="milestone_SACRIFICE_50_description">Sacrifice 50 perpetrators to the Blood God.</string>
 
-	<!-- Additional milestones -->
-		<string name="milestone_MILESTONE2_description">Survive 3 terrible invasions. (Need to beef up the story here a bit...)</string>
 
-		<string name="milestone_MILESTONE3_description">Sacrifice 250 perpetrators to the Blood God.</string>
-		<string name="milestone_MILESTONE4_description">Sacrifice 500 perpetrators to the Blood God.</string>
-		<string name="milestone_MILESTONE5_description">Sacrifice 1000 perpetrators to the Blood God.</string>
-		<string name="milestone_MILESTONE6_description">Reach a population of 150.</string>
-		<string name="milestone_MILESTONE7_description">Reach a population of 300.</string>
-		<string name="milestone_MILESTONE8_description">Reach a population of 450.</string>
+	<!-- Survival -->
+		<string name="milestone_SURVIVE_3_description">Survive 3 terrible invasions. (Need to beef up the story here a bit...)</string>
 
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
@@ -191,8 +219,8 @@ A rival clan has taken notice.
 
 
 	<!-- Early spring -->
-	<string name="five_years_title">5 Long Years.</string>
-	<string name="five_years_description">You survived for 5 long years. Congratulations!
+	<string name="six_years_title">6 Long Years.</string>
+	<string name="six_years_description">You survived for 6 long years. Congratulations!
 (A note from the creator: Please let me know what you enjoyed about this mod. How can it be improved?)
 </string>
 

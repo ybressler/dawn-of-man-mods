@@ -58,14 +58,59 @@
 
 	<milestones>
 
-		<!-- Population milestones. -->
+	<!-- Population Growth -->
 		<milestone id="POPULATION_75">
-			<condition type="ValueReached" id="Population" value="75"/>
+				<condition type="ValueReached" id="Population" value="75"/>
 		</milestone>
 
 		<milestone id="POPULATION_100">
-			<condition type="ValueReached" id="Population" value="100"/>
+				<condition type="ValueReached" id="Population" value="100"/>
 		</milestone>
+
+		<milestone id="POPULATION_150">
+				<condition type="ValueReached" id="Population" value="150"/>
+		</milestone>
+
+		<milestone id="POPULATION_300">
+				<condition type="ValueReached" id="Population" value="300"/>
+		</milestone>
+
+		<milestone id="POPULATION_450">
+				<condition type="ValueReached" id="Population" value="450"/>
+		</milestone>
+
+	<!-- Be prestigious -->
+		<milestone id="PRESTIGE_250">
+				<condition type="ValueReached" id="Prestige" value="250"/>
+		</milestone>
+
+		<milestone id="PRESTIGE_500">
+				<condition type="ValueReached" id="Prestige" value="500"/>
+		</milestone>
+
+
+	<!-- Build big things -->
+		<milestone id="BUILD_MEGALITH_3">
+				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="menhir" value="3"/>
+		</milestone>
+
+		<milestone id="BUILD_STONE_CIRCLE">
+				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
+		</milestone>
+
+
+		<milestone id="BUILD_50_BRONZE">
+			<condition type="And">
+				<sub_conditions>
+					<condition type="EntityCountReached" counter="ProducedResources" entity_type="bronze_spear" value="50"/>
+					<condition type="EntityCountReached" counter="ProducedResources" entity_type="bronze_knife" value="50"/>
+					<condition type="EntityCountReached" counter="ProducedResources" entity_type="bronze_axe" value="50"/>
+				</sub_conditions>
+			</condition>
+		</milestone>
+
+
+	<!-- Next, animals -->
 
 		<milestone id="ANIMALS_100">
 			<condition type="ValueReached" id="DomesticAnimalCount" value="100"/>
@@ -76,7 +121,6 @@
 			<!-- More than 150 residents and have more cows than people...
 					Solve with OR( And(population, cattle), And(p, c), ...)
 			-->
-
 			<condition type="Or">
 				<!-- Any of the following... -->
 				<sub_conditions>
@@ -101,6 +145,26 @@
 			</condition>
 		</milestone>
 
+<!-- Kill Raiders -->
+
+		<milestone id="SACRIFICE_50">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="50"/>
+		</milestone>
+
+		<milestone id="SACRIFICE_250">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="250"/>
+		</milestone>
+
+		<milestone id="SACRIFICE_500">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="500"/>
+		</milestone>
+
+		<milestone id="SACRIFICE_1000">
+			<condition type="EntityCountReached" counter="KilledRaiders" value="1000"/>
+		</milestone>
+
+
+<!-- Sacrifice your own -->
 
 		<milestone id="DEATH_1">
 			<condition type="EntityCountReached" counter="DeadResidents" value="1"/>
@@ -110,71 +174,20 @@
 			<condition type="EntityCountReached" counter="DeadResidents" value="50"/>
 		</milestone>
 
-
 		<milestone id="DEATH_150">
 			<condition type="EntityCountReached" counter="DeadResidents" value="150"/>
 		</milestone>
 
-		<milestone id="PRESTIGE_250">
-			<!--Condition "And" needs ALL sub_conditions to be reached: 100 Prestige & 1 Stone Circle
- 			<condition type="And">
-				<sub_conditions>
-					<condition type="ValueReached" id="Prestige" value="100"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
-				</sub_conditions>
-			</condition>
-			-->
-
-			<!--Condition "Or" needs ONE sub_condition to be reached: 100 Prestige OR 1 Stone Circle
- 			<condition type="Or">
-				<sub_conditions>
-					<condition type="ValueReached" id="Prestige" value="100"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
-				</sub_conditions>
-			</condition>
-			-->
-			<!-- If you only need 1 condition there is no need for And / Or, but I think only 1 sub_condition works technically.
-			<condition type="ValueReached" id="Prestige" value="100"/>
-			-->
-			<condition type="ValueReached" id="Prestige" value="250"/>
-			<!-- <condition type="And">
-				<sub_conditions>
-					<condition type="ValueReached" id="Prestige" value="100"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="stone_circle" value="1"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="dolmen" value="4"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="menhir" value="8"/>
-					<condition type="EntityCountReached" counter="BuiltStructures" entity_type="totem" value="16"/>
-				</sub_conditions>
-			</condition> -->
-		</milestone>
 
 
+	<!-- Survival -->
 
-		<milestone id="MILESTONE2">
+		<milestone id="SURVIVE_3">
 			<condition type="TimeElapsed" timer="GameTime" value="4.25y"/>
 		</milestone>
 
-		<milestone id="MILESTONE3">
-			<condition type="EntityCountReached" counter="KilledRaiders" value="250"/>
-		</milestone>
 
-		<milestone id="MILESTONE4">
-			<condition type="EntityCountReached" counter="KilledRaiders" value="500"/>
-		</milestone>
 
-		<milestone id="MILESTONE5">
-			<condition type="EntityCountReached" counter="KilledRaiders" value="1000"/>
-		</milestone>
-
-		<milestone id="MILESTONE6">
-			<condition type="ValueReached" id="Population" value="150"/>
-		</milestone>
-		<milestone id="MILESTONE7">
-			<condition type="ValueReached" id="Population" value="300"/>
-		</milestone>
-		<milestone id="MILESTONE8">
-			<condition type="ValueReached" id="Population" value="450"/>
-		</milestone>
 	</milestones>
 
 
@@ -287,10 +300,10 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 
 				<!-- At first, many small animals... -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="8 8" grace_period="0.05y" periods="0.25y 0.33y" variances="0.05y 0.05y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="8 8" grace_period="0.05y" periods="0.25y 0.33y" variances="0.15y 0.175y"/>
 
 				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
-				<action type="SetRaider" era="Neolithic" hardcore_timer="4.5y" entity_types="primitive_human cave_lion cave_hyena" mins="4 2 2" maxes="8 6 6" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="15"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="4.75y" entity_types="primitive_human cave_lion cave_hyena" mins="10 6 6" maxes="15 10 10" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="15 20 20"/>
 
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
 				<!-- <action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/> -->
@@ -506,9 +519,9 @@
 		</event>
 
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.85y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.75y"/>
 				<actions>
-						<action type="TriggerRaiderAttack" amount="15"/>
+						<action type="TriggerRaiderAttack" amount="25"/>
 				</actions>
 		</event>
 
@@ -541,9 +554,9 @@
 
 	<!-- After 5 years, call the game... -->
 	<event>
-			<condition type="TimeElapsed" timer="GameTime" value="5.1y"/>
+			<condition type="TimeElapsed" timer="GameTime" value="6.1y"/>
 			<actions>
-					<action type="ShowMessage" title="five_years_title" text="five_years_description"/>
+					<action type="ShowMessage" title="six_years_title" text="six_years_description"/>
 					<action type="QuitGame" success="true"/>
 			</actions>
 	</event>
