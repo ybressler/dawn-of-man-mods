@@ -391,7 +391,7 @@
 
 		<!--  0.15 years after the above event... -->
 		<event flags="RequiresPrevious">
-				<condition type="TimeElapsed" timer="RealTime" value="0.25"/>
+				<condition type="TimeElapsed" timer="RealTime" value="90"/>
 				<actions>
 						<action type="ShowMessage" title="post_fortifications_build_title" text="post_fortifications_build_description"/>
 						<action type="SetMigrationParameters" min="2" max="6" period="0.25y" variance="0.15"/>
@@ -478,7 +478,7 @@
 
 
 		<event>
-				<condition type="TimeElapsed" timer="RealTime" value="2"/>
+				<condition type="TimeElapsed" timer="RealTime" value="10"/>
 				<actions>
 						<action type="ShowMessage" title="welcome_message_2_title" text="welcome_message_2_description"/>
 						<action type="TriggerRaiderAttack" amount="5"/>
