@@ -303,7 +303,7 @@
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="8 8" grace_period="0.05y" periods="0.25y 0.33y" variances="0.15y 0.175y"/>
 
 				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
-				<action type="SetRaider" era="Neolithic" hardcore_timer="4.75y" entity_types="primitive_human cave_lion cave_hyena" mins="10 6 6" maxes="15 10 10" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="15 20 20"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="4.75y" entity_types="primitive_human cave_lion cave_hyena" mins="10 6 6" maxes="15 10 10" periods="0.5y .25y 0.33y 0.5y" variance="0.5y" extra_raider_per_population="13"/>
 
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
 				<!-- <action type="SetRaider" era="Mesolithic" hardcore_timer="1.2y" entity_types="primitive_human" min="4" max="10" grace_period="0.25y" period="1.0y" variance="0.5y" extra_raider_per_population="20"/> -->
