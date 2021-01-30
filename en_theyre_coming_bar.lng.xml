@@ -15,7 +15,7 @@
 	<string name="theyre_coming">They're Coming</string>
 	<!-- <string name="theyre_coming_group">Deadly Times</string> -->
 
-	<string name="scenario_theyre_coming">They're Coming (Part I) [DEV]</string>
+	<string name="scenario_theyre_coming">They're Coming (Part I) – 6 Long Years</string>
 	<string name="scenario_theyre_coming_subtitle">And they want revenge.</string>
 	<string name="scenario_theyre_coming_description">A brutal scenario.</string>
 	<string name="scenario_theyre_coming_context">You've transgressed the sacred vow. Now you will pay the ultimate price.</string>
@@ -37,8 +37,8 @@
 
 	<!-- Build big things -->
 		<string name="milestone_BUILD_MEGALITH_3">Big Stones</string>
-		<string name="milestone_BUILD_STONE_CIRCLE">Big Magic!</string>
-		<string name="milestone_BUILD_50_BRONZE">Worship the God of War</string>
+		<string name="milestone_BUILD_STONE_CIRCLE">Worship Big Magic!</string>
+		<string name="milestone_BUILD_50_BRONZE">Create a Bronze God of War</string>
 
 	<!-- Next, animals -->
 		<string name="milestone_ANIMALS_100">Animal Town</string>
@@ -76,11 +76,11 @@
 
 	<!-- Be prestigious -->
 		<string name="milestone_PRESTIGE_250_description">Reach prestige of 250!</string>
-		<string name="milestone_PRESTIGE_250_description">Reach prestige of 500!</string>
+		<string name="milestone_PRESTIGE_500_description">Reach prestige of 500!</string>
 
 	<!-- Build big things -->
 		<string name="milestone_BUILD_MEGALITH_3_description">Please the gods with 3 megaliths!</string>
-		<string name="milestone_BUILD_STONE_CIRCLE_description">Harness "Big Magic" from 1 stone circle!</string>
+		<string name="milestone_BUILD_STONE_CIRCLE_description">Bring "Big Magic" to your clan by building 1 stone circle!</string>
 		<string name="milestone_BUILD_50_BRONZE_description">Have in your possession 50 bronze spears, knives, and axes!</string>
 
 
