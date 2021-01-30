@@ -523,8 +523,8 @@
 				</actions>
 		</event>
 
-		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.70y"/>
+		<event flags="RequiresPrevious">
+				<condition type="TimeElapsed" timer="GameTime" value="3.75y"/>
 				<actions>
 						<action type="TriggerRaiderAttack" amount="15"/>
 				</actions>
