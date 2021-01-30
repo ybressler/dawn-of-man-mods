@@ -481,10 +481,15 @@
 				<condition type="TimeElapsed" timer="RealTime" value="10"/>
 				<actions>
 						<action type="ShowMessage" title="welcome_message_2_title" text="welcome_message_2_description"/>
-						<action type="TriggerRaiderAttack" amount="5"/>
 				</actions>
 		</event>
 
+		<event>
+				<condition type="TimeElapsed" timer="GameTime" value="0.125y"/>
+				<actions>
+					<action type="TriggerRaiderAttack" amount="5"/>
+				</actions>
+		</event>
 
 		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
