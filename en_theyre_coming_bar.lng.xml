@@ -57,7 +57,7 @@
 
 
 	<!-- Survival -->
-		<string name="milestone_SURVIVE_3">Survive "Invasion #3"</string>
+		<string name="milestone_SURVIVE_3">Survive "Invasion 3"</string>
 
 
 
@@ -131,8 +131,12 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 "They're already here."</string>
 
 	<!-- 3rd wave -->
-	<string name="invasion_3_main_title">Wave #3</string>
+	<string name="invasion_3_main_title">Invasion 3</string>
 	<string name="invasion_3_main_description">Survive this invasion and achieve a milestone!</string>
+
+<!-- 4th wave -->
+	<string name="invasion_4_main_title">Invasion 4</string>
+	<string name="invasion_3_main_description">This one is gonna be a beast.</string>
 
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
@@ -221,7 +225,10 @@ A rival clan has taken notice.
 	<!-- Early spring -->
 	<string name="six_years_title">6 Long Years.</string>
 	<string name="six_years_description">You survived for 6 long years. Congratulations!
-(A note from the creator: Please let me know what you enjoyed about this mod. How can it be improved?)
+
+(A note from the creator: That's all the gameplay I designed for now.
+Let me know if you enjoyed this mod + how it can be improved.
+Cheers!)
 </string>
 
 
