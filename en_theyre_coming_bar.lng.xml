@@ -111,6 +111,11 @@
 	<string name="welcome_message_title">They're coming.</string>
 	<string name="welcome_message_description">The hills echo with battle cries.</string>
 
+	<string name="welcome_message_title">They're already on their way.</string>
+	<string name="welcome_message_description">You don't have much time before a small scouting team comes upon your encampment.
+	Build some weapons right away!
+	Tip: Build wooden spears and harpoons, they're quick to build and you have enough sticks.</string>
+
 
 	<!-- Raiders will come to attack... -->
 	<string name="invasion_1_scouts_title">Can you hear them?</string>
@@ -146,7 +151,8 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 	<string name="fortifications_warning_title">Neolithic unlocked!</string>
 	<string name="fortifications_warning_description">You've unlocked the power to harness the earth. Be careful while building fortifications.
 Such an outright display of strength is sure to anger your enemies...
-Tip: Build walls and a gate, but don't build towers or defensive platforms until you're ready to defend against the tide of invaders who'll storm your fortress driven by jealosy, bloodlust, and sacrificial zeal.
+Tip: Build walls and a gate, but don't build towers until you're ready to defend against the tide of invaders who'll storm your fortress driven by jealosy, bloodlust, and sacrificial zeal.
+Also: Also, defensive platforms won't trigger anu invasions. (Atleast for now.)
 </string>
 
 <!-- Challenge the Uhrghor clan (1 watchtower)-->
@@ -154,7 +160,7 @@ Tip: Build walls and a gate, but don't build towers or defensive platforms until
 	<string name="fortifications_unlocked_description">
 Rumor has it that your settlement has unlocked a strange new technology which can "shoot arrows from the sky."
 The rival clan of Uhrghor is paying close attention.
-Tip: Wait until your population is greater than 65 before building any towers.
+Tip: Wait until your population is greater than 65 before building any towers. Defensive platforms are okay though.
 </string>
 
 	<string name="fortifications_build_title">Watch Towers Built!</string>
