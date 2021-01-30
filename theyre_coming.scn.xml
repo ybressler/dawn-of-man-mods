@@ -300,7 +300,7 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 
 				<!-- At first, many small animals... -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="8 8" grace_period="0.05y" periods="0.25y 0.33y" variances="0.15y 0.175y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="6 6" grace_period="0.05y" periods="0.25y 0.33y" variances="0.15y 0.175y"/>
 
 				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
 				<action type="SetRaider" era="Neolithic" hardcore_timer="4.75y" entity_types="primitive_human" min="10" max="20" periods="0.4y" variance="0.5y" extra_raider_per_population="13"/>
@@ -335,10 +335,10 @@
 
 				<!-- Parameters -->
 				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.35"/>
-				<action type="SetMigrationParameters" min="3" max="8" period="0.70y" variance="0.15" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetMigrationParameters" min="3" max="6" period="0.55y" variance="0.15" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
-				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.75"/>
+				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.65"/>
 
 				<!-- Start off with some knowledge -->
 				<action type="Unlock" tech_era="Paleolithic"/>
@@ -472,7 +472,7 @@
 				<condition type="TimeElapsed" timer="RealTime" value="0"/>
 				<actions>
 						<action type="ShowMessage" title="welcome_message_title" text="welcome_message_description"/>
-						<action type="TriggerRaiderAttack" amount="5"/>
+						<action type="TriggerRaiderAttack" amount="7"/>
 				</actions>
 		</event>
 
@@ -483,14 +483,6 @@
 						<action type="ShowMessage" title="welcome_message_2_title" text="welcome_message_2_description"/>
 				</actions>
 		</event>
-
-		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="0.125y"/>
-				<actions>
-					<action type="TriggerRaiderAttack" amount="5"/>
-				</actions>
-		</event>
-
 		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
 
@@ -517,7 +509,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="1.975y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_2_main_title" text="invasion_2_main_description"/>
-						<action type="TriggerRaiderAttack" amount="27"/>
+						<action type="TriggerRaiderAttack" amount="28"/>
 				</actions>
 		</event>
 
@@ -532,16 +524,9 @@
 		</event>
 
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.675y"/>
-				<actions>
-						<action type="TriggerRaiderAttack" amount="15"/>
-				</actions>
-		</event>
-
-		<event>
 				<condition type="TimeElapsed" timer="GameTime" value="3.70y"/>
 				<actions>
-						<action type="TriggerRaiderAttack" amount="10"/>
+						<action type="TriggerRaiderAttack" amount="15"/>
 				</actions>
 		</event>
 
@@ -562,7 +547,7 @@
 
 		<!-- early winters -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="1.45y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="1.4125y"/>
 				<actions>
 						<action type="ShowMessage" title="earlywinter_timer_1_title" text="earlywinter_timer_1_description"/>
 						<action type="SetTimeOfYear" value="0.68"/>
