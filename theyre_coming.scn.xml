@@ -523,12 +523,12 @@
 				</actions>
 		</event>
 
-		<event flags="RequiresPrevious">
+		<!-- <event flags="RequiresPrevious">
 				<condition type="TimeElapsed" timer="GameTime" value="3.85y"/>
 				<actions>
 						<action type="TriggerRaiderAttack" amount="15"/>
 				</actions>
-		</event>
+		</event> -->
 
 
 		<!-- Fourth invasion -->
