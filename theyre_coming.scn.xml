@@ -335,7 +335,7 @@
 
 				<!-- Parameters -->
 				<action type="SetKnowledgeParameters" tech_cost_multiplier="1.35"/>
-				<action type="SetMigrationParameters" min="3" max="6" period="0.55y" variance="0.15" decrease_start_population="300" decrease_halfing_population="250"/>
+				<action type="SetMigrationParameters" min="3" max="8" period="0.55y" variance="0.25" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetBirthParameters" decrease_start_population="300" decrease_halfing_population="250"/>
 				<action type="SetTraderPeriod" value="1.15y"/>
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.65"/>
