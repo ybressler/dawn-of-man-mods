@@ -519,7 +519,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="3.85y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
-						<action type="TriggerRaiderAttack" amount="33"/>
+						<action type="TriggerRaiderAttack" amount="31"/>
 				</actions>
 		</event>
 
