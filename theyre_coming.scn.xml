@@ -311,16 +311,16 @@
 				<!-- <action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/> -->
 
 				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/> -->
-				<action type="SetRaider" era="CopperAge" hardcore_timer="5.25y" entity_types="primitive_human" min="10" max="25" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="9"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="6.25y" entity_types="primitive_human" min="10" max="25" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="10"/>
 
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/> -->
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="6.25y" entity_types="bear" min="2" max="6" grace_period="0.15y" period="1.1y" variance="0.75y"/> -->
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="7.25" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="7"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10.25" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="8"/>
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="50" grace_period="0.40y" period="1.5y" variance="0.85y" extra_raider_per_population="6"/> -->
 
-				<action type="SetRaider" era="IronAge" hardcore_timer="10.35y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="13.25y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="7"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="6"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
 				<!-- There's no steel age, sadly. -->
 				<action type="SetRaider" era="IronAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="130" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
 
@@ -380,7 +380,7 @@
 		<!-- Trigger raider attack on completion of watch tower -->
 		<event>
 			<!-- Maybe I should span a specific raider with a name and if he's killed, we get the next bonus... -->
-				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="2"/>
+				<condition type="EntityCountReached" counter="BuiltStructures" entity_type="watchtower" value="1"/>
 				<actions>
 						<action type="ShowMessage" title="fortifications_built_title" text="fortifications_built_description"/>
 						<action type="SetMigrationParameters" min="2" max="4" period="0.75y" variance="0.35"  decrease_start_population="300" decrease_halfing_population="250"/>
@@ -516,10 +516,10 @@
 		<!-- Third invasion -->
 		<!-- The following raider invasion occurs at almost the same time, I hope this makes them spawn in different areas... -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.65y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.85y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
-						<action type="TriggerRaiderAttack" amount="30"/>
+						<action type="TriggerRaiderAttack" amount="33"/>
 				</actions>
 		</event>
 
@@ -534,10 +534,10 @@
 		<!-- Fourth invasion -->
 		<!-- The following raider invasion occurs at almost the same time, I hope this makes them spawn in different areas... -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="5.55y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="5.85y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_4_main_title" text="invasion_4_main_description"/>
-						<action type="TriggerRaiderAttack" amount="44"/>
+						<action type="TriggerRaiderAttack" amount="45"/>
 				</actions>
 		</event>
 
@@ -571,7 +571,7 @@
 
 	<!-- After 6 years, call the game... -->
 	<event>
-			<condition type="TimeElapsed" timer="GameTime" value="6.1y"/>
+			<condition type="TimeElapsed" timer="GameTime" value="6.24y"/>
 			<actions>
 					<action type="ShowMessage" title="six_years_title" text="six_years_description"/>
 					<!-- <action type="QuitGame" success="true"/> -->
