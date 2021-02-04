@@ -557,14 +557,21 @@
 
 		<!-- skip spring (early summer) -->
 		<event>
-				<condition type="TimeElapsed" timer="GameTime" value="3.0125y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.0075y"/>
 				<actions>
 						<action type="ShowMessage" title="earlysummer_timer_1_title" text="earlysummer_timer_1_description"/>
 						<action type="SetTimeOfYear" value="0.19"/>
 				</actions>
 		</event>
 
-
+		<!-- Make another early winter -->
+		<event>
+				<condition type="TimeElapsed" timer="GameTime" value="6.4125y"/>
+				<actions>
+						<action type="ShowMessage" title="earlywinter_timer_2_title" text="earlywinter_timer_2_description"/>
+						<action type="SetTimeOfYear" value="0.68"/>
+				</actions>
+		</event>
 
 
 <!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
