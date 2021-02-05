@@ -202,6 +202,7 @@
 				<!-- Clear trees around start location -->
 				<action type="ClearTrees" radius="12"/>
 
+
 				<!-- People -->
 				<action type="Spawn" entity_type="primitive_human" amount="20" placement="StartLocationCircular" angle="35" radius="5" age="Adult" gender="Male"/>
 				<action type="Spawn" entity_type="primitive_human" amount="20" placement="StartLocationCircular" angle="35" radius="4" age="Adult" gender="Female"/>
@@ -215,6 +216,11 @@
 				<action type="Spawn" entity_type="crafter" amount="1" placement="StartLocationCircular" radius="14"/>
 				<action type="Spawn" entity_type="storage_hut" amount="3" placement="StartLocationCircular" radius="14" />
 				<action type="Spawn" entity_type="hut" amount="15" placement="StartLocationCircular" angle="24" radius="25" />
+
+				<!-- Create a few food dryers -->
+				<action type="Spawn" entity_type="food_dryer" amount="1" placement="StartLocationCircular" angle="20" radius="16" />
+				<action type="Spawn" entity_type="skins_dryer" amount="2" placement="StartLocationCircular" angle="290" radius="20" />
+
 
 				<action type="Spawn" entity_type="sledge" amount="5" placement="StartLocationCircular" angle="5" radius="18"/>
 				<action type="Spawn" entity_type="sticks" amount="15" placement="StartLocationCircular" angle="300" radius="20"/>
@@ -300,7 +306,10 @@
 				<!-- I remember extra_raider_per_population to only work for primitive_human, if that is still valid it should become clear during test in Meso with 100 people -->
 
 				<!-- At first, many small animals... -->
-				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="6 6" grace_period="0.05y" periods="0.25y 0.33y" variances="0.15y 0.175y"/>
+				<action type="SetRaider" era="Mesolithic" hardcore_timer="0y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="6 6" grace_period="0.05y" periods="0.30y 0.36y" variances="0.15y 0.175y"/>
+
+				<!-- Define the same types of animals as above, but this time, set to neolithic period -->
+				<action type="SetRaider" era="Neolithic" hardcore_timer="3.25y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="6 6" grace_period="0.05y" periods="0.25y 0.33y" variances="0.15y 0.175y"/>
 
 				<!-- Soon, animals and people... (YES you CAN do multiple periods....)-->
 				<action type="SetRaider" era="Neolithic" hardcore_timer="4.75y" entity_types="primitive_human" min="10" max="20" periods="0.6y" grace_period="0.25y"  variance="0.5y"/>
@@ -310,7 +319,6 @@
 
 				<!-- <action type="SetRaider" era="Neolithic" hardcore_timer="2.5y" entity_types="primitive_human" min="10" max="20" grace_period="0.55y" period="1.25y" variance="0.5y" extra_raider_per_population="12"/> -->
 
-				<!-- <action type="SetRaider" era="CopperAge" hardcore_timer="5y" entity_types="bear" min="2" max="6" grace_period="0.25y" period="1.0y" variance="0.5y"/> -->
 				<action type="SetRaider" era="CopperAge" hardcore_timer="6.25y" entity_types="primitive_human" min="10" max="25" grace_period="0.50y" period="1.15y" variance="0.5y" extra_raider_per_population="10"/>
 
 				<!-- <action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="wolf" min="1" max="7" grace_period="0.25y" period="1.2y" variance="0.65y"/> -->
@@ -341,6 +349,7 @@
 				<action type="SetDiseaseParameters" period="5y" variance="3y" individual_disease_chance="0.65"/>
 
 				<!-- Start off with some knowledge -->
+
 				<action type="Unlock" tech_era="Paleolithic"/>
 				<action type="Unlock" tech_type="pottery"/>
 				<action type="Unlock" tech_type="bone_polishing"/>
@@ -349,12 +358,25 @@
 				<!-- These technologies are traps. Don't create bows, they won't help you against invadors. -->
 				<action type="Unlock" tech_type="archery"/>
 
+				<!-- Can we break rules? -->
+				<action type="Unlock" tech_era="thatching"/>
 
 
 			</actions>
 		</event>
 
 		<!-- ############################################################################################################################################################################## -->
+
+		<event>
+				<condition type="EntityCountReached" counter="ProducedResources" entity_type="flint" value="30"/>
+				<actions>
+						<action type="ShowMessage" title="unlock_underground_mining_title" text="unlock_underground_mining_description"/>
+						<action type="Unlock" tech_era="underground_mining"/>
+				</actions>
+		</event>
+
+
+
 
 
 		<!-- Change behaviors inside the game as things progress -->
