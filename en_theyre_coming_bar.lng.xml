@@ -110,7 +110,7 @@
 
 	<string name="unlock_underground_mining_title">Unlock Underground Mining</string>
 	<string name="unlock_underground_mining_description">Your villagers have discovered a new way to extract flint from the earth.
-	Triggered by collecting 30 flints!</string>
+	Triggered by collecting 50 flints!</string>
 
 	<!-- Time driven invasions -->
 
