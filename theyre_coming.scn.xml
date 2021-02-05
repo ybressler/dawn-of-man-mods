@@ -359,7 +359,7 @@
 				<action type="Unlock" tech_type="archery"/>
 
 				<!-- Can we break rules? -->
-				<action type="Unlock" tech_era="thatching"/>
+				<action type="Unlock" tech_type="thatching"/>
 
 
 			</actions>
@@ -371,7 +371,7 @@
 				<condition type="EntityCountReached" counter="ProducedResources" entity_type="flint" value="30"/>
 				<actions>
 						<action type="ShowMessage" title="unlock_underground_mining_title" text="unlock_underground_mining_description"/>
-						<action type="Unlock" tech_era="underground_mining"/>
+						<action type="Unlock" tech_type="underground_mining"/>
 				</actions>
 		</event>
 
