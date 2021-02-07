@@ -312,12 +312,12 @@
 				<action type="SetRaider" era="Mesolithic" hardcore_timer="1.25y" entity_types="cave_lion cave_hyena" mins="4 4" maxes="6 6" grace_period="0.05y" periods="0.30y 0.36y" variances="0.15y 0.175y"/>
 
 
-				<action type="SetRaider" era="Neolithic" hardcore_timer="3.50y" entity_types="primitive_human cave_hyena" mins="4 4" maxes="10 6" grace_period="0.05y" periods="0.33y 0.44y" variances="0.15y 0.175y"/>
+				<action type="SetRaider" era="Neolithic" hardcore_timer="2.75y" entity_types="primitive_human cave_hyena" mins="4 4" maxes="10 6" grace_period="0.05y" periods="0.33y 0.44y" variances="0.15y 0.175y"/>
 
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
-				<action type="SetRaider" era="CopperAge" hardcore_timer="6.25y" entity_types="primitive_human" min="10" max="20" grace_period="0.50y" period="1.15y" variance="0.5y"/>
+				<action type="SetRaider" era="CopperAge" hardcore_timer="4.25y" entity_types="primitive_human" min="10" max="20" grace_period="0.50y" period="1.15y" variance="0.5y"/>
 
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="8"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="9"/>
 
 				<action type="SetRaider" era="IronAge" hardcore_timer="13.25y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="7"/>
 				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="6"/>
@@ -534,7 +534,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="3.85y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_3_main_title" text="invasion_3_main_description"/>
-						<action type="TriggerRaiderAttack" amount="31"/>
+						<action type="TriggerRaiderAttack" amount="35"/>
 				</actions>
 		</event>
 
@@ -552,7 +552,7 @@
 				<condition type="TimeElapsed" timer="GameTime" value="5.85y"/>
 				<actions>
 						<action type="ShowMessage" title="invasion_4_main_title" text="invasion_4_main_description"/>
-						<action type="TriggerRaiderAttack" amount="45"/>
+						<action type="TriggerRaiderAttack" amount="35"/>
 				</actions>
 		</event>
 
