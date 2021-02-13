@@ -8,7 +8,7 @@
 
 
 	<!-- How much resources? -->
-	<resource_factor value="0.85"/>
+	<resource_factor value="0.75"/>
 
 
 	<!-- How far apart are river fords? -->
@@ -83,7 +83,7 @@
 		<min_altitude value="10" />
 		<max_altitude value="90"/>
 		<min_angle value="20" />
-		<max_angle value="65"/>
+		<max_angle value="55"/>
 	</prop_override_prototype>
 
 	<!-- Loose flint at the bottpm of hills-->

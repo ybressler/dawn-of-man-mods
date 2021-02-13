@@ -10,7 +10,7 @@
 	<!-- Size means the size of the world (default=4)-->
 	<size value="3"/>
 
-	<starting_conditions season_id="Spring"/>
+	<starting_conditions season_id="Summer"/>
 
 	<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
@@ -392,6 +392,16 @@
 				</actions>
 		</event>
 
+		<event flags="RequiresPrevious">
+				<condition type="TimeElapsed" timer="RealTime" value="30"/>
+				<actions>
+						<action type="ShowMessage" title="fortifications_gift_of_logs" text="gift_of_logs_30"/>
+						<action type="Spawn" entity_type="log" amount="30" placement="Storage"/>
+				</actions>
+		</event>
+
+
+
 		<!-- Trigger raider attack on completion of watch tower -->
 		<event>
 			<!-- Maybe I should span a specific raider with a name and if he's killed, we get the next bonus... -->
@@ -464,6 +474,59 @@
 
 
 		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+		<!-- Gifts from the Gods -->
+
+		<!-- Depths of Devotion -->
+		<event>
+			<!-- Any 2 mines have been built -->
+			<condition type="Or">
+					<sub_conditions>
+							<condition type="EntityCountReached" counter="BuiltStructures" entity_type="flint_mine" value="2"/>
+							<condition type="EntityCountReached" counter="BuiltStructures" entity_type="copper_mine" value="2"/>
+							<condition type="EntityCountReached" counter="BuiltStructures" entity_type="tin_mine" value="2"/>
+					</sub_conditions>
+			</condition>
+
+				<actions>
+						<action type="ShowMessage" title="2nd_mine_gift" text="gift_of_logs_20"/>
+						<action type="Spawn" entity_type="log" amount="20" placement="Storage"/>
+				</actions>
+		</event>
+
+
+		<!-- First wall -->
+		<event>
+			<condition type="EntityCountReached" counter="BuiltStructures" entity_type="palisade" value="10"/>
+				<actions>
+						<action type="ShowMessage" title="first_wall_gift" text="gift_of_logs_30"/>
+						<action type="Spawn" entity_type="log" amount="30" placement="Storage"/>
+				</actions>
+		</event>
+
+
+
+		<!-- First Stone wall -->
+		<event>
+			<condition type="EntityCountReached" counter="BuiltStructures" entity_type="wall" value="10"/>
+				<actions>
+						<action type="ShowMessage" title="first_wall_gift" text="gift_of_stone_40"/>
+						<action type="Spawn" entity_type="stone" amount="40" placement="Storage"/>
+				</actions>
+		</event>
+
+
+
+
+
+
+
+
+
+		<!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+
+
 
 		<!--  Prestige -->
 
