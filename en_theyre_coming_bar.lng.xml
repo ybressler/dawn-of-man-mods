@@ -117,16 +117,22 @@
 
 	<!-- Gifts from the gods -->
 
-		<string name="fortifications_gift">The Gods of War Smile Upon Your Bravery</string>
-		<string name="2nd_mine_gift">The Gods of the Underworld are Pleased with the Depth of your Devotion (2 Mines have been built)</string>
-		<string name="first_wall_gift">Your Battlements Please the Gods</string>
+		<string name="gift_from_the_gods">A Gift from the Gods</string>
 
-		<!-- Gifts of wood -->
-		<string name="gift_of_logs_20">20 logs have been added to your stockpile</string>
-		<string name="gift_of_logs_30">30 logs have been added to your stockpile</string>
+		<string name="fortifications_gift">The Gods of War smile upon your bravery.
+		20 logs have been added to your stockpile</string>
 
-		<!-- Gifts of stone -->
-		<string name="gift_of_stone_40">40 stone have been added to your stockpile</string>
+		<string name="2nd_mine_gift">The Gods of the Underworld are pleased with the depth of your devotion.
+		(2 Mines have been built)
+		20 logs have been added to your stockpile</string>
+
+
+		<string name="first_wood_wall_gift">Your battlements please the Gods.
+		30 logs have been added to your stockpile</string>
+
+		<string name="first_stone_wall_gift">Your battlements please the Gods.
+		40 stone have been added to your stockpile</string>
+
 
 
 

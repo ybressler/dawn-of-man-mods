@@ -412,8 +412,8 @@
 		<event flags="RequiresPrevious">
 				<condition type="TimeElapsed" timer="RealTime" value="30"/>
 				<actions>
-						<action type="ShowMessage" title="fortifications_gift_of_logs" text="gift_of_logs_30"/>
-						<action type="Spawn" entity_type="log" amount="30" placement="Storage"/>
+						<action type="ShowMessage" title="gift_from_the_gods" text="fortifications_gift"/>
+						<action type="Spawn" entity_type="log" amount="20" placement="Storage"/>
 				</actions>
 		</event>
 
@@ -506,7 +506,7 @@
 			</condition>
 
 				<actions>
-						<action type="ShowMessage" title="2nd_mine_gift" text="gift_of_logs_20"/>
+						<action type="ShowMessage" title="gift_from_the_gods" text="2nd_mine_gift"/>
 						<action type="Spawn" entity_type="log" amount="20" placement="Storage"/>
 				</actions>
 		</event>
@@ -516,7 +516,7 @@
 		<event>
 			<condition type="EntityCountReached" counter="BuiltStructures" entity_type="palisade" value="10"/>
 				<actions>
-						<action type="ShowMessage" title="first_wall_gift" text="gift_of_logs_30"/>
+						<action type="ShowMessage" title="gift_from_the_gods" text="first_wood_wall_gift"/>
 						<action type="Spawn" entity_type="log" amount="30" placement="Storage"/>
 				</actions>
 		</event>
@@ -527,7 +527,7 @@
 		<event>
 			<condition type="EntityCountReached" counter="BuiltStructures" entity_type="wall" value="10"/>
 				<actions>
-						<action type="ShowMessage" title="first_wall_gift" text="gift_of_stone_40"/>
+						<action type="ShowMessage" title="gift_from_the_gods" text="first_stone_wall_gift"/>
 						<action type="Spawn" entity_type="stone" amount="40" placement="Storage"/>
 				</actions>
 		</event>
