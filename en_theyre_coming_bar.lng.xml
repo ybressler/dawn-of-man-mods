@@ -127,7 +127,7 @@
 
 		<!-- Gifts of stone -->
 		<string name="gift_of_stone_40">40 stone have been added to your stockpile</string>
-		
+
 
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
@@ -260,8 +260,8 @@ A rival clan has taken notice.
 
 
 	<!-- Early spring -->
-	<string name="six_years_title">6 Long Years.</string>
-	<string name="six_years_description">You survived for 6 long years. Congratulations!
+	<string name="6_years_title">6 Long Years.</string>
+	<string name="6_years_description">You survived for 6 long years. Congratulations!
 
 (A note from the creator: That's all the gameplay I designed for now.
 Let me know if you enjoyed this mod + how it can be improved.
@@ -269,11 +269,19 @@ Cheers!)
 </string>
 
 
+<string name="100_years_title">It's been 100 years of battle</string>
+<string name="100_years_description">For a century, your clan has fought bravely. You've proven your might to the entire Northern continent.
+
+One final clan prepares to invade you. In 5 years from now, 1,000 raiders will descend upon your settlement in 2 giant waves. Get raidy.
+</string>
 
 
+<string name="105_years_title">The invasion has begun</string>
+<string name="105_years_description">Sound the alarm! 1,000 raiders are on their way to your settlement!</string>
 
 
-
+<string name="108_years_title">1,000 raiders are no match for your prowess! You are the ULTIMATE Dawn of Man champion!</string>
+<string name="108_years_description">You've earned yourself a place in the hall of fame. Take a screenshot of this message and frame it!</string>
 
 
 

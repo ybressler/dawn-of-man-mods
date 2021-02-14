@@ -317,13 +317,30 @@
 				<!-- Be careful when setting raiders... since we want to curate and balance the invasions... kind of manually too... -->
 				<action type="SetRaider" era="CopperAge" hardcore_timer="4.25y" entity_types="primitive_human" min="10" max="20" grace_period="0.50y" period="1.15y" variance="0.5y"/>
 
-				<action type="SetRaider" era="BronzeAge" hardcore_timer="10y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="9"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="6y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.5y" variance="0.75y" extra_raider_per_population="13"/>
+				<action type="SetRaider" era="BronzeAge" hardcore_timer="9.75y" entity_types="primitive_human" min="20" max="45" grace_period="0.45y" period="1.45y" variance="0.65y" extra_raider_per_population="11"/>
 
-				<action type="SetRaider" era="IronAge" hardcore_timer="13.25y" entity_types="primitive_human" min="30" max="100" grace_period="0.40y" period="1.0y" variance="1.0y" extra_raider_per_population="7"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="105" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="6"/>
-				<action type="SetRaider" era="IronAge" hardcore_timer="30y" entity_types="primitive_human" min="30" max="110" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
-				<!-- There's no steel age, sadly. -->
-				<action type="SetRaider" era="IronAge" hardcore_timer="40y" entity_types="primitive_human" min="30" max="130" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="13.25y" entity_types="primitive_human" min="30" max="60" grace_period="0.40y" period="1.0y" variance="0.55y" extra_raider_per_population="10"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="17.25y" entity_types="primitive_human" min="30" max="65" grace_period="0.40y" period="1.0y" variance="0.50y" extra_raider_per_population="9"/>
+
+				<action type="SetRaider" era="IronAge" hardcore_timer="20y" entity_types="primitive_human" min="30" max="75" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="8"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="28y" entity_types="primitive_human" min="30" max="80" grace_period="0.35y" period="1.0y" variance="1.0y" extra_raider_per_population="7"/>
+
+				<!-- Increase the frequency and intensity of the raids -->
+				<action type="SetRaider" era="IronAge" hardcore_timer="36y" entity_types="primitive_human" min="30" max="85" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="6"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="44y" entity_types="primitive_human" min="30" max="90" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="5"/>
+
+				<!-- Mega mode yo... -->
+				<action type="SetRaider" era="IronAge" hardcore_timer="50y" entity_types="primitive_human" min="30" max="100" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="4"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="65y" entity_types="primitive_human" min="30" max="115" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="75y" entity_types="primitive_human" min="30" max="135" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+				<action type="SetRaider" era="IronAge" hardcore_timer="90y" entity_types="primitive_human" min="40" max="150" grace_period="0.30y" period="1.0y" variance="1.0y" extra_raider_per_population="3"/>
+
+				<!-- Create a short break – prepare for 1,000 raiders! -->
+				<action type="SetRaider" era="IronAge" hardcore_timer="100y" entity_types="primitive_human" min="5" max="5" grace_period="0.30y" period="0.5y" variance="0.15y"/>
+				<!-- Turn off raiders at this point -->
+				<action type="SetRaider" era="IronAge" hardcore_timer="104.75y" entity_types="primitive_human" min="0" max="0"/>
+
 
 
 				<!-- Features -->
@@ -658,8 +675,41 @@
 	<event>
 			<condition type="TimeElapsed" timer="GameTime" value="6.24y"/>
 			<actions>
-					<action type="ShowMessage" title="six_years_title" text="six_years_description"/>
+					<action type="ShowMessage" title="6_years_title" text="6_years_description"/>
 					<!-- <action type="QuitGame" success="true"/> -->
+			</actions>
+	</event>
+
+
+	<!-- After 100 years, show them this monster-->
+	<event>
+			<condition type="TimeElapsed" timer="GameTime" value="100.1y"/>
+			<actions>
+					<action type="ShowMessage" title="100_years_title" text="100_years_description"/>
+			</actions>
+	</event>
+
+	<!-- Year 105, begin the invasion -->
+	<event>
+			<condition type="TimeElapsed" timer="GameTime" value="105.1y"/>
+			<actions>
+					<action type="ShowMessage" title="105_years_title" text="105_years_description"/>
+					<action type="TriggerRaiderAttack" amount="250"/>
+			</actions>
+	</event>
+
+	<event>
+			<condition type="TimeElapsed" timer="GameTime" value="105.35y"/>
+			<actions>
+					<action type="TriggerRaiderAttack" amount="750"/>
+			</actions>
+	</event>
+
+
+	<event>
+			<condition type="TimeElapsed" timer="GameTime" value="108y"/>
+			<actions>
+					<action type="ShowMessage" title="108_years_title" text="108_years_description"/>
 			</actions>
 	</event>
 
