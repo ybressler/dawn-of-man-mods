@@ -27,7 +27,7 @@
 	<!-- Population Growth -->
 		<string name="milestone_POPULATION_75">Population 75</string>
 		<string name="milestone_POPULATION_100">Population 100</string>
-		<!-- <string name="milestone_POPULATION_150">Population 150</string> -->
+		<string name="milestone_POPULATION_150">Population 150</string>
 		<string name="milestone_POPULATION_300">Population 300</string>
 		<string name="milestone_POPULATION_450">Population 450</string>
 

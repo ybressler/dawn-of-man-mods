@@ -66,11 +66,10 @@
 		<milestone id="POPULATION_100">
 				<condition type="ValueReached" id="Population" value="100"/>
 		</milestone>
-
-		<!-- Remove this milestone (temporarily)
+		
 		<milestone id="POPULATION_150">
 				<condition type="ValueReached" id="Population" value="150"/>
-		</milestone> -->
+		</milestone>
 
 		<milestone id="POPULATION_300">
 				<condition type="ValueReached" id="Population" value="300"/>
@@ -130,7 +129,7 @@
 					<condition type="And">
 							<sub_conditions>
 								<condition type="ValueReached" id="Population" value="150"/>
-								<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="150"/>
+								<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="150" comparison="GreaterOrEquals"/>
 							</sub_conditions>
 						</condition>
 
@@ -138,7 +137,7 @@
 					<condition type="And">
 						<sub_conditions>
 							<condition type="ValueReached" id="Population" value="200"/>
-							<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200"/>
+							<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200" omparison="GreaterOrEquals"/>
 						</sub_conditions>
 					</condition>
 
