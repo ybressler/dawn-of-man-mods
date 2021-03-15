@@ -67,9 +67,10 @@
 				<condition type="ValueReached" id="Population" value="100"/>
 		</milestone>
 
+		<!-- Remove this milestone (temporarily)
 		<milestone id="POPULATION_150">
 				<condition type="ValueReached" id="Population" value="150"/>
-		</milestone>
+		</milestone> -->
 
 		<milestone id="POPULATION_300">
 				<condition type="ValueReached" id="Population" value="300"/>
@@ -518,6 +519,11 @@
 				<actions>
 						<action type="ShowMessage" title="gift_from_the_gods" text="first_wood_wall_gift"/>
 						<action type="Spawn" entity_type="log" amount="30" placement="Storage"/>
+
+						<!-- Some people will migrate to your settlement -->
+						<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Male"/>
+						<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Female"/>
+
 				</actions>
 		</event>
 
@@ -618,12 +624,18 @@
 				</actions>
 		</event>
 
-		<!-- <event flags="RequiresPrevious">
-				<condition type="TimeElapsed" timer="GameTime" value="3.85y"/>
+
+		<event flags="RequiresPrevious">
+				<condition type="TimeElapsed" timer="GameTime" value="3.90y"/>
+
 				<actions>
-						<action type="TriggerRaiderAttack" amount="15"/>
+					<!-- Some people will migrate to your settlement -->
+					<action type="ShowMessage" title="invasion_3_migrate_title" text="invasion_3_migrate_description"/>
+					<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Male"/>
+					<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Female"/>
+
 				</actions>
-		</event> -->
+		</event>
 
 
 		<!-- Fourth invasion -->

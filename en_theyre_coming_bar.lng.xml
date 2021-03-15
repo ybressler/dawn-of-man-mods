@@ -27,7 +27,7 @@
 	<!-- Population Growth -->
 		<string name="milestone_POPULATION_75">Population 75</string>
 		<string name="milestone_POPULATION_100">Population 100</string>
-		<string name="milestone_POPULATION_150">Population 150</string>
+		<!-- <string name="milestone_POPULATION_150">Population 150</string> -->
 		<string name="milestone_POPULATION_300">Population 300</string>
 		<string name="milestone_POPULATION_450">Population 450</string>
 
@@ -70,7 +70,7 @@
 	<!-- Population Growth -->
 		<string name="milestone_POPULATION_75_description">Reach a Population of 75</string>
 		<string name="milestone_POPULATION_100_description">Reach a Population of 100</string>
-		<string name="milestone_POPULATION_150_description">Reach a Population of 150</string>
+		<!-- <string name="milestone_POPULATION_150_description">Reach a Population of 150</string> -->
 		<string name="milestone_POPULATION_300_description">Reach a Population of 300</string>
 		<string name="milestone_POPULATION_450_description">Reach a Population of 450</string>
 
@@ -173,6 +173,9 @@ The crowd parts, and forms an open circle around Timmy (an adorable child). A la
 	<!-- 3rd wave -->
 	<string name="invasion_3_main_title">Invasion 3</string>
 	<string name="invasion_3_main_description">Survive this invasion and achieve a milestone!</string>
+
+	<string name="invasion_3_migrate_title">Help has arrived</string>
+	<string name="invasion_3_migrate_description">A band of strong hunters agree to stay for the fight.</string>
 
 <!-- 4th wave -->
 	<string name="invasion_4_main_title">Invasion 4</string>
