@@ -33,9 +33,9 @@
 		<location id="north_lake" seed="6789834" environment="newNorth" map_location="0.9,0.2" lakes="7" river="false"/>
 
 		<!--  Some additional locations? -->
-		<location id="north_lake2" seed="6789834" environment="newNorth" map_location="0.8,0.25" lakes="7" river="false"/>
-		<location id="twisty_river2" seed="3165798" location="775.0, 500.0" environment="newNorth" map_location="0.425,0.650" lakes="4" river="true"/>
-	
+		<location id="north_lake2" seed="6789835" environment="newNorth" map_location="0.8,0.25" lakes="7" river="false"/>
+		<location id="twisty_river2" seed="3165799" location="775.0, 500.0" environment="newNorth" map_location="0.425,0.650" lakes="4" river="true"/>
+
 	</locations>
 
 <!--  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
