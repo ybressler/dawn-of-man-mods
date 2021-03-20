@@ -134,7 +134,28 @@
 		40 stone have been added to your stockpile</string>
 
 
+	<!-- Hunting milestones -->
+	<string name="hunt_mamoth_title">Hunted 1st mamoth!</string>
+	<string name="hunt_mamoth_5_title">Hunted 5th mamoth!</string>
+	<string name="hunt_mamoth_text">Several big game hunters choose to join your settlement.</string>
 
+	<string name="hunt_wolf_10_title">Hunted 10th wolf!</string>
+	<string name="hunt_wolf_30_title">Hunted 30th wolf!</string>
+	<string name="hunt_wolf_text">A band of children emerge from the forest. They claim to be raised by wolves, but who's to say.
+They chose to stay in your settlement.</string>
+
+
+	<string name="hunt_bear_1_title">Hunted 1st bear!</string>
+	<string name="hunt_bear_10_title">Hunted 10th bear!</string>
+	<string name="hunt_bear_text">Several shaggy warriors emerge from the underbrush, they wish to hunt dangerous animals with you.</string>
+
+
+
+	<!-- Unlock techs -->
+	<string name="unlock_copper_title">Stronger Metal</string>
+	<string name="unlock_copper_text">A strange new metal can be pulled from the earth and turned into hard tools.
+Your war chief thinks this can be useful for arming his men.
+10 copper axes, 5 copper, and 5 charcoal have been added to your stockpile.</string>
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
 

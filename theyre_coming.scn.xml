@@ -66,7 +66,7 @@
 		<milestone id="POPULATION_100">
 				<condition type="ValueReached" id="Population" value="100"/>
 		</milestone>
-		
+
 		<milestone id="POPULATION_150">
 				<condition type="ValueReached" id="Population" value="150"/>
 		</milestone>
@@ -386,7 +386,20 @@
 		</event>
 
 
+<!--    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    -->
+	<!-- Unlock tech = leads to stuff -->
+		<event>
+				<condition type="TechUnlocked" tech="copper_smelting"/>
+				<actions>
+						<action type="ShowMessage" title="unlock_copper_title" text="unlock_copper_text"/>
+						<action type="Spawn" entity_type="copper_axe" amount="10" placement="Storage"/>
+						<action type="Spawn" entity_type="copper" amount="5" placement="Storage"/>
+						<action type="Spawn" entity_type="charcoal" amount="5" placement="Storage"/>
+				</actions>
+		</event>
 
+
+<!--    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    -->
 
 
 		<!-- Change behaviors inside the game as things progress -->
@@ -540,8 +553,65 @@
 
 
 
+	<!-- Hunt your first Mamoth -->
+	<event>
+		<condition type="EntityCountReached" counter="HuntedAnimals" entity_type="mammoth" value="1"/>
+			<actions>
+					<action type="ShowMessage" title="hunt_mamoth_title" text="hunt_mamoth_text"/>
+					<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Male"/>
+					<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Female"/>
+			</actions>
+	</event>
+
+	<!-- Hunt your fifth Mamoth -->
+	<event>
+		<condition type="EntityCountReached" counter="HuntedAnimals" entity_type="mammoth" value="5"/>
+			<actions>
+					<action type="ShowMessage" title="hunt_mamoth_5_title" text="hunt_mamoth_text"/>
+					<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Male"/>
+					<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Female"/>
+			</actions>
+	</event>
 
 
+	<!-- Hunt your 10th wolf -->
+	<event>
+		<condition type="EntityCountReached" counter="HuntedAnimals" entity_type="wolf" value="10"/>
+			<actions>
+					<action type="ShowMessage" title="hunt_wolf_10_title" text="hunt_wolf_text"/>
+					<action type="Spawn" entity_type="primitive_human" amount="4" placement="StartLocationCircular" angle="35" radius="95" age="Young" gender="Male"/>
+					<action type="Spawn" entity_type="primitive_human" amount="4" placement="StartLocationCircular" angle="35" radius="90" age="Young" gender="Female"/>
+			</actions>
+	</event>
+
+	<!-- Hunt your 30th wolf -->
+	<event>
+		<condition type="EntityCountReached" counter="HuntedAnimals" entity_type="wolf" value="30"/>
+			<actions>
+					<action type="ShowMessage" title="hunt_wolf_30_title" text="hunt_wolf_text"/>
+					<action type="Spawn" entity_type="primitive_human" amount="8" placement="StartLocationCircular" angle="35" radius="95" age="Young" gender="Male"/>
+					<action type="Spawn" entity_type="primitive_human" amount="7" placement="StartLocationCircular" angle="35" radius="90" age="Young" gender="Female"/>
+			</actions>
+	</event>
+
+	<!-- Hunt your 1st bear -->
+	<event>
+		<condition type="EntityCountReached" counter="HuntedAnimals" entity_type="bear" value="1"/>
+			<actions>
+					<action type="ShowMessage" title="hunt_bear_1_title" text="hunt_bear_text"/>
+					<action type="Spawn" entity_type="primitive_human" amount="2" placement="StartLocationCircular" angle="15" radius="50" age="Old" gender="Male"/>
+			</actions>
+	</event>
+
+	<!-- Hunt your 10th bear -->
+	<event>
+		<condition type="EntityCountReached" counter="HuntedAnimals" entity_type="bear" value="10"/>
+			<actions>
+					<action type="ShowMessage" title="hunt_bear_1_title" text="hunt_bear_text"/>
+					<action type="Spawn" entity_type="primitive_human" amount="1" placement="StartLocationCircular" angle="15" radius="55" age="Adult" gender="Male"/>
+					<action type="Spawn" entity_type="primitive_human" amount="4" placement="StartLocationCircular" angle="15" radius="50" age="Old" gender="Male"/>
+			</actions>
+	</event>
 
 
 
@@ -625,13 +695,14 @@
 
 
 		<event flags="RequiresPrevious">
-				<condition type="TimeElapsed" timer="GameTime" value="3.90y"/>
+				<condition type="TimeElapsed" timer="GameTime" value="3.875y"/>
 
 				<actions>
+
 					<!-- Some people will migrate to your settlement -->
 					<action type="ShowMessage" title="invasion_3_migrate_title" text="invasion_3_migrate_description"/>
-					<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Male"/>
-					<action type="Spawn" entity_type="primitive_human" amount="3" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Female"/>
+					<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Male"/>
+					<action type="Spawn" entity_type="primitive_human" amount="5" placement="StartLocationCircular" angle="35" radius="20" age="Adult" gender="Female"/>
 
 				</actions>
 		</event>
