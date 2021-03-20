@@ -20,6 +20,15 @@
 	<string name="scenario_theyre_coming_description">6 Long Years</string>
 	<string name="scenario_theyre_coming_context">You've transgressed the sacred vow. Now you will pay the ultimate price.</string>
 
+
+	<!-- Location names -->
+	<string name="twisty_river">Twisty River</string>
+	<string name="river_fork">River Fork</string>
+	<string name="north_lake">North Lake</string>
+	<string name="another_north_lake">Another North Lake</string>
+	<string name="south_river">South River</string>
+
+
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  -->
 
 	<!-- Create your milestones -->
