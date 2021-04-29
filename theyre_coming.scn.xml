@@ -141,7 +141,7 @@
 					<condition type="And">
 						<sub_conditions>
 							<condition type="ValueReached" id="Population" value="200"/>
-							<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200" omparison="GreaterOrEquals"/>
+							<condition type="EntityCountComparison" counter="AliveAnimals" entity_type="cattle" value="200" comparison="GreaterOrEquals"/>
 						</sub_conditions>
 					</condition>
 
@@ -430,7 +430,7 @@
 				<condition type="TimeElapsed" timer="RealTime" value="30"/>
 				<actions>
 						<action type="ShowMessage" title="gift_from_the_gods" text="fortifications_gift"/>
-						<action type="Spawn" entity_type="log" amount="20" placement="Storage"/>
+						<action type="Spawn" entity_type="log" amount="20" placement="Human"/>
 				</actions>
 		</event>
 
@@ -524,7 +524,7 @@
 
 				<actions>
 						<action type="ShowMessage" title="gift_from_the_gods" text="2nd_mine_gift"/>
-						<action type="Spawn" entity_type="log" amount="20" placement="Storage"/>
+						<action type="Spawn" entity_type="log" amount="20" placement="Human"/>
 				</actions>
 		</event>
 
